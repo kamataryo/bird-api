@@ -1,0 +1,29 @@
+{
+  "name": "bird-api",
+  "version": "1.0.0",
+  "description": "鳥の名前のAPIサーバ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bird",
+    "name",
+    "academic-name"
+  ],
+  "author": "KamataRyo",
+  "license": "MIT",
+  "dependencies": {
+    "express": "~4.0.0",
+    "mongoose": "~3.6.13",
+    "body-parser": "~1.0.1"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "gulp": "^3.9.1",
+    "gulp-coffee": "^2.3.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-uglify": "^1.5.3"
+  }
+}
