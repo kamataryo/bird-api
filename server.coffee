@@ -1,16 +1,28 @@
 express    = require 'express'
 app        = express()
+router     = express.Router()
 bodyParser = require 'body-parser'
 mongoose   = require 'mongoose'
-router     = express.Router()
-Models     = require './app/models'
+
+# require models
+Taxonomies = require './app/models/models'
+Order      = Taxonomies.Order
+Family     = Taxonomies.Family
+Genus      = Taxonomies.Genus
+Bird       = Taxonomies.Species
+Subspecies = Taxonomies.Subspecies
+
+# require routers
+
 
 mongoose.connect 'mongodb://localhost/birdAPI'
 port = process.env.PORT || 3000
 
+
 app.use bodyParser.urlencoded(extended: true)
 app.use bodyParser.json()
 app.use '/api', router
+
 app.listen port
 console.log 'listen on port ' + port
 
@@ -25,9 +37,13 @@ router.get '/', (req, res) ->
     res.json message: 'Successfully posted a test message!'
 
 
+
+
+
+
 router.route '/birds'
     .post (req, res) ->
-        bird = new Models.Bird()
+        bird = new Bird()
         bird.name = req.body.name
         bird.ac_name = req.body.ac_name
         bird.save (err) ->
@@ -37,7 +53,7 @@ router.route '/birds'
                 res.json {message: 'Bird created!'}
 
     .get (req, res) ->
-        Models.Bird.find (err, birds) ->
+        Bird.find (err, birds) ->
             if err
                 res.send err
             else
@@ -46,7 +62,7 @@ router.route '/birds'
 
 router.route '/birds/:bird_id'
     .get (req, res) ->
-        Models.Bird.findById req.params.bird_id, (err, bird) ->
+        Bird.findById req.params.bird_id, (err, bird) ->
             if err
                 res.send err
             else
@@ -58,11 +74,11 @@ router.route '/birds/:bird_id'
 
 router.route '/birds/:bird_id/subspecies'
     .get (req, res) ->
-        Models.Bird.findById req.params.bird_id, (err, bird) ->
+        Bird.findById req.params.bird_id, (err, bird) ->
             if err
                 res.send err
             else
-                Models.Subspecies.findById bird.genius_id (err, genius) ->
+                Subspecies.findById bird.genius_id (err, genius) ->
                 if err
                     res.send err
                 else
