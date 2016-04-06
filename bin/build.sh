@@ -6,7 +6,7 @@ npm install
 npm run build
 
 # start db server
---dbpath /usr/local/var/mongodb/
+mongod --dbpath /usr/local/var/mongodb/
 
 # migrate dbs
 mongo birdAPI ./migration/mongo.provision.js
