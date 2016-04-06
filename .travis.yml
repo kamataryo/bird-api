@@ -5,12 +5,12 @@ node_js:
 
 services:
   - mongodb
-addons:
-  apt:
-    sources:
-    - mongodb-3.0-precise
-    packages:
-    - mongodb-org-server
+# addons:
+#   apt:
+#     sources:
+#     - mongodb-3.0-precise
+#     packages:
+#     - mongodb-org-server
 
 branches:
   only:
