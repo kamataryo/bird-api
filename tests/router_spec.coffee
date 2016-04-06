@@ -1,5 +1,10 @@
-frisby = require 'frisby'
-version = require('../package.json').version.split('.')[0]
+frisby  = require 'frisby'
+meta    = require '../package.json'
+version = meta.version.split('.')[0]
+
+# run server
+#server  = require "../#{meta.main}"
+
 url = (dir) ->
     "http://localhost:3000/#{version}/#{dir}"
 

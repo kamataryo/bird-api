@@ -1,4 +1,4 @@
-Name = require '../models/name.js'
+Name = require '../models/'
 
 module.exports =
     docs: (req, res) ->

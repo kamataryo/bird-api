@@ -1,3 +1,4 @@
 node_modules/
 *.js
 !mongo.provision.js
+npm-debug.log
