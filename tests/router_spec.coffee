@@ -12,10 +12,18 @@ frisby
     .create 'Test run of frisby.'
     .get url('')
     .expectStatus 200
+    .expectHeaderContains 'Content-Type', 'json'
     .toss()
 
 frisby
     .create 'Test of GET birds'
     .get url('birds')
+    .expectStatus 200
+    .expectHeaderContains 'Content-Type', 'json'
+    .toss()
+
+frisby
+    .create 'Test of GET birds/スズメ'
+    .get url('birds/スズメ')
     .expectStatus 200
     .toss()
