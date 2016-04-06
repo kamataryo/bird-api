@@ -12,7 +12,7 @@ branches:
 before_script: bash ./bin/build.sh
 script: npm test
 after_success: bash ./bin/deploy.sh
-after_script: kill $(ps -ar | grep "node server.js" | grep -v "grep" | cut -d" " -f1)
+after_script: npm stop
 env:
   global:
   - GH_REF: github.com/kamataryo/kamome-note.git

@@ -4,7 +4,3 @@ set -e
 
 npm install
 npm run build
-
-# migrate dbs
-npm run migrate
-npm start
