@@ -4,13 +4,18 @@
   "description": "鳥の名前のAPIサーバ",
   "main": "server.js",
   "scripts": {
-    "test": "mocha ./tests/"
+    "test": "./node_modules/jasmine-node/bin/jasmine-node tests/",
+    "build": "./node_modules/gulp/bin/gulp.js"
   },
   "keywords": [
     "bird",
     "name",
     "academic-name"
   ],
+  "repositoyy": {
+      "type": "git",
+      "url": "git@github.com:KamataRyo/bird-api.git"
+  },
   "author": "KamataRyo",
   "license": "MIT",
   "dependencies": {
@@ -21,12 +26,12 @@
   },
   "devDependencies": {
     "coffee-script": "^1.10.0",
+    "frisby": "^0.8.5",
     "gulp": "^3.9.1",
     "gulp-coffee": "^2.3.2",
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.1.0",
     "gulp-uglify": "^1.5.3",
-    "mocha": "^2.4.5",
-    "should": "^8.3.0"
+    "jasmine-node": "^1.14.5"
   }
 }
