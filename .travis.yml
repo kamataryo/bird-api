@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- '0.11'
+- '0.10'
+branches:
+  only:
+  - master
+before_script: bash ./bin/build.sh
+script: npm test
+after_success: bash ./bin/deploy.sh
+env:
+  global:
+  - GH_REF: github.com/kamataryo/kamome-note.git
+  - secure: TMBPlbuKt7GHKVZ5Alb4YqMLO965rkGyDekCWmghOFOaiJU9fprg/lYQ7gTboxrqECqhhIZ7Oa+7C/zt90RuhUSfIN4lyvEGohexGkxHbh1W+SOEtofFHhKuxCug8PRHkuhaBPkIKsR6gO33PsRnA+FtBx3stfieXC3m2FOWFaZEVxNYie0y/DTM2spPnStU5GU712jRexpGeEgbJerS8zLfpcAlKYHXQ05zQO+ZG6XYoLrs6aIDyc34GJSKpjNs3yvnH+YGAfwR4Gz8Bgzs4po+usX+kwrHVSjetLaR5A27rM07finqGcYdcniSdeVR4DcLxgZPBYHslGY8uaTSEkGdSGaJPXG1jUjaEKmRPdnIuvB0LPm7Fj/C9815gJcBpLNkR4XAhLhzgVQp13tPtgtVphvi5IO8dx7N6tNDRy8pw6t8CP/+5AJHBdXxMlsHdUwUCYfQR6B+3MgS15b+7aQ6cpBIjonvIYc/iMngD3N8UAN50LpDHFcCRVXaujOIBvmlvawGayIku4WP4zjL6FzDou9Tioxnz7H4jFbz+LYtRMge821SybfjD/FYAsz/8etC8u/IxnVY9mUqi2079lVhrxUqmwYd/xuCR1iLlvIWjmkDQsZKUFNBDTgAW3tBfcOT8lz3dp+ZFsP3yU9FlLZ4mG6O1Jg6m3n+3H7TILA=
