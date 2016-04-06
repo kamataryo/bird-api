@@ -3,7 +3,7 @@ bodyParser = require 'body-parser'
 mongoose   = require 'mongoose'
 app        = express()
 router     = express.Router()
-routes     = require './app/routes/index'
+routes     = require './app/routes'
 version    = require('./package.json').version.split('.')[0]
 _          = require 'underscore'
 

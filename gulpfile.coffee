@@ -10,7 +10,7 @@ src =
 gulp.task 'coffee', ()->
     gulp.src src['coffee']
         .pipe plumber(errorHandler: notify.onError '<%= error.message %>')
-        .pipe coffee { bare:false }
+        .pipe coffee { bare:true }
         .pipe uglify()
         .pipe gulp.dest './'
 
