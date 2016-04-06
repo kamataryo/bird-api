@@ -7,6 +7,7 @@
     "migrate": "mongo birdAPI ./migrations/mongo.provision.js",
     "build": "./node_modules/gulp/bin/gulp.js",
     "start": "node server.js &",
+    "poststart": "ifconfig;ping -c3 localhost",
     "stop": "psid=$(ps ar | grep \"node server.js\" | grep -v \"grep\" | cut -d\" \" -f1);if [[ $psid -ne '' ]];then kill $psid;fi",
     "pretest": "npm run migrate;npm run build;npm start",
     "test": "./node_modules/jasmine-node/bin/jasmine-node tests/"
