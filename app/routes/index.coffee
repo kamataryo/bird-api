@@ -10,3 +10,10 @@ module.exports =
                 res.send err
             else
                 res. json names
+
+    species: (req, res) ->
+        Name.find {rank:"species"}, (err, species) ->
+            if err
+                res.send err
+            else
+                res. json species

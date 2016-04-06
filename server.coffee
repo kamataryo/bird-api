@@ -20,11 +20,11 @@ app.use "/#{version}", router
 
 router.use (req, res, next) ->
     console.log 'Detect access.'
-    console.log req
     next()
 
 router.get '/', routes.docs
 router.route('/index').get routes.index
+router.route('/birds').get routes.species
 
 app.listen port, ->
     console.log "server #{meta.name} start listenning on port #{port}."
