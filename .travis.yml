@@ -17,7 +17,6 @@ branches:
   - master
 before_script: bash ./bin/build.sh
 script: npm test
-after_success: bash ./bin/deploy.sh
 after_script: npm stop
 env:
   global:
