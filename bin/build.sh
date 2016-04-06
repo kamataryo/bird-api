@@ -7,7 +7,7 @@ npm run build
 
 # start db server
 sudo mkdir /data
-sudo mkdir data/db
+sudo mkdir /data/db
 sudo mongod --dbpath ~/data/db
 
 # migrate dbs
