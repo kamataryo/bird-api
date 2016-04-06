@@ -1,8 +1,6 @@
 // mongo birdAPI
 db.dropDatabase();
 
-db.createCollection('orders');
-
 var data_orders = [
     {
         "ac":"galliformes",
@@ -101,18 +99,38 @@ var data_orders = [
         "ja":"スズメ目"
     },
     {
+        "ac":"galliformes",
+        "ja":"キジ目"
+    },
+    {
+        "ac":"anseriformes",
+        "ja":"カモ目"
+    },
+    {
+        "ac":"columbiformes",
+        "ja":"ハト目"
+    },
+    {
+        "ac":"ciconiiformes",
+        "ja":"コウノトリ目"
+    },
+    {
+        "ac":"pelecaniformes",
+        "ja":"ペリカン目"
+    },
+    {
+        "ac":"charadriiformes",
+        "ja":"チドリ目"
+    },
+    {
         "ac":"psittaciformes",
         "ja":"インコ目"
+    },
+    {
+        "ac":"passeriformes",
+        "ja":"スズメ目"
     }
 ];
-
-data_orders.forEach(function(order){
-    db.orders.insert(order);
-});
-
-
-
-db.createCollection('families');
 
 var data_families = [
     {
@@ -552,16 +570,6 @@ var data_families = [
     }
 ];
 
-data_families.forEach(function(family){
-    if(db.families.find(family).count() === 0){
-        family.order = db.orders.find({"ac":family.order})[0]._id
-        db.families.insert(family);
-    }
-});
-
-
-
-db.createCollection('genuses');
 var data_genuses = [
     {
         "family":"phasianidae",
@@ -2005,16 +2013,7 @@ var data_genuses = [
     }
 ]
 
-data_genuses.forEach(function(genus){
-    if(db.genuses.find(genus).count() === 0){
-        genus.family = db.families.find({"ac":genus.family})[0]._id
-        db.genuses.insert(genus);
-    }
-});
-
-
-db.createCollection('species');
-data_species = [
+var data_species = [
     {
         "alien":false,
         "genus":"tetrastes",
@@ -6073,16 +6072,7 @@ data_species = [
     }
 ]
 
-data_species.forEach(function(species){
-    if(db.species.find(species).count() === 0){
-        species.genus = db.genuses.find({"ac":species.genus})[0]._id
-        db.species.insert(species);
-    }
-});
-
-
-db.createCollection('subspecies');
-data_subspecies =[
+var data_subspecies =[
     {
         "alien":false,
         "species":"bonasia",
@@ -9277,12 +9267,42 @@ data_subspecies =[
     }
 ]
 
-data_subspecies.forEach(function(subspecies){
-    if(db.subspecies.find(subspecies).count() === 0){
-        if(db.species.find({"ac":subspecies.genus})>1){
-            console.log("collision!");
-        }
-        subspecies.species = db.species.find({"ac":subspecies.species})[0]._id
-        db.subspecies.insert(subspecies);
+db.createCollection('orders');
+db.createCollection('families');
+db.createCollection('genuses');
+db.createCollection('species');
+db.createCollection('subspecies');
+
+data_orders.forEach(function(or){
+    if (db.orders.find(or).count() === 0) {
+        db.orders.insert(or);
+    }
+});
+
+data_families.forEach(function(fam){
+    if (db.families.find(fam).count() === 0) {
+        fam.order = db.orders.find({"ac":fam.order})[0]._id
+        db.families.insert(fam);
+    }
+});
+
+data_genuses.forEach(function(gen){
+    if (db.genuses.find(gen).count() === 0) {
+        gen.family = db.families.find({"ac":gen.family})[0]._id
+        db.genuses.insert(gen);
+    }
+});
+
+data_species.forEach(function(spc){
+    if(db.species.find(spc).count() === 0){
+        spc.genus = db.genuses.find({"ac":spc.genus})[0]._id
+        db.species.insert(spc);
+    }
+});
+
+data_subspecies.forEach(function(subs){
+    if(db.subspecies.find(subs).count() === 0){
+        subs.species = db.species.find({"ac":subs.species})[0]._id
+        db.subspecies.insert(subs);
     }
 });

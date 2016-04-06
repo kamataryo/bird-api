@@ -15,9 +15,9 @@ for rank in ranks
         alien: Boolean
         ac: String
         ja: String
-        upper:
+    if upperRank
+        args[upperRank] =
             type: Schema.Types.ObjectId
             ref: upperRank
-
+    upperRank = rank.toLowerCase()
     module.exports[rank] = mongoose.model rank, new Schema args
-    upperRank = rank
