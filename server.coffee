@@ -7,21 +7,7 @@ version    = require('./package.json').version.split('.')[0]
 _          = require 'underscore'
 
 # require models
-ranks = require './app/models/models'
-Order      = ranks.Order
-Family     = ranks.Family
-Genus      = ranks.Genus
-Bird       = ranks.Species
-Subspecies = ranks.Subspecies
-
-
-getter = (Model) ->
-    (req, res) ->
-        Model.find (err, values) ->
-            if err
-                res.send err
-            else
-                res.json { test:Model, values }
+Name = require './app/models/name'
 
 
 poster = (Model) ->
@@ -54,31 +40,16 @@ router.use (req, res, next) ->
 router.get '/', (req, res) ->
     res.json message: 'Successfully posted a test message!'
 
-router.route('/orders').get getter(Order)
-router.route('/genuses').get getter(Genus)
-router.route('/families').get getter(Family)
-router.route('/birds').get getter(Bird)
-#
-# router.route '/birds/:bird_id'
-#     .get (req, res) ->
-#         Bird.findById req.params.bird_id, (err, bird) ->
-#             if err
-#                 res.send err
-#             else
-#                 res.json {
-#                     query:req.query
-#                     body:bird
-#                 }
-#
-#
-# router.route '/birds/:bird_id/subspecies'
-#     .get (req, res) ->
-#         Bird.findById req.params.bird_id, (err, bird) ->
-#             if err
-#                 res.send err
-#             else
-#                 Subspecies.find {species:bird.ac}, (err, subspecies) ->
-#                 if err
-#                     res.send err
-#                 else
-#                     res.json subspecies
+router.route('/names').get (req, res) ->
+    Name.find (err, names) ->
+        if err
+            res.send err
+        else
+            res.json names
+
+router.route('/birds').get (req, res) ->
+    Name.find {"rank":"species"}, (err, names) ->
+        if err
+            res.send err
+        else
+            res. json names
