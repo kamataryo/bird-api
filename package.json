@@ -11,7 +11,6 @@
 
     "pretest": "npm run migrate;npm run build;npm start",
     "test": "./node_modules/jasmine-node/bin/jasmine-node tests/",
-    "posttest": "npm stop"
   },
   "keywords": [
     "bird",
