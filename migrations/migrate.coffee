@@ -3,2698 +3,2698 @@ db.dropDatabase()
 
 data_names = [
     {
-        ac:"galliformes"
+        sc:"galliformes"
         ja:"キジ目"
         rank:"order"
     }
     {
-        ac:"anseriformes"
+        sc:"anseriformes"
         ja:"カモ目"
         rank:"order"
     }
     {
-        ac:"podicipediformes"
+        sc:"podicipediformes"
         ja:"カイツブリ目"
         rank:"order"
     }
     {
-        ac:"phaethontiformes"
+        sc:"phaethontiformes"
         ja:"ネッタイチョウ目"
         rank:"order"
     }
     {
-        ac:"pterocliformes"
+        sc:"pterocliformes"
         ja:"サケイ目"
         rank:"order"
     }
     {
-        ac:"columbiformes"
+        sc:"columbiformes"
         ja:"ハト目"
         rank:"order"
     }
     {
-        ac:"gaviiformes"
+        sc:"gaviiformes"
         ja:"アビ目"
         rank:"order"
     }
     {
-        ac:"procellariiformes"
+        sc:"procellariiformes"
         ja:"ミズナギドリ目"
         rank:"order"
     }
     {
-        ac:"ciconiiformes"
+        sc:"ciconiiformes"
         ja:"コウノトリ目"
         rank:"order"
     }
     {
-        ac:"suliformes"
+        sc:"suliformes"
         ja:"カツオドリ目"
         rank:"order"
     }
     {
-        ac:"pelecaniformes"
+        sc:"pelecaniformes"
         ja:"ペリカン目"
         rank:"order"
     }
     {
-        ac:"gruiformes"
+        sc:"gruiformes"
         ja:"ツル目"
         rank:"order"
     }
     {
-        ac:"otidiformes"
+        sc:"otidiformes"
         ja:"ノガン目"
         rank:"order"
     }
     {
-        ac:"cuculiformes"
+        sc:"cuculiformes"
         ja:"カッコウ目"
         rank:"order"
     }
     {
-        ac:"caprimulgiformes"
+        sc:"caprimulgiformes"
         ja:"ヨタカ目"
         rank:"order"
     }
     {
-        ac:"apodiformes"
+        sc:"apodiformes"
         ja:"アマツバメ目"
         rank:"order"
     }
     {
-        ac:"charadriiformes"
+        sc:"charadriiformes"
         ja:"チドリ目"
         rank:"order"
     }
     {
-        ac:"accipitriformes"
+        sc:"accipitriformes"
         ja:"タカ目"
         rank:"order"
     }
     {
-        ac:"strigiformes"
+        sc:"strigiformes"
         ja:"フクロウ目"
         rank:"order"
     }
     {
-        ac:"bucerotiformes"
+        sc:"bucerotiformes"
         ja:"サイチョウ目"
         rank:"order"
     }
     {
-        ac:"coraciiformes"
+        sc:"coraciiformes"
         ja:"ブッポウソウ目"
         rank:"order"
     }
     {
-        ac:"piciformes"
+        sc:"piciformes"
         ja:"キツツキ目"
         rank:"order"
     }
     {
-        ac:"falconiformes"
+        sc:"falconiformes"
         ja:"ハヤブサ目"
         rank:"order"
     }
     {
-        ac:"passeriformes"
+        sc:"passeriformes"
         ja:"スズメ目"
         rank:"order"
     }
     {
-        ac:"galliformes"
+        sc:"galliformes"
         ja:"キジ目"
         rank:"order"
     }
     {
-        ac:"anseriformes"
+        sc:"anseriformes"
         ja:"カモ目"
         rank:"order"
     }
     {
-        ac:"columbiformes"
+        sc:"columbiformes"
         ja:"ハト目"
         rank:"order"
     }
     {
-        ac:"ciconiiformes"
+        sc:"ciconiiformes"
         ja:"コウノトリ目"
         rank:"order"
     }
     {
-        ac:"pelecaniformes"
+        sc:"pelecaniformes"
         ja:"ペリカン目"
         rank:"order"
     }
     {
-        ac:"charadriiformes"
+        sc:"charadriiformes"
         ja:"チドリ目"
         rank:"order"
     }
     {
-        ac:"psittaciformes"
+        sc:"psittaciformes"
         ja:"インコ目"
         rank:"order"
     }
     {
-        ac:"passeriformes"
+        sc:"passeriformes"
         ja:"スズメ目"
         rank:"order"
     }
     {
-        ac:"phasianidae"
+        sc:"phasianidae"
         ja:"キジ科"
         rank:"family"
         upper:"galliformes"
     }
     {
-        ac:"anatidae"
+        sc:"anatidae"
         ja:"カモ科"
         rank:"family"
         upper:"anseriformes"
     }
     {
-        ac:"podicipedidae"
+        sc:"podicipedidae"
         ja:"カイツブリ科"
         rank:"family"
         upper:"podicipediformes"
     }
     {
-        ac:"phaethontidae"
+        sc:"phaethontidae"
         ja:"ネッタイチョウ科"
         rank:"family"
         upper:"phaethontiformes"
     }
     {
-        ac:"pteroclidae"
+        sc:"pteroclidae"
         ja:"サケイ科"
         rank:"family"
         upper:"pterocliformes"
     }
     {
-        ac:"columbidae"
+        sc:"columbidae"
         ja:"ハト科"
         rank:"family"
         upper:"columbiformes"
     }
     {
-        ac:"gaviidae"
+        sc:"gaviidae"
         ja:"アビ科"
         rank:"family"
         upper:"gaviiformes"
     }
     {
-        ac:"diomedeidae"
+        sc:"diomedeidae"
         ja:"アホウドリ科"
         rank:"family"
         upper:"procellariiformes"
     }
     {
-        ac:"procellariidae"
+        sc:"procellariidae"
         ja:"ミズナギドリ科"
         rank:"family"
         upper:"procellariiformes"
     }
     {
-        ac:"hydrobatidae"
+        sc:"hydrobatidae"
         ja:"ウミツバメ科"
         rank:"family"
         upper:"procellariiformes"
     }
     {
-        ac:"ciconiidae"
+        sc:"ciconiidae"
         ja:"コウノトリ科"
         rank:"family"
         upper:"ciconiiformes"
     }
     {
-        ac:"fregatidae"
+        sc:"fregatidae"
         ja:"グンカンドリ科"
         rank:"family"
         upper:"suliformes"
     }
     {
-        ac:"sulidae"
+        sc:"sulidae"
         ja:"カツオドリ科"
         rank:"family"
         upper:"suliformes"
     }
     {
-        ac:"phalacrocoracidae"
+        sc:"phalacrocoracidae"
         ja:"ウ科"
         rank:"family"
         upper:"suliformes"
     }
     {
-        ac:"pelecanidae"
+        sc:"pelecanidae"
         ja:"ペリカン科"
         rank:"family"
         upper:"pelecaniformes"
     }
     {
-        ac:"ardeidae"
+        sc:"ardeidae"
         ja:"サギ科"
         rank:"family"
         upper:"pelecaniformes"
     }
     {
-        ac:"threskiornithidae"
+        sc:"threskiornithidae"
         ja:"トキ科"
         rank:"family"
         upper:"pelecaniformes"
     }
     {
-        ac:"gruidae"
+        sc:"gruidae"
         ja:"ツル科"
         rank:"family"
         upper:"gruiformes"
     }
     {
-        ac:"rallidae"
+        sc:"rallidae"
         ja:"クイナ科"
         rank:"family"
         upper:"gruiformes"
     }
     {
-        ac:"otididae"
+        sc:"otididae"
         ja:"ノガン科"
         rank:"family"
         upper:"otidiformes"
     }
     {
-        ac:"cuculidae"
+        sc:"cuculidae"
         ja:"カッコウ科"
         rank:"family"
         upper:"cuculiformes"
     }
     {
-        ac:"caprimulgidae"
+        sc:"caprimulgidae"
         ja:"ヨタカ科"
         rank:"family"
         upper:"caprimulgiformes"
     }
     {
-        ac:"apodidae"
+        sc:"apodidae"
         ja:"アマツバメ科"
         rank:"family"
         upper:"apodiformes"
     }
     {
-        ac:"charadriidae"
+        sc:"charadriidae"
         ja:"チドリ科"
         rank:"family"
         upper:"charadriiformes"
     }
     {
-        ac:"haematopodidae"
+        sc:"haematopodidae"
         ja:"ミヤコドリ科"
         rank:"family"
         upper:"charadriiformes"
     }
     {
-        ac:"recurvirostridae"
+        sc:"recurvirostridae"
         ja:"セイタカシギ科"
         rank:"family"
         upper:"charadriiformes"
     }
     {
-        ac:"scolopacidae"
+        sc:"scolopacidae"
         ja:"シギ科"
         rank:"family"
         upper:"charadriiformes"
     }
     {
-        ac:"jacanidae"
+        sc:"jacanidae"
         ja:"レンカク科"
         rank:"family"
         upper:"charadriiformes"
     }
     {
-        ac:"rostratulidae"
+        sc:"rostratulidae"
         ja:"タマシギ科"
         rank:"family"
         upper:"charadriiformes"
     }
     {
-        ac:"turnicidae"
+        sc:"turnicidae"
         ja:"ミフウズラ科"
         rank:"family"
         upper:"charadriiformes"
     }
     {
-        ac:"glareolidae"
+        sc:"glareolidae"
         ja:"ツバメチドリ科"
         rank:"family"
         upper:"charadriiformes"
     }
     {
-        ac:"laridae"
+        sc:"laridae"
         ja:"カモメ科"
         rank:"family"
         upper:"charadriiformes"
     }
     {
-        ac:"stercorariidae"
+        sc:"stercorariidae"
         ja:"トウゾクカモメ科"
         rank:"family"
         upper:"charadriiformes"
     }
     {
-        ac:"alcidae"
+        sc:"alcidae"
         ja:"ウミスズメ科"
         rank:"family"
         upper:"charadriiformes"
     }
     {
-        ac:"pandionidae"
+        sc:"pandionidae"
         ja:"ミサゴ科"
         rank:"family"
         upper:"accipitriformes"
     }
     {
-        ac:"accipitridae"
+        sc:"accipitridae"
         ja:"タカ科"
         rank:"family"
         upper:"accipitriformes"
     }
     {
-        ac:"tytonidae"
+        sc:"tytonidae"
         ja:"メンフクロウ科"
         rank:"family"
         upper:"strigiformes"
     }
     {
-        ac:"strigidae"
+        sc:"strigidae"
         ja:"フクロウ科"
         rank:"family"
         upper:"strigiformes"
     }
     {
-        ac:"upupidae"
+        sc:"upupidae"
         ja:"ヤツガシラ科"
         rank:"family"
         upper:"bucerotiformes"
     }
     {
-        ac:"alcedinidae"
+        sc:"alcedinidae"
         ja:"カワセミ科"
         rank:"family"
         upper:"coraciiformes"
     }
     {
-        ac:"meropidae"
+        sc:"meropidae"
         ja:"ハチクイ科"
         rank:"family"
         upper:"coraciiformes"
     }
     {
-        ac:"coraciidae"
+        sc:"coraciidae"
         ja:"ブッポウソウ科"
         rank:"family"
         upper:"coraciiformes"
     }
     {
-        ac:"picidae"
+        sc:"picidae"
         ja:"キツツキ科"
         rank:"family"
         upper:"piciformes"
     }
     {
-        ac:"falconidae"
+        sc:"falconidae"
         ja:"ハヤブサ科"
         rank:"family"
         upper:"falconiformes"
     }
     {
-        ac:"pittidae"
+        sc:"pittidae"
         ja:"ヤイロチョウ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"artamidae"
+        sc:"artamidae"
         ja:"モリツバメ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"campephagidae"
+        sc:"campephagidae"
         ja:"サンショウクイ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"oriolidae"
+        sc:"oriolidae"
         ja:"コウライウグイス科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"dicruridae"
+        sc:"dicruridae"
         ja:"オウチュウ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"monarchidae"
+        sc:"monarchidae"
         ja:"カササギヒタキ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"laniidae"
+        sc:"laniidae"
         ja:"モズ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"corvidae"
+        sc:"corvidae"
         ja:"カラス科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"regulidae"
+        sc:"regulidae"
         ja:"キクイタダキ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"remizidae"
+        sc:"remizidae"
         ja:"ツリスガラ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"paridae"
+        sc:"paridae"
         ja:"シジュウカラ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"panuridae"
+        sc:"panuridae"
         ja:"ヒゲガラ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"alaudidae"
+        sc:"alaudidae"
         ja:"ヒバリ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"hirundinidae"
+        sc:"hirundinidae"
         ja:"ツバメ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"pycnonotidae"
+        sc:"pycnonotidae"
         ja:"ヒヨドリ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"cettiidae"
+        sc:"cettiidae"
         ja:"ウグイス科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"aegithalidae"
+        sc:"aegithalidae"
         ja:"エナガ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"phylloscopidae"
+        sc:"phylloscopidae"
         ja:"ムシクイ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"sylviidae"
+        sc:"sylviidae"
         ja:"ズグロムシクイ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"zosteropidae"
+        sc:"zosteropidae"
         ja:"メジロ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"locustellidae"
+        sc:"locustellidae"
         ja:"センニュウ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"acrocephalidae"
+        sc:"acrocephalidae"
         ja:"ヨシキリ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"cisticolidae"
+        sc:"cisticolidae"
         ja:"セッカ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"bombycillidae"
+        sc:"bombycillidae"
         ja:"レンジャク科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"sittidae"
+        sc:"sittidae"
         ja:"ゴジュウカラ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"certhiidae"
+        sc:"certhiidae"
         ja:"キバシリ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"troglodytidae"
+        sc:"troglodytidae"
         ja:"ミソサザイ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"sturnidae"
+        sc:"sturnidae"
         ja:"ムクドリ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"cinclidae"
+        sc:"cinclidae"
         ja:"カワガラス科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"muscicapidae"
+        sc:"muscicapidae"
         ja:"ヒタキ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"prunellidae"
+        sc:"prunellidae"
         ja:"イワヒバリ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"passeridae"
+        sc:"passeridae"
         ja:"スズメ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"motacillidae"
+        sc:"motacillidae"
         ja:"セキレイ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"fringillidae"
+        sc:"fringillidae"
         ja:"アトリ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"calcariidae"
+        sc:"calcariidae"
         ja:"ツメナガホオジロ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"parulidae"
+        sc:"parulidae"
         ja:"アメリカムシクイ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"emberizidae"
+        sc:"emberizidae"
         ja:"ホオジロ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"psittacidae"
+        sc:"psittacidae"
         ja:"インコ科"
         rank:"family"
         upper:"psittaciformes"
     }
     {
-        ac:"timaliidae"
+        sc:"timaliidae"
         ja:"チメドリ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"ploceidae"
+        sc:"ploceidae"
         ja:"ハタオリドリ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"estrildidae"
+        sc:"estrildidae"
         ja:"カエデチョウ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"viduidae"
+        sc:"viduidae"
         ja:"テンニンチョウ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"thraupidae"
+        sc:"thraupidae"
         ja:"フウキンチョウ科"
         rank:"family"
         upper:"passeriformes"
     }
     {
-        ac:"tetrastes"
+        sc:"tetrastes"
         ja:"エゾライチョウ属"
         rank:"genus"
         upper:"phasianidae"
 
     }
     {
-        ac:"lagopus"
+        sc:"lagopus"
         ja:"ライチョウ属"
         rank:"genus"
         upper:"phasianidae"
 
     }
     {
-        ac:"coturnix"
+        sc:"coturnix"
         ja:"ウズラ属"
         rank:"genus"
         upper:"phasianidae"
 
     }
     {
-        ac:"syrmaticus"
+        sc:"syrmaticus"
         ja:"ヤマドリ属"
         rank:"genus"
         upper:"phasianidae"
 
     }
     {
-        ac:"phasianus"
+        sc:"phasianus"
         ja:"キジ属"
         rank:"genus"
         upper:"phasianidae"
 
     }
     {
-        ac:"dendrocygna"
+        sc:"dendrocygna"
         ja:"リュウキュウガモ属"
         rank:"genus"
         upper:"anatidae"
 
     }
     {
-        ac:"anser"
+        sc:"anser"
         ja:"マガン属"
         rank:"genus"
         upper:"anatidae"
 
     }
     {
-        ac:"branta"
+        sc:"branta"
         ja:"コクガン属"
         rank:"genus"
         upper:"anatidae"
 
     }
     {
-        ac:"cygnus"
+        sc:"cygnus"
         ja:"ハクチョウ属"
         rank:"genus"
         upper:"anatidae"
 
     }
     {
-        ac:"tadorna"
+        sc:"tadorna"
         ja:"ツクシガモ属"
         rank:"genus"
         upper:"anatidae"
 
     }
     {
-        ac:"aix"
+        sc:"aix"
         ja:"オシドリ属"
         rank:"genus"
         upper:"anatidae"
 
     }
     {
-        ac:"nettapus"
+        sc:"nettapus"
         ja:"ナンキンオシ属"
         rank:"genus"
         upper:"anatidae"
 
     }
     {
-        ac:"anas"
+        sc:"anas"
         ja:"マガモ属"
         rank:"genus"
         upper:"anatidae"
 
     }
     {
-        ac:"netta"
+        sc:"netta"
         ja:"アカハシハジロ属"
         rank:"genus"
         upper:"anatidae"
 
     }
     {
-        ac:"aythya"
+        sc:"aythya"
         ja:"スズガモ属"
         rank:"genus"
         upper:"anatidae"
 
     }
     {
-        ac:"polysticta"
+        sc:"polysticta"
         ja:"コケワタガモ属"
         rank:"genus"
         upper:"anatidae"
 
     }
     {
-        ac:"somateria"
+        sc:"somateria"
         ja:"ケワタガモ属"
         rank:"genus"
         upper:"anatidae"
 
     }
     {
-        ac:"histrionicus"
+        sc:"histrionicus"
         ja:"シノリガモ属"
         rank:"genus"
         upper:"anatidae"
 
     }
     {
-        ac:"melanitta"
+        sc:"melanitta"
         ja:"ビロードキンクロ属"
         rank:"genus"
         upper:"anatidae"
 
     }
     {
-        ac:"clangula"
+        sc:"clangula"
         ja:"コオリガモ属"
         rank:"genus"
         upper:"anatidae"
 
     }
     {
-        ac:"bucephala"
+        sc:"bucephala"
         ja:"ホオジロガモ属"
         rank:"genus"
         upper:"anatidae"
 
     }
     {
-        ac:"mergellus"
+        sc:"mergellus"
         ja:"ミコアイサ属"
         rank:"genus"
         upper:"anatidae"
 
     }
     {
-        ac:"mergus"
+        sc:"mergus"
         ja:"ウミアイサ属"
         rank:"genus"
         upper:"anatidae"
 
     }
     {
-        ac:"tachybaptus"
+        sc:"tachybaptus"
         ja:"カイツブリ属"
         rank:"genus"
         upper:"podicipedidae"
 
     }
     {
-        ac:"podiceps"
+        sc:"podiceps"
         ja:"カンムリカイツブリ属"
         rank:"genus"
         upper:"podicipedidae"
 
     }
     {
-        ac:"phaethon"
+        sc:"phaethon"
         ja:"ネッタイチョウ属"
         rank:"genus"
         upper:"phaethontidae"
 
     }
     {
-        ac:"syrrhaptes"
+        sc:"syrrhaptes"
         ja:"サケイ属"
         rank:"genus"
         upper:"pteroclidae"
 
     }
     {
-        ac:"columba"
+        sc:"columba"
         ja:"カワラバト属"
         rank:"genus"
         upper:"columbidae"
 
     }
     {
-        ac:"streptopelia"
+        sc:"streptopelia"
         ja:"キジバト属"
         rank:"genus"
         upper:"columbidae"
 
     }
     {
-        ac:"chalcophaps"
+        sc:"chalcophaps"
         ja:"キンバト属"
         rank:"genus"
         upper:"columbidae"
 
     }
     {
-        ac:"treron"
+        sc:"treron"
         ja:"アオバト属"
         rank:"genus"
         upper:"columbidae"
 
     }
     {
-        ac:"ptilinopus"
+        sc:"ptilinopus"
         ja:"ヒメアオバト属"
         rank:"genus"
         upper:"columbidae"
 
     }
     {
-        ac:"gavia"
+        sc:"gavia"
         ja:"アビ属"
         rank:"genus"
         upper:"gaviidae"
 
     }
     {
-        ac:"phoebastria"
+        sc:"phoebastria"
         ja:"アホウドリ属"
         rank:"genus"
         upper:"diomedeidae"
 
     }
     {
-        ac:"fulmarus"
+        sc:"fulmarus"
         ja:"フルマカモメ属"
         rank:"genus"
         upper:"procellariidae"
 
     }
     {
-        ac:"pterodroma"
+        sc:"pterodroma"
         ja:"シロハラミズナギドリ属"
         rank:"genus"
         upper:"procellariidae"
 
     }
     {
-        ac:"calonectris"
+        sc:"calonectris"
         ja:"オオミズナギドリ属"
         rank:"genus"
         upper:"procellariidae"
 
     }
     {
-        ac:"puffinus"
+        sc:"puffinus"
         ja:"ハイイロミズナギドリ属"
         rank:"genus"
         upper:"procellariidae"
 
     }
     {
-        ac:"bulweria"
+        sc:"bulweria"
         ja:"アナドリ属"
         rank:"genus"
         upper:"procellariidae"
 
     }
     {
-        ac:"oceanites"
+        sc:"oceanites"
         ja:"アシナガウミツバメ属"
         rank:"genus"
         upper:"hydrobatidae"
 
     }
     {
-        ac:"oceanodroma"
+        sc:"oceanodroma"
         ja:"オーストンウミツバメ属"
         rank:"genus"
         upper:"hydrobatidae"
 
     }
     {
-        ac:"ciconia"
+        sc:"ciconia"
         ja:"コウノトリ属"
         rank:"genus"
         upper:"ciconiidae"
 
     }
     {
-        ac:"fregata"
+        sc:"fregata"
         ja:"グンカンドリ属"
         rank:"genus"
         upper:"fregatidae"
 
     }
     {
-        ac:"sula"
+        sc:"sula"
         ja:"カツオドリ属"
         rank:"genus"
         upper:"sulidae"
 
     }
     {
-        ac:"phalacrocorax"
+        sc:"phalacrocorax"
         ja:"ウ属"
         rank:"genus"
         upper:"phalacrocoracidae"
 
     }
     {
-        ac:"pelecanus"
+        sc:"pelecanus"
         ja:"ペリカン属"
         rank:"genus"
         upper:"pelecanidae"
 
     }
     {
-        ac:"botaurus"
+        sc:"botaurus"
         ja:"サンカノゴイ属"
         rank:"genus"
         upper:"ardeidae"
 
     }
     {
-        ac:"ixobrychus"
+        sc:"ixobrychus"
         ja:"ヨシゴイ属"
         rank:"genus"
         upper:"ardeidae"
 
     }
     {
-        ac:"gorsachius"
+        sc:"gorsachius"
         ja:"ミゾゴイ属"
         rank:"genus"
         upper:"ardeidae"
 
     }
     {
-        ac:"nycticorax"
+        sc:"nycticorax"
         ja:"ゴイサギ属"
         rank:"genus"
         upper:"ardeidae"
 
     }
     {
-        ac:"butorides"
+        sc:"butorides"
         ja:"ササゴイ属"
         rank:"genus"
         upper:"ardeidae"
 
     }
     {
-        ac:"ardeola"
+        sc:"ardeola"
         ja:"アカガシラサギ属"
         rank:"genus"
         upper:"ardeidae"
 
     }
     {
-        ac:"bubulcus"
+        sc:"bubulcus"
         ja:"アマサギ属"
         rank:"genus"
         upper:"ardeidae"
 
     }
     {
-        ac:"ardea"
+        sc:"ardea"
         ja:"アオサギ属"
         rank:"genus"
         upper:"ardeidae"
 
     }
     {
-        ac:"egretta"
+        sc:"egretta"
         ja:"コサギ属"
         rank:"genus"
         upper:"ardeidae"
 
     }
     {
-        ac:"threskiornis"
+        sc:"threskiornis"
         ja:"クロトキ属"
         rank:"genus"
         upper:"threskiornithidae"
 
     }
     {
-        ac:"nipponia"
+        sc:"nipponia"
         ja:"トキ属"
         rank:"genus"
         upper:"threskiornithidae"
 
     }
     {
-        ac:"platalea"
+        sc:"platalea"
         ja:"ヘラサギ属"
         rank:"genus"
         upper:"threskiornithidae"
 
     }
     {
-        ac:"grus"
+        sc:"grus"
         ja:"ツル属"
         rank:"genus"
         upper:"gruidae"
 
     }
     {
-        ac:"anthropoides"
+        sc:"anthropoides"
         ja:"アネハヅル属"
         rank:"genus"
         upper:"gruidae"
 
     }
     {
-        ac:"coturnicops"
+        sc:"coturnicops"
         ja:"シマクイナ属"
         rank:"genus"
         upper:"rallidae"
 
     }
     {
-        ac:"rallina"
+        sc:"rallina"
         ja:"オオクイナ属"
         rank:"genus"
         upper:"rallidae"
 
     }
     {
-        ac:"gallirallus"
+        sc:"gallirallus"
         ja:"ヤンバルクイナ属"
         rank:"genus"
         upper:"rallidae"
 
     }
     {
-        ac:"rallus"
+        sc:"rallus"
         ja:"クイナ属"
         rank:"genus"
         upper:"rallidae"
 
     }
     {
-        ac:"amaurornis"
+        sc:"amaurornis"
         ja:"シロハラクイナ属"
         rank:"genus"
         upper:"rallidae"
 
     }
     {
-        ac:"porzana"
+        sc:"porzana"
         ja:"ヒメクイナ属"
         rank:"genus"
         upper:"rallidae"
 
     }
     {
-        ac:"gallicrex"
+        sc:"gallicrex"
         ja:"ツルクイナ属"
         rank:"genus"
         upper:"rallidae"
 
     }
     {
-        ac:"gallinula"
+        sc:"gallinula"
         ja:"バン属"
         rank:"genus"
         upper:"rallidae"
 
     }
     {
-        ac:"fulica"
+        sc:"fulica"
         ja:"オオバン属"
         rank:"genus"
         upper:"rallidae"
 
     }
     {
-        ac:"otis"
+        sc:"otis"
         ja:"ノガン属"
         rank:"genus"
         upper:"otididae"
 
     }
     {
-        ac:"tetrax"
+        sc:"tetrax"
         ja:"ヒメノガン属"
         rank:"genus"
         upper:"otididae"
 
     }
     {
-        ac:"centropus"
+        sc:"centropus"
         ja:"バンケン属"
         rank:"genus"
         upper:"cuculidae"
 
     }
     {
-        ac:"clamator"
+        sc:"clamator"
         ja:"カンムリカッコウ属"
         rank:"genus"
         upper:"cuculidae"
 
     }
     {
-        ac:"eudynamys"
+        sc:"eudynamys"
         ja:"オニカッコウ属"
         rank:"genus"
         upper:"cuculidae"
 
     }
     {
-        ac:"urodynamis"
+        sc:"urodynamis"
         ja:"キジカッコウ属"
         rank:"genus"
         upper:"cuculidae"
 
     }
     {
-        ac:"surniculus"
+        sc:"surniculus"
         ja:"オウチュウカッコウ属"
         rank:"genus"
         upper:"cuculidae"
 
     }
     {
-        ac:"hierococcyx"
+        sc:"hierococcyx"
         ja:"ジュウイチ属"
         rank:"genus"
         upper:"cuculidae"
 
     }
     {
-        ac:"cuculus"
+        sc:"cuculus"
         ja:"カッコウ属"
         rank:"genus"
         upper:"cuculidae"
 
     }
     {
-        ac:"caprimulgus"
+        sc:"caprimulgus"
         ja:"ヨタカ属"
         rank:"genus"
         upper:"caprimulgidae"
 
     }
     {
-        ac:"aerodramus"
+        sc:"aerodramus"
         ja:"ヒマラヤアナツバメ属"
         rank:"genus"
         upper:"apodidae"
 
     }
     {
-        ac:"hirundapus"
+        sc:"hirundapus"
         ja:"ハリオアマツバメ属"
         rank:"genus"
         upper:"apodidae"
 
     }
     {
-        ac:"apus"
+        sc:"apus"
         ja:"アマツバメ属"
         rank:"genus"
         upper:"apodidae"
 
     }
     {
-        ac:"vanellus"
+        sc:"vanellus"
         ja:"タゲリ属"
         rank:"genus"
         upper:"charadriidae"
 
     }
     {
-        ac:"pluvialis"
+        sc:"pluvialis"
         ja:"ムナグロ属"
         rank:"genus"
         upper:"charadriidae"
 
     }
     {
-        ac:"charadrius"
+        sc:"charadrius"
         ja:"チドリ属"
         rank:"genus"
         upper:"charadriidae"
 
     }
     {
-        ac:"haematopus"
+        sc:"haematopus"
         ja:"ミヤコドリ属"
         rank:"genus"
         upper:"haematopodidae"
 
     }
     {
-        ac:"himantopus"
+        sc:"himantopus"
         ja:"セイタカシギ属"
         rank:"genus"
         upper:"recurvirostridae"
 
     }
     {
-        ac:"recurvirostra"
+        sc:"recurvirostra"
         ja:"ソリハシセイタカシギ属"
         rank:"genus"
         upper:"recurvirostridae"
 
     }
     {
-        ac:"scolopax"
+        sc:"scolopax"
         ja:"ヤマシギ属"
         rank:"genus"
         upper:"scolopacidae"
 
     }
     {
-        ac:"lymnocryptes"
+        sc:"lymnocryptes"
         ja:"コシギ属"
         rank:"genus"
         upper:"scolopacidae"
 
     }
     {
-        ac:"gallinago"
+        sc:"gallinago"
         ja:"タシギ属"
         rank:"genus"
         upper:"scolopacidae"
 
     }
     {
-        ac:"limnodromus"
+        sc:"limnodromus"
         ja:"オオハシシギ属"
         rank:"genus"
         upper:"scolopacidae"
 
     }
     {
-        ac:"limosa"
+        sc:"limosa"
         ja:"オグロシギ属"
         rank:"genus"
         upper:"scolopacidae"
 
     }
     {
-        ac:"numenius"
+        sc:"numenius"
         ja:"ダイシャクシギ属"
         rank:"genus"
         upper:"scolopacidae"
 
     }
     {
-        ac:"tringa"
+        sc:"tringa"
         ja:"クサシギ属"
         rank:"genus"
         upper:"scolopacidae"
 
     }
     {
-        ac:"heteroscelus"
+        sc:"heteroscelus"
         ja:"キアシシギ属"
         rank:"genus"
         upper:"scolopacidae"
 
     }
     {
-        ac:"xenus"
+        sc:"xenus"
         ja:"ソリハシシギ属"
         rank:"genus"
         upper:"scolopacidae"
 
     }
     {
-        ac:"actitis"
+        sc:"actitis"
         ja:"イソシギ属"
         rank:"genus"
         upper:"scolopacidae"
 
     }
     {
-        ac:"arenaria"
+        sc:"arenaria"
         ja:"キョウジョシギ属"
         rank:"genus"
         upper:"scolopacidae"
 
     }
     {
-        ac:"calidris"
+        sc:"calidris"
         ja:"オバシギ属"
         rank:"genus"
         upper:"scolopacidae"
 
     }
     {
-        ac:"eurynorhynchus"
+        sc:"eurynorhynchus"
         ja:"ヘラシギ属"
         rank:"genus"
         upper:"scolopacidae"
 
     }
     {
-        ac:"limicola"
+        sc:"limicola"
         ja:"キリアイ属"
         rank:"genus"
         upper:"scolopacidae"
 
     }
     {
-        ac:"tryngites"
+        sc:"tryngites"
         ja:"コモンシギ属"
         rank:"genus"
         upper:"scolopacidae"
 
     }
     {
-        ac:"philomachus"
+        sc:"philomachus"
         ja:"エリマキシギ属"
         rank:"genus"
         upper:"scolopacidae"
 
     }
     {
-        ac:"phalaropus"
+        sc:"phalaropus"
         ja:"ヒレアシシギ属"
         rank:"genus"
         upper:"scolopacidae"
 
     }
     {
-        ac:"hydrophasianus"
+        sc:"hydrophasianus"
         ja:"レンカク属"
         rank:"genus"
         upper:"jacanidae"
 
     }
     {
-        ac:"rostratula"
+        sc:"rostratula"
         ja:"タマシギ属"
         rank:"genus"
         upper:"rostratulidae"
 
     }
     {
-        ac:"turnix"
+        sc:"turnix"
         ja:"ミフウズラ属"
         rank:"genus"
         upper:"turnicidae"
 
     }
     {
-        ac:"glareola"
+        sc:"glareola"
         ja:"ツバメチドリ属"
         rank:"genus"
         upper:"glareolidae"
 
     }
     {
-        ac:"anous"
+        sc:"anous"
         ja:"クロアジサシ属"
         rank:"genus"
         upper:"laridae"
 
     }
     {
-        ac:"procelsterna"
+        sc:"procelsterna"
         ja:"ハイイロアジサシ属"
         rank:"genus"
         upper:"laridae"
 
     }
     {
-        ac:"gygis"
+        sc:"gygis"
         ja:"シロアジサシ属"
         rank:"genus"
         upper:"laridae"
 
     }
     {
-        ac:"rissa"
+        sc:"rissa"
         ja:"ミツユビカモメ属"
         rank:"genus"
         upper:"laridae"
 
     }
     {
-        ac:"pagophila"
+        sc:"pagophila"
         ja:"ゾウゲカモメ属"
         rank:"genus"
         upper:"laridae"
 
     }
     {
-        ac:"xema"
+        sc:"xema"
         ja:"クビワカモメ属"
         rank:"genus"
         upper:"laridae"
 
     }
     {
-        ac:"rhodostethia"
+        sc:"rhodostethia"
         ja:"ヒメクビワカモメ属"
         rank:"genus"
         upper:"laridae"
 
     }
     {
-        ac:"larus"
+        sc:"larus"
         ja:"カモメ属"
         rank:"genus"
         upper:"laridae"
 
     }
     {
-        ac:"gelochelidon"
+        sc:"gelochelidon"
         ja:"ハシブトアジサシ属"
         rank:"genus"
         upper:"laridae"
 
     }
     {
-        ac:"sterna"
+        sc:"sterna"
         ja:"アジサシ属"
         rank:"genus"
         upper:"laridae"
 
     }
     {
-        ac:"chlidonias"
+        sc:"chlidonias"
         ja:"クロハラアジサシ属"
         rank:"genus"
         upper:"laridae"
 
     }
     {
-        ac:"stercorarius"
+        sc:"stercorarius"
         ja:"トウゾクカモメ属"
         rank:"genus"
         upper:"stercorariidae"
 
     }
     {
-        ac:"alle"
+        sc:"alle"
         ja:"ヒメウミスズメ属"
         rank:"genus"
         upper:"alcidae"
 
     }
     {
-        ac:"uria"
+        sc:"uria"
         ja:"ウミガラス属"
         rank:"genus"
         upper:"alcidae"
 
     }
     {
-        ac:"alca"
+        sc:"alca"
         ja:"オオハシウミガラス属"
         rank:"genus"
         upper:"alcidae"
 
     }
     {
-        ac:"cepphus"
+        sc:"cepphus"
         ja:"ウミバト属"
         rank:"genus"
         upper:"alcidae"
 
     }
     {
-        ac:"brachyramphus"
+        sc:"brachyramphus"
         ja:"マダラウミスズメ属"
         rank:"genus"
         upper:"alcidae"
 
     }
     {
-        ac:"synthliboramphus"
+        sc:"synthliboramphus"
         ja:"ウミスズメ属"
         rank:"genus"
         upper:"alcidae"
 
     }
     {
-        ac:"aethia"
+        sc:"aethia"
         ja:"エトロフウミスズメ属"
         rank:"genus"
         upper:"alcidae"
 
     }
     {
-        ac:"cerorhinca"
+        sc:"cerorhinca"
         ja:"ウトウ属"
         rank:"genus"
         upper:"alcidae"
 
     }
     {
-        ac:"fratercula"
+        sc:"fratercula"
         ja:"ツノメドリ属"
         rank:"genus"
         upper:"alcidae"
 
     }
     {
-        ac:"pandion"
+        sc:"pandion"
         ja:"ミサゴ属"
         rank:"genus"
         upper:"pandionidae"
 
     }
     {
-        ac:"pernis"
+        sc:"pernis"
         ja:"ハチクマ属"
         rank:"genus"
         upper:"accipitridae"
 
     }
     {
-        ac:"elanus"
+        sc:"elanus"
         ja:"カタグロトビ属"
         rank:"genus"
         upper:"accipitridae"
 
     }
     {
-        ac:"milvus"
+        sc:"milvus"
         ja:"トビ属"
         rank:"genus"
         upper:"accipitridae"
 
     }
     {
-        ac:"haliaeetus"
+        sc:"haliaeetus"
         ja:"オジロワシ属"
         rank:"genus"
         upper:"accipitridae"
 
     }
     {
-        ac:"aegypius"
+        sc:"aegypius"
         ja:"クロハゲワシ属"
         rank:"genus"
         upper:"accipitridae"
 
     }
     {
-        ac:"spilornis"
+        sc:"spilornis"
         ja:"カンムリワシ属"
         rank:"genus"
         upper:"accipitridae"
 
     }
     {
-        ac:"circus"
+        sc:"circus"
         ja:"チュウヒ属"
         rank:"genus"
         upper:"accipitridae"
 
     }
     {
-        ac:"accipiter"
+        sc:"accipiter"
         ja:"ハイタカ属"
         rank:"genus"
         upper:"accipitridae"
 
     }
     {
-        ac:"butastur"
+        sc:"butastur"
         ja:"サシバ属"
         rank:"genus"
         upper:"accipitridae"
 
     }
     {
-        ac:"buteo"
+        sc:"buteo"
         ja:"ノスリ属"
         rank:"genus"
         upper:"accipitridae"
 
     }
     {
-        ac:"aquila"
+        sc:"aquila"
         ja:"イヌワシ属"
         rank:"genus"
         upper:"accipitridae"
 
     }
     {
-        ac:"nisaetus"
+        sc:"nisaetus"
         ja:"クマタカ属"
         rank:"genus"
         upper:"accipitridae"
 
     }
     {
-        ac:"tyto"
+        sc:"tyto"
         ja:"メンフクロウ属"
         rank:"genus"
         upper:"tytonidae"
 
     }
     {
-        ac:"otus"
+        sc:"otus"
         ja:"コノハズク属"
         rank:"genus"
         upper:"strigidae"
 
     }
     {
-        ac:"bubo"
+        sc:"bubo"
         ja:"ワシミミズク属"
         rank:"genus"
         upper:"strigidae"
 
     }
     {
-        ac:"ketupa"
+        sc:"ketupa"
         ja:"シマフクロウ属"
         rank:"genus"
         upper:"strigidae"
 
     }
     {
-        ac:"strix"
+        sc:"strix"
         ja:"フクロウ属"
         rank:"genus"
         upper:"strigidae"
 
     }
     {
-        ac:"aegolius"
+        sc:"aegolius"
         ja:"キンメフクロウ属"
         rank:"genus"
         upper:"strigidae"
 
     }
     {
-        ac:"ninox"
+        sc:"ninox"
         ja:"アオバズク属"
         rank:"genus"
         upper:"strigidae"
 
     }
     {
-        ac:"asio"
+        sc:"asio"
         ja:"トラフズク属"
         rank:"genus"
         upper:"strigidae"
 
     }
     {
-        ac:"upupa"
+        sc:"upupa"
         ja:"ヤツガシラ属"
         rank:"genus"
         upper:"upupidae"
 
     }
     {
-        ac:"halcyon"
+        sc:"halcyon"
         ja:"アカショウビン属"
         rank:"genus"
         upper:"alcedinidae"
 
     }
     {
-        ac:"todiramphus"
+        sc:"todiramphus"
         ja:"ナンヨウショウビン属"
         rank:"genus"
         upper:"alcedinidae"
 
     }
     {
-        ac:"alcedo"
+        sc:"alcedo"
         ja:"カワセミ属"
         rank:"genus"
         upper:"alcedinidae"
 
     }
     {
-        ac:"ceyx"
+        sc:"ceyx"
         ja:"ミツユビカワセミ属"
         rank:"genus"
         upper:"alcedinidae"
 
     }
     {
-        ac:"megaceryle"
+        sc:"megaceryle"
         ja:"ヤマセミ属"
         rank:"genus"
         upper:"alcedinidae"
 
     }
     {
-        ac:"merops"
+        sc:"merops"
         ja:"ハチクイ属"
         rank:"genus"
         upper:"meropidae"
 
     }
     {
-        ac:"eurystomus"
+        sc:"eurystomus"
         ja:"ブッポウソウ属"
         rank:"genus"
         upper:"coraciidae"
 
     }
     {
-        ac:"jynx"
+        sc:"jynx"
         ja:"アリスイ属"
         rank:"genus"
         upper:"picidae"
 
     }
     {
-        ac:"dendrocopos"
+        sc:"dendrocopos"
         ja:"アカゲラ属"
         rank:"genus"
         upper:"picidae"
 
     }
     {
-        ac:"picoides"
+        sc:"picoides"
         ja:"ミユビゲラ属"
         rank:"genus"
         upper:"picidae"
 
     }
     {
-        ac:"dryocopus"
+        sc:"dryocopus"
         ja:"クマゲラ属"
         rank:"genus"
         upper:"picidae"
 
     }
     {
-        ac:"picus"
+        sc:"picus"
         ja:"アオゲラ属"
         rank:"genus"
         upper:"picidae"
 
     }
     {
-        ac:"sapheopipo"
+        sc:"sapheopipo"
         ja:"ノグチゲラ属"
         rank:"genus"
         upper:"picidae"
 
     }
     {
-        ac:"falco"
+        sc:"falco"
         ja:"ハヤブサ属"
         rank:"genus"
         upper:"falconidae"
 
     }
     {
-        ac:"pitta"
+        sc:"pitta"
         ja:"ヤイロチョウ属"
         rank:"genus"
         upper:"pittidae"
 
     }
     {
-        ac:"artamus"
+        sc:"artamus"
         ja:"モリツバメ属"
         rank:"genus"
         upper:"artamidae"
 
     }
     {
-        ac:"coracina"
+        sc:"coracina"
         ja:"アサクラサンショウクイ属"
         rank:"genus"
         upper:"campephagidae"
 
     }
     {
-        ac:"pericrocotus"
+        sc:"pericrocotus"
         ja:"サンショウクイ属"
         rank:"genus"
         upper:"campephagidae"
 
     }
     {
-        ac:"oriolus"
+        sc:"oriolus"
         ja:"コウライウグイス属"
         rank:"genus"
         upper:"oriolidae"
 
     }
     {
-        ac:"dicrurus"
+        sc:"dicrurus"
         ja:"オウチュウ属"
         rank:"genus"
         upper:"dicruridae"
 
     }
     {
-        ac:"hypothymis"
+        sc:"hypothymis"
         ja:"クロエリヒタキ属"
         rank:"genus"
         upper:"monarchidae"
 
     }
     {
-        ac:"terpsiphone"
+        sc:"terpsiphone"
         ja:"サンコウチョウ属"
         rank:"genus"
         upper:"monarchidae"
 
     }
     {
-        ac:"lanius"
+        sc:"lanius"
         ja:"モズ属"
         rank:"genus"
         upper:"laniidae"
 
     }
     {
-        ac:"garrulus"
+        sc:"garrulus"
         ja:"カケス属"
         rank:"genus"
         upper:"corvidae"
 
     }
     {
-        ac:"cyanopica"
+        sc:"cyanopica"
         ja:"オナガ属"
         rank:"genus"
         upper:"corvidae"
 
     }
     {
-        ac:"pica"
+        sc:"pica"
         ja:"カササギ属"
         rank:"genus"
         upper:"corvidae"
 
     }
     {
-        ac:"nucifraga"
+        sc:"nucifraga"
         ja:"ホシガラス属"
         rank:"genus"
         upper:"corvidae"
 
     }
     {
-        ac:"corvus"
+        sc:"corvus"
         ja:"カラス属"
         rank:"genus"
         upper:"corvidae"
 
     }
     {
-        ac:"regulus"
+        sc:"regulus"
         ja:"キクイタダキ属"
         rank:"genus"
         upper:"regulidae"
 
     }
     {
-        ac:"remiz"
+        sc:"remiz"
         ja:"ツリスガラ属"
         rank:"genus"
         upper:"remizidae"
 
     }
     {
-        ac:"poecile"
+        sc:"poecile"
         ja:"コガラ属"
         rank:"genus"
         upper:"paridae"
 
     }
     {
-        ac:"periparus"
+        sc:"periparus"
         ja:"ヒガラ属"
         rank:"genus"
         upper:"paridae"
 
     }
     {
-        ac:"parus"
+        sc:"parus"
         ja:"シジュウカラ属"
         rank:"genus"
         upper:"paridae"
 
     }
     {
-        ac:"cyanistes"
+        sc:"cyanistes"
         ja:"ルリガラ属"
         rank:"genus"
         upper:"paridae"
 
     }
     {
-        ac:"panurus"
+        sc:"panurus"
         ja:"ヒゲガラ属"
         rank:"genus"
         upper:"panuridae"
 
     }
     {
-        ac:"melanocorypha"
+        sc:"melanocorypha"
         ja:"コウテンシ属"
         rank:"genus"
         upper:"alaudidae"
 
     }
     {
-        ac:"calandrella"
+        sc:"calandrella"
         ja:"ヒメコウテンシ属"
         rank:"genus"
         upper:"alaudidae"
 
     }
     {
-        ac:"alauda"
+        sc:"alauda"
         ja:"ヒバリ属"
         rank:"genus"
         upper:"alaudidae"
 
     }
     {
-        ac:"eremophila"
+        sc:"eremophila"
         ja:"ハマヒバリ属"
         rank:"genus"
         upper:"alaudidae"
 
     }
     {
-        ac:"riparia"
+        sc:"riparia"
         ja:"ショウドウツバメ属"
         rank:"genus"
         upper:"hirundinidae"
 
     }
     {
-        ac:"tachycineta"
+        sc:"tachycineta"
         ja:"ミドリツバメ属"
         rank:"genus"
         upper:"hirundinidae"
 
     }
     {
-        ac:"hirundo"
+        sc:"hirundo"
         ja:"ツバメ属"
         rank:"genus"
         upper:"hirundinidae"
 
     }
     {
-        ac:"delichon"
+        sc:"delichon"
         ja:"イワツバメ属"
         rank:"genus"
         upper:"hirundinidae"
 
     }
     {
-        ac:"pycnonotus"
+        sc:"pycnonotus"
         ja:"シロガシラ属"
         rank:"genus"
         upper:"pycnonotidae"
 
     }
     {
-        ac:"hypsipetes"
+        sc:"hypsipetes"
         ja:"ヒヨドリ属"
         rank:"genus"
         upper:"pycnonotidae"
 
     }
     {
-        ac:"cettia"
+        sc:"cettia"
         ja:"ウグイス属"
         rank:"genus"
         upper:"cettiidae"
 
     }
     {
-        ac:"urosphena"
+        sc:"urosphena"
         ja:"ヤブサメ属"
         rank:"genus"
         upper:"cettiidae"
 
     }
     {
-        ac:"aegithalos"
+        sc:"aegithalos"
         ja:"エナガ属"
         rank:"genus"
         upper:"aegithalidae"
 
     }
     {
-        ac:"phylloscopus"
+        sc:"phylloscopus"
         ja:"ムシクイ属"
         rank:"genus"
         upper:"phylloscopidae"
 
     }
     {
-        ac:"sylvia"
+        sc:"sylvia"
         ja:"ズグロムシクイ属"
         rank:"genus"
         upper:"sylviidae"
 
     }
     {
-        ac:"apalopteron"
+        sc:"apalopteron"
         ja:"メグロ属"
         rank:"genus"
         upper:"zosteropidae"
 
     }
     {
-        ac:"zosterops"
+        sc:"zosterops"
         ja:"メジロ属"
         rank:"genus"
         upper:"zosteropidae"
 
     }
     {
-        ac:"locustella"
+        sc:"locustella"
         ja:"センニュウ属"
         rank:"genus"
         upper:"locustellidae"
 
     }
     {
-        ac:"acrocephalus"
+        sc:"acrocephalus"
         ja:"ヨシキリ属"
         rank:"genus"
         upper:"acrocephalidae"
 
     }
     {
-        ac:"iduna"
+        sc:"iduna"
         ja:"ヒメウタイムシクイ属"
         rank:"genus"
         upper:"acrocephalidae"
 
     }
     {
-        ac:"cisticola"
+        sc:"cisticola"
         ja:"セッカ属"
         rank:"genus"
         upper:"cisticolidae"
 
     }
     {
-        ac:"bombycilla"
+        sc:"bombycilla"
         ja:"レンジャク属"
         rank:"genus"
         upper:"bombycillidae"
 
     }
     {
-        ac:"sitta"
+        sc:"sitta"
         ja:"ゴジュウカラ属"
         rank:"genus"
         upper:"sittidae"
 
     }
     {
-        ac:"certhia"
+        sc:"certhia"
         ja:"キバシリ属"
         rank:"genus"
         upper:"certhiidae"
 
     }
     {
-        ac:"troglodytes"
+        sc:"troglodytes"
         ja:"ミソサザイ属"
         rank:"genus"
         upper:"troglodytidae"
 
     }
     {
-        ac:"spodiopsar"
+        sc:"spodiopsar"
         ja:"ムクドリ属"
         rank:"genus"
         upper:"sturnidae"
 
     }
     {
-        ac:"agropsar"
+        sc:"agropsar"
         ja:"コムクドリ属"
         rank:"genus"
         upper:"sturnidae"
 
     }
     {
-        ac:"sturnia"
+        sc:"sturnia"
         ja:"カラムクドリ属"
         rank:"genus"
         upper:"sturnidae"
 
     }
     {
-        ac:"pastor"
+        sc:"pastor"
         ja:"バライロムクドリ属"
         rank:"genus"
         upper:"sturnidae"
 
     }
     {
-        ac:"sturnus"
+        sc:"sturnus"
         ja:"ホシムクドリ属"
         rank:"genus"
         upper:"sturnidae"
 
     }
     {
-        ac:"cinclus"
+        sc:"cinclus"
         ja:"カワガラス属"
         rank:"genus"
         upper:"cinclidae"
 
     }
     {
-        ac:"zoothera"
+        sc:"zoothera"
         ja:"トラツグミ属"
         rank:"genus"
         upper:"muscicapidae"
 
     }
     {
-        ac:"cichlopasser"
+        sc:"cichlopasser"
         ja:"オガサワラガビチョウ属"
         rank:"genus"
         upper:"muscicapidae"
 
     }
     {
-        ac:"catharus"
+        sc:"catharus"
         ja:"チャツグミ属"
         rank:"genus"
         upper:"muscicapidae"
 
     }
     {
-        ac:"turdus"
+        sc:"turdus"
         ja:"ツグミ属"
         rank:"genus"
         upper:"muscicapidae"
 
     }
     {
-        ac:"erithacus"
+        sc:"erithacus"
         ja:"ヨーロッパコマドリ属"
         rank:"genus"
         upper:"muscicapidae"
 
     }
     {
-        ac:"luscinia"
+        sc:"luscinia"
         ja:"ノゴマ属"
         rank:"genus"
         upper:"muscicapidae"
 
     }
     {
-        ac:"tarsiger"
+        sc:"tarsiger"
         ja:"ルリビタキ属"
         rank:"genus"
         upper:"muscicapidae"
 
     }
     {
-        ac:"phoenicurus"
+        sc:"phoenicurus"
         ja:"ジョウビタキ属"
         rank:"genus"
         upper:"muscicapidae"
 
     }
     {
-        ac:"saxicola"
+        sc:"saxicola"
         ja:"ノビタキ属"
         rank:"genus"
         upper:"muscicapidae"
 
     }
     {
-        ac:"oenanthe"
+        sc:"oenanthe"
         ja:"サバクヒタキ属"
         rank:"genus"
         upper:"muscicapidae"
 
     }
     {
-        ac:"monticola"
+        sc:"monticola"
         ja:"イソヒヨドリ属"
         rank:"genus"
         upper:"muscicapidae"
 
     }
     {
-        ac:"muscicapa"
+        sc:"muscicapa"
         ja:"サメビタキ属"
         rank:"genus"
         upper:"muscicapidae"
 
     }
     {
-        ac:"ficedula"
+        sc:"ficedula"
         ja:"キビタキ属"
         rank:"genus"
         upper:"muscicapidae"
 
     }
     {
-        ac:"cyanoptila"
+        sc:"cyanoptila"
         ja:"オオルリ属"
         rank:"genus"
         upper:"muscicapidae"
 
     }
     {
-        ac:"eumyias"
+        sc:"eumyias"
         ja:"アイイロヒタキ属"
         rank:"genus"
         upper:"muscicapidae"
 
     }
     {
-        ac:"niltava"
+        sc:"niltava"
         ja:"アオヒタキ属"
         rank:"genus"
         upper:"muscicapidae"
 
     }
     {
-        ac:"prunella"
+        sc:"prunella"
         ja:"カヤクグリ属"
         rank:"genus"
         upper:"prunellidae"
 
     }
     {
-        ac:"passer"
+        sc:"passer"
         ja:"スズメ属"
         rank:"genus"
         upper:"passeridae"
 
     }
     {
-        ac:"dendronanthus"
+        sc:"dendronanthus"
         ja:"イワミセキレイ属"
         rank:"genus"
         upper:"motacillidae"
 
     }
     {
-        ac:"motacilla"
+        sc:"motacilla"
         ja:"セキレイ属"
         rank:"genus"
         upper:"motacillidae"
 
     }
     {
-        ac:"anthus"
+        sc:"anthus"
         ja:"タヒバリ属"
         rank:"genus"
         upper:"motacillidae"
 
     }
     {
-        ac:"fringilla"
+        sc:"fringilla"
         ja:"アトリ属"
         rank:"genus"
         upper:"fringillidae"
 
     }
     {
-        ac:"chloris"
+        sc:"chloris"
         ja:"カワラヒワ属"
         rank:"genus"
         upper:"fringillidae"
 
     }
     {
-        ac:"carduelis"
+        sc:"carduelis"
         ja:"マヒワ属"
         rank:"genus"
         upper:"fringillidae"
 
     }
     {
-        ac:"leucosticte"
+        sc:"leucosticte"
         ja:"ハギマシコ属"
         rank:"genus"
         upper:"fringillidae"
 
     }
     {
-        ac:"uragus"
+        sc:"uragus"
         ja:"ベニマシコ属"
         rank:"genus"
         upper:"fringillidae"
 
     }
     {
-        ac:"chaunoproctus"
+        sc:"chaunoproctus"
         ja:"オガサワラマシコ属"
         rank:"genus"
         upper:"fringillidae"
 
     }
     {
-        ac:"carpodacus"
+        sc:"carpodacus"
         ja:"オオマシコ属"
         rank:"genus"
         upper:"fringillidae"
 
     }
     {
-        ac:"pinicola"
+        sc:"pinicola"
         ja:"ギンザンマシコ属"
         rank:"genus"
         upper:"fringillidae"
 
     }
     {
-        ac:"loxia"
+        sc:"loxia"
         ja:"イスカ属"
         rank:"genus"
         upper:"fringillidae"
 
     }
     {
-        ac:"pyrrhula"
+        sc:"pyrrhula"
         ja:"ウソ属"
         rank:"genus"
         upper:"fringillidae"
 
     }
     {
-        ac:"coccothraustes"
+        sc:"coccothraustes"
         ja:"シメ属"
         rank:"genus"
         upper:"fringillidae"
 
     }
     {
-        ac:"eophona"
+        sc:"eophona"
         ja:"イカル属"
         rank:"genus"
         upper:"fringillidae"
 
     }
     {
-        ac:"calcarius"
+        sc:"calcarius"
         ja:"ツメナガホオジロ属"
         rank:"genus"
         upper:"calcariidae"
 
     }
     {
-        ac:"plectrophenax"
+        sc:"plectrophenax"
         ja:"ユキホオジロ属"
         rank:"genus"
         upper:"calcariidae"
 
     }
     {
-        ac:"setophaga"
+        sc:"setophaga"
         ja:"ハゴロモムシクイ属"
         rank:"genus"
         upper:"parulidae"
 
     }
     {
-        ac:"cardellina"
+        sc:"cardellina"
         ja:"アカガオアメリカムシクイ属"
         rank:"genus"
         upper:"parulidae"
 
     }
     {
-        ac:"emberiza"
+        sc:"emberiza"
         ja:"ホオジロ属"
         rank:"genus"
         upper:"emberizidae"
 
     }
     {
-        ac:"passerella"
+        sc:"passerella"
         ja:"ゴマフスズメ属"
         rank:"genus"
         upper:"emberizidae"
 
     }
     {
-        ac:"melospiza"
+        sc:"melospiza"
         ja:"ウタスズメ属"
         rank:"genus"
         upper:"emberizidae"
 
     }
     {
-        ac:"zonotrichia"
+        sc:"zonotrichia"
         ja:"ミヤマシトド属"
         rank:"genus"
         upper:"emberizidae"
 
     }
     {
-        ac:"passerculus"
+        sc:"passerculus"
         ja:"サバンナシトド属"
         rank:"genus"
         upper:"emberizidae"
 
     }
     {
-        ac:"bambusicola"
+        sc:"bambusicola"
         ja:"コジュケイ属"
         rank:"genus"
         upper:"phasianidae"
 
     }
     {
-        ac:"syrmaticus"
+        sc:"syrmaticus"
         ja:"ヤマドリ属"
         rank:"genus"
         upper:"phasianidae"
 
     }
     {
-        ac:"phasianus"
+        sc:"phasianus"
         ja:"キジ属"
         rank:"genus"
         upper:"phasianidae"
 
     }
     {
-        ac:"pavo"
+        sc:"pavo"
         ja:"クジャク属"
         rank:"genus"
         upper:"phasianidae"
 
     }
     {
-        ac:"branta"
+        sc:"branta"
         ja:"コクガン属"
         rank:"genus"
         upper:"anatidae"
 
     }
     {
-        ac:"cygnus"
+        sc:"cygnus"
         ja:"ハクチョウ属"
         rank:"genus"
         upper:"anatidae"
 
     }
     {
-        ac:"columba"
+        sc:"columba"
         ja:"カワラバト属"
         rank:"genus"
         upper:"columbidae"
 
     }
     {
-        ac:"streptopelia"
+        sc:"streptopelia"
         ja:"キジバト属"
         rank:"genus"
         upper:"columbidae"
 
     }
     {
-        ac:"ciconia"
+        sc:"ciconia"
         ja:"コウノトリ属"
         rank:"genus"
         upper:"ciconiidae"
 
     }
     {
-        ac:"nipponia"
+        sc:"nipponia"
         ja:"トキ属"
         rank:"genus"
         upper:"threskiornithidae"
 
     }
     {
-        ac:"himantopus"
+        sc:"himantopus"
         ja:"セイタカシギ属"
         rank:"genus"
         upper:"recurvirostridae"
 
     }
     {
-        ac:"melopsittacus"
+        sc:"melopsittacus"
         ja:"セキセイインコ属"
         rank:"genus"
         upper:"psittacidae"
 
     }
     {
-        ac:"psittacula"
+        sc:"psittacula"
         ja:"ダルマインコ属"
         rank:"genus"
         upper:"psittacidae"
 
     }
     {
-        ac:"myiopsitta"
+        sc:"myiopsitta"
         ja:"オキナインコ属"
         rank:"genus"
         upper:"psittacidae"
 
     }
     {
-        ac:"urocissa"
+        sc:"urocissa"
         ja:"サンジャク属"
         rank:"genus"
         upper:"corvidae"
 
     }
     {
-        ac:"pica"
+        sc:"pica"
         ja:"カササギ属"
         rank:"genus"
         upper:"corvidae"
 
     }
     {
-        ac:"zosterops"
+        sc:"zosterops"
         ja:"メジロ属"
         rank:"genus"
         upper:"zosteropidae"
 
     }
     {
-        ac:"garrulax"
+        sc:"garrulax"
         ja:"ガビチョウ属"
         rank:"genus"
         upper:"timaliidae"
 
     }
     {
-        ac:"leiothrix"
+        sc:"leiothrix"
         ja:"ソウシチョウ属"
         rank:"genus"
         upper:"timaliidae"
 
     }
     {
-        ac:"acridotheres"
+        sc:"acridotheres"
         ja:"ハッカチョウ属"
         rank:"genus"
         upper:"sturnidae"
 
     }
     {
-        ac:"gracupica"
+        sc:"gracupica"
         ja:"クビワムクドリ属"
         rank:"genus"
         upper:"sturnidae"
 
     }
     {
-        ac:"ploceus"
+        sc:"ploceus"
         ja:"キハタオリ属"
         rank:"genus"
         upper:"ploceidae"
 
     }
     {
-        ac:"euplectes"
+        sc:"euplectes"
         ja:"キンランチョウ属"
         rank:"genus"
         upper:"ploceidae"
 
     }
     {
-        ac:"estrilda"
+        sc:"estrilda"
         ja:"カエデチョウ属"
         rank:"genus"
         upper:"estrildidae"
 
     }
     {
-        ac:"amandava"
+        sc:"amandava"
         ja:"ベニスズメ属"
         rank:"genus"
         upper:"estrildidae"
 
     }
     {
-        ac:"lonchura"
+        sc:"lonchura"
         ja:"キンパラ属"
         rank:"genus"
         upper:"estrildidae"
 
     }
     {
-        ac:"vidua"
+        sc:"vidua"
         ja:"テンニンチョウ属"
         rank:"genus"
         upper:"viduidae"
 
     }
     {
-        ac:"paroaria"
+        sc:"paroaria"
         ja:"コウカンチョウ属"
         rank:"genus"
         upper:"thraupidae"
@@ -2704,8456 +2704,8456 @@ data_names = [
         "alien":false,
         upper:"tetrastes"
         rank:"species"
-        ac:"bonasia"
+        sc:"bonasia"
         ja:"エゾライチョウ"
     }
     {
         "alien":false,
         upper:"lagopus"
         rank:"species"
-        ac:"muta"
+        sc:"muta"
         ja:"ライチョウ"
     }
     {
         "alien":false,
         upper:"coturnix"
         rank:"species"
-        ac:"japonica"
+        sc:"japonica"
         ja:"ウズラ"
     }
     {
         "alien":false,
         upper:"syrmaticus"
         rank:"species"
-        ac:"soemmerringii"
+        sc:"soemmerringii"
         ja:"ヤマドリ"
     }
     {
         "alien":false,
         upper:"phasianus"
         rank:"species"
-        ac:"colchicus"
+        sc:"colchicus"
         ja:"キジ"
     }
     {
         "alien":false,
         upper:"dendrocygna"
         rank:"species"
-        ac:"javanica"
+        sc:"javanica"
         ja:"リュウキュウガモ"
     }
     {
         "alien":false,
         upper:"anser"
         rank:"species"
-        ac:"cygnoides"
+        sc:"cygnoides"
         ja:"サカツラガン"
     }
     {
         "alien":false,
         upper:"anser"
         rank:"species"
-        ac:"fabalis"
+        sc:"fabalis"
         ja:"ヒシクイ"
     }
     {
         "alien":false,
         upper:"anser"
         rank:"species"
-        ac:"anser"
+        sc:"anser"
         ja:"ハイイロガン"
     }
     {
         "alien":false,
         upper:"anser"
         rank:"species"
-        ac:"albifrons"
+        sc:"albifrons"
         ja:"マガン"
     }
     {
         "alien":false,
         upper:"anser"
         rank:"species"
-        ac:"erythropus"
+        sc:"erythropus"
         ja:"カリガネ"
     }
     {
         "alien":false,
         upper:"anser"
         rank:"species"
-        ac:"indicus"
+        sc:"indicus"
         ja:"インドガン"
     }
     {
         "alien":false,
         upper:"anser"
         rank:"species"
-        ac:"caerulescens"
+        sc:"caerulescens"
         ja:"ハクガン"
     }
     {
         "alien":false,
         upper:"anser"
         rank:"species"
-        ac:"canagicus"
+        sc:"canagicus"
         ja:"ミカドガン"
     }
     {
         "alien":false,
         upper:"branta"
         rank:"species"
-        ac:"hutchinsii"
+        sc:"hutchinsii"
         ja:"シジュウカラガン"
     }
     {
         "alien":false,
         upper:"branta"
         rank:"species"
-        ac:"bernicla"
+        sc:"bernicla"
         ja:"コクガン"
     }
     {
         "alien":false,
         upper:"cygnus"
         rank:"species"
-        ac:"olor"
+        sc:"olor"
         ja:"コブハクチョウ"
     }
     {
         "alien":false,
         upper:"cygnus"
         rank:"species"
-        ac:"buccinator"
+        sc:"buccinator"
         ja:"ナキハクチョウ"
     }
     {
         "alien":false,
         upper:"cygnus"
         rank:"species"
-        ac:"columbianus"
+        sc:"columbianus"
         ja:"コハクチョウ"
     }
     {
         "alien":false,
         upper:"cygnus"
         rank:"species"
-        ac:"cygnus"
+        sc:"cygnus"
         ja:"オオハクチョウ"
     }
     {
         "alien":false,
         upper:"tadorna"
         rank:"species"
-        ac:"tadorna"
+        sc:"tadorna"
         ja:"ツクシガモ"
     }
     {
         "alien":false,
         upper:"tadorna"
         rank:"species"
-        ac:"ferruginea"
+        sc:"ferruginea"
         ja:"アカツクシガモ"
     }
     {
         "alien":false,
         upper:"tadorna"
         rank:"species"
-        ac:"cristata"
+        sc:"cristata"
         ja:"カンムリツクシガモ"
     }
     {
         "alien":false,
         upper:"aix"
         rank:"species"
-        ac:"galericulata"
+        sc:"galericulata"
         ja:"オシドリ"
     }
     {
         "alien":false,
         upper:"nettapus"
         rank:"species"
-        ac:"coromandelianus"
+        sc:"coromandelianus"
         ja:"ナンキンオシ"
     }
     {
         "alien":false,
         upper:"anas"
         rank:"species"
-        ac:"strepera"
+        sc:"strepera"
         ja:"オカヨシガモ"
     }
     {
         "alien":false,
         upper:"anas"
         rank:"species"
-        ac:"falcata"
+        sc:"falcata"
         ja:"ヨシガモ"
     }
     {
         "alien":false,
         upper:"anas"
         rank:"species"
-        ac:"penelope"
+        sc:"penelope"
         ja:"ヒドリガモ"
     }
     {
         "alien":false,
         upper:"anas"
         rank:"species"
-        ac:"americana"
+        sc:"americana"
         ja:"アメリカヒドリ"
     }
     {
         "alien":false,
         upper:"anas"
         rank:"species"
-        ac:"platyrhynchos"
+        sc:"platyrhynchos"
         ja:"マガモ"
     }
     {
         "alien":false,
         upper:"anas"
         rank:"species"
-        ac:"luzonica"
+        sc:"luzonica"
         ja:"アカノドカルガモ"
     }
     {
         "alien":false,
         upper:"anas"
         rank:"species"
-        ac:"zonorhyncha"
+        sc:"zonorhyncha"
         ja:"カルガモ"
     }
     {
         "alien":false,
         upper:"anas"
         rank:"species"
-        ac:"discors"
+        sc:"discors"
         ja:"ミカヅキシマアジ"
     }
     {
         "alien":false,
         upper:"anas"
         rank:"species"
-        ac:"clypeata"
+        sc:"clypeata"
         ja:"ハシビロガモ"
     }
     {
         "alien":false,
         upper:"anas"
         rank:"species"
-        ac:"acuta"
+        sc:"acuta"
         ja:"オナガガモ"
     }
     {
         "alien":false,
         upper:"anas"
         rank:"species"
-        ac:"querquedula"
+        sc:"querquedula"
         ja:"シマアジ"
     }
     {
         "alien":false,
         upper:"anas"
         rank:"species"
-        ac:"formosa"
+        sc:"formosa"
         ja:"トモエガモ"
     }
     {
         "alien":false,
         upper:"anas"
         rank:"species"
-        ac:"crecca"
+        sc:"crecca"
         ja:"コガモ"
     }
     {
         "alien":false,
         upper:"netta"
         rank:"species"
-        ac:"rufina"
+        sc:"rufina"
         ja:"アカハシハジロ"
     }
     {
         "alien":false,
         upper:"aythya"
         rank:"species"
-        ac:"valisineria"
+        sc:"valisineria"
         ja:"オオホシハジロ"
     }
     {
         "alien":false,
         upper:"aythya"
         rank:"species"
-        ac:"americana"
+        sc:"americana"
         ja:"アメリカホシハジロ"
     }
     {
         "alien":false,
         upper:"aythya"
         rank:"species"
-        ac:"ferina"
+        sc:"ferina"
         ja:"ホシハジロ"
     }
     {
         "alien":false,
         upper:"aythya"
         rank:"species"
-        ac:"baeri"
+        sc:"baeri"
         ja:"アカハジロ"
     }
     {
         "alien":false,
         upper:"aythya"
         rank:"species"
-        ac:"nyroca"
+        sc:"nyroca"
         ja:"メジロガモ"
     }
     {
         "alien":false,
         upper:"aythya"
         rank:"species"
-        ac:"collaris"
+        sc:"collaris"
         ja:"クビワキンクロ"
     }
     {
         "alien":false,
         upper:"aythya"
         rank:"species"
-        ac:"fuligula"
+        sc:"fuligula"
         ja:"キンクロハジロ"
     }
     {
         "alien":false,
         upper:"aythya"
         rank:"species"
-        ac:"marila"
+        sc:"marila"
         ja:"スズガモ"
     }
     {
         "alien":false,
         upper:"aythya"
         rank:"species"
-        ac:"affinis"
+        sc:"affinis"
         ja:"コスズガモ"
     }
     {
         "alien":false,
         upper:"polysticta"
         rank:"species"
-        ac:"stelleri"
+        sc:"stelleri"
         ja:"コケワタガモ"
     }
     {
         "alien":false,
         upper:"somateria"
         rank:"species"
-        ac:"spectabilis"
+        sc:"spectabilis"
         ja:"ケワタガモ"
     }
     {
         "alien":false,
         upper:"histrionicus"
         rank:"species"
-        ac:"histrionicus"
+        sc:"histrionicus"
         ja:"シノリガモ"
     }
     {
         "alien":false,
         upper:"melanitta"
         rank:"species"
-        ac:"perspicillata"
+        sc:"perspicillata"
         ja:"アラナミキンクロ"
     }
     {
         "alien":false,
         upper:"melanitta"
         rank:"species"
-        ac:"fusca"
+        sc:"fusca"
         ja:"ビロードキンクロ"
     }
     {
         "alien":false,
         upper:"melanitta"
         rank:"species"
-        ac:"americana"
+        sc:"americana"
         ja:"クロガモ"
     }
     {
         "alien":false,
         upper:"clangula"
         rank:"species"
-        ac:"hyemalis"
+        sc:"hyemalis"
         ja:"コオリガモ"
     }
     {
         "alien":false,
         upper:"bucephala"
         rank:"species"
-        ac:"albeola"
+        sc:"albeola"
         ja:"ヒメハジロ"
     }
     {
         "alien":false,
         upper:"bucephala"
         rank:"species"
-        ac:"clangula"
+        sc:"clangula"
         ja:"ホオジロガモ"
     }
     {
         "alien":false,
         upper:"mergellus"
         rank:"species"
-        ac:"albellus"
+        sc:"albellus"
         ja:"ミコアイサ"
     }
     {
         "alien":false,
         upper:"mergus"
         rank:"species"
-        ac:"merganser"
+        sc:"merganser"
         ja:"カワアイサ"
     }
     {
         "alien":false,
         upper:"mergus"
         rank:"species"
-        ac:"serrator"
+        sc:"serrator"
         ja:"ウミアイサ"
     }
     {
         "alien":false,
         upper:"mergus"
         rank:"species"
-        ac:"squamatus"
+        sc:"squamatus"
         ja:"コウライアイサ"
     }
     {
         "alien":false,
         upper:"tachybaptus"
         rank:"species"
-        ac:"ruficollis"
+        sc:"ruficollis"
         ja:"カイツブリ"
     }
     {
         "alien":false,
         upper:"podiceps"
         rank:"species"
-        ac:"grisegena"
+        sc:"grisegena"
         ja:"アカエリカイツブリ"
     }
     {
         "alien":false,
         upper:"podiceps"
         rank:"species"
-        ac:"cristatus"
+        sc:"cristatus"
         ja:"カンムリカイツブリ"
     }
     {
         "alien":false,
         upper:"podiceps"
         rank:"species"
-        ac:"auritus"
+        sc:"auritus"
         ja:"ミミカイツブリ"
     }
     {
         "alien":false,
         upper:"podiceps"
         rank:"species"
-        ac:"nigricollis"
+        sc:"nigricollis"
         ja:"ハジロカイツブリ"
     }
     {
         "alien":false,
         upper:"phaethon"
         rank:"species"
-        ac:"rubricauda"
+        sc:"rubricauda"
         ja:"アカオネッタイチョウ"
     }
     {
         "alien":false,
         upper:"phaethon"
         rank:"species"
-        ac:"lepturus"
+        sc:"lepturus"
         ja:"シラオネッタイチョウ"
     }
     {
         "alien":false,
         upper:"syrrhaptes"
         rank:"species"
-        ac:"paradoxus"
+        sc:"paradoxus"
         ja:"サケイ"
     }
     {
         "alien":false,
         upper:"columba"
         rank:"species"
-        ac:"oenas"
+        sc:"oenas"
         ja:"ヒメモリバト"
     }
     {
         "alien":false,
         upper:"columba"
         rank:"species"
-        ac:"janthina"
+        sc:"janthina"
         ja:"カラスバト"
     }
     {
         "alien":false,
         upper:"columba"
         rank:"species"
-        ac:"versicolor"
+        sc:"versicolor"
         ja:"オガサワラカラスバト"
     }
     {
         "alien":false,
         upper:"columba"
         rank:"species"
-        ac:"jouyi"
+        sc:"jouyi"
         ja:"リュウキュウカラスバト"
     }
     {
         "alien":false,
         upper:"streptopelia"
         rank:"species"
-        ac:"orientalis"
+        sc:"orientalis"
         ja:"キジバト"
     }
     {
         "alien":false,
         upper:"streptopelia"
         rank:"species"
-        ac:"decaocto"
+        sc:"decaocto"
         ja:"シラコバト"
     }
     {
         "alien":false,
         upper:"streptopelia"
         rank:"species"
-        ac:"tranquebarica"
+        sc:"tranquebarica"
         ja:"ベニバト"
     }
     {
         "alien":false,
         upper:"chalcophaps"
         rank:"species"
-        ac:"indica"
+        sc:"indica"
         ja:"キンバト"
     }
     {
         "alien":false,
         upper:"treron"
         rank:"species"
-        ac:"sieboldii"
+        sc:"sieboldii"
         ja:"アオバト"
     }
     {
         "alien":false,
         upper:"treron"
         rank:"species"
-        ac:"formosae"
+        sc:"formosae"
         ja:"ズアカアオバト"
     }
     {
         "alien":false,
         upper:"ptilinopus"
         rank:"species"
-        ac:"leclancheri"
+        sc:"leclancheri"
         ja:"クロアゴヒメアオバト"
     }
     {
         "alien":false,
         upper:"gavia"
         rank:"species"
-        ac:"stellata"
+        sc:"stellata"
         ja:"アビ"
     }
     {
         "alien":false,
         upper:"gavia"
         rank:"species"
-        ac:"arctica"
+        sc:"arctica"
         ja:"オオハム"
     }
     {
         "alien":false,
         upper:"gavia"
         rank:"species"
-        ac:"pacifica"
+        sc:"pacifica"
         ja:"シロエリオオハム"
     }
     {
         "alien":false,
         upper:"gavia"
         rank:"species"
-        ac:"immer"
+        sc:"immer"
         ja:"ハシグロアビ"
     }
     {
         "alien":false,
         upper:"gavia"
         rank:"species"
-        ac:"adamsii"
+        sc:"adamsii"
         ja:"ハシジロアビ"
     }
     {
         "alien":false,
         upper:"phoebastria"
         rank:"species"
-        ac:"immutabilis"
+        sc:"immutabilis"
         ja:"コアホウドリ"
     }
     {
         "alien":false,
         upper:"phoebastria"
         rank:"species"
-        ac:"nigripes"
+        sc:"nigripes"
         ja:"クロアシアホウドリ"
     }
     {
         "alien":false,
         upper:"phoebastria"
         rank:"species"
-        ac:"albatrus"
+        sc:"albatrus"
         ja:"アホウドリ"
     }
     {
         "alien":false,
         upper:"fulmarus"
         rank:"species"
-        ac:"glacialis"
+        sc:"glacialis"
         ja:"フルマカモメ"
     }
     {
         "alien":false,
         upper:"pterodroma"
         rank:"species"
-        ac:"solandri"
+        sc:"solandri"
         ja:"ハジロミズナギドリ"
     }
     {
         "alien":false,
         upper:"pterodroma"
         rank:"species"
-        ac:"externa"
+        sc:"externa"
         ja:"オオシロハラミズナギドリ"
     }
     {
         "alien":false,
         upper:"pterodroma"
         rank:"species"
-        ac:"neglecta"
+        sc:"neglecta"
         ja:"カワリシロハラミズナギドリ"
     }
     {
         "alien":false,
         upper:"pterodroma"
         rank:"species"
-        ac:"phaeopygia"
+        sc:"phaeopygia"
         ja:"ハワイシロハラミズナギドリ"
     }
     {
         "alien":false,
         upper:"pterodroma"
         rank:"species"
-        ac:"inexpectata"
+        sc:"inexpectata"
         ja:"マダラシロハラミズナギドリ"
     }
     {
         "alien":false,
         upper:"pterodroma"
         rank:"species"
-        ac:"nigripennis"
+        sc:"nigripennis"
         ja:"ハグロシロハラミズナギドリ"
     }
     {
         "alien":false,
         upper:"pterodroma"
         rank:"species"
-        ac:"hypoleuca"
+        sc:"hypoleuca"
         ja:"シロハラミズナギドリ"
     }
     {
         "alien":false,
         upper:"pterodroma"
         rank:"species"
-        ac:"longirostris"
+        sc:"longirostris"
         ja:"ヒメシロハラミズナギドリ"
     }
     {
         "alien":false,
         upper:"calonectris"
         rank:"species"
-        ac:"leucomelas"
+        sc:"leucomelas"
         ja:"オオミズナギドリ"
     }
     {
         "alien":false,
         upper:"puffinus"
         rank:"species"
-        ac:"pacificus"
+        sc:"pacificus"
         ja:"オナガミズナギドリ"
     }
     {
         "alien":false,
         upper:"puffinus"
         rank:"species"
-        ac:"bulleri"
+        sc:"bulleri"
         ja:"ミナミオナガミズナギドリ"
     }
     {
         "alien":false,
         upper:"puffinus"
         rank:"species"
-        ac:"griseus"
+        sc:"griseus"
         ja:"ハイイロミズナギドリ"
     }
     {
         "alien":false,
         upper:"puffinus"
         rank:"species"
-        ac:"tenuirostris"
+        sc:"tenuirostris"
         ja:"ハシボソミズナギドリ"
     }
     {
         "alien":false,
         upper:"puffinus"
         rank:"species"
-        ac:"creatopus"
+        sc:"creatopus"
         ja:"シロハラアカアシミズナギドリ"
     }
     {
         "alien":false,
         upper:"puffinus"
         rank:"species"
-        ac:"carneipes"
+        sc:"carneipes"
         ja:"アカアシミズナギドリ"
     }
     {
         "alien":false,
         upper:"puffinus"
         rank:"species"
-        ac:"nativitatis"
+        sc:"nativitatis"
         ja:"コミズナギドリ"
     }
     {
         "alien":false,
         upper:"puffinus"
         rank:"species"
-        ac:"puffinus"
+        sc:"puffinus"
         ja:"マンクスミズナギドリ"
     }
     {
         "alien":false,
         upper:"puffinus"
         rank:"species"
-        ac:"newelli"
+        sc:"newelli"
         ja:"ハワイセグロミズナギドリ"
     }
     {
         "alien":false,
         upper:"puffinus"
         rank:"species"
-        ac:"lherminieri"
+        sc:"lherminieri"
         ja:"セグロミズナギドリ"
     }
     {
         "alien":false,
         upper:"puffinus"
         rank:"species"
-        ac:"bryani"
+        sc:"bryani"
         ja:"オガサワラヒメミズナギドリ"
     }
     {
         "alien":false,
         upper:"bulweria"
         rank:"species"
-        ac:"bulwerii"
+        sc:"bulwerii"
         ja:"アナドリ"
     }
     {
         "alien":false,
         upper:"oceanites"
         rank:"species"
-        ac:"oceanicus"
+        sc:"oceanicus"
         ja:"アシナガウミツバメ"
     }
     {
         "alien":false,
         upper:"oceanodroma"
         rank:"species"
-        ac:"castro"
+        sc:"castro"
         ja:"クロコシジロウミツバメ"
     }
     {
         "alien":false,
         upper:"oceanodroma"
         rank:"species"
-        ac:"monorhis"
+        sc:"monorhis"
         ja:"ヒメクロウミツバメ"
     }
     {
         "alien":false,
         upper:"oceanodroma"
         rank:"species"
-        ac:"leucorhoa"
+        sc:"leucorhoa"
         ja:"コシジロウミツバメ"
     }
     {
         "alien":false,
         upper:"oceanodroma"
         rank:"species"
-        ac:"tristrami"
+        sc:"tristrami"
         ja:"オーストンウミツバメ"
     }
     {
         "alien":false,
         upper:"oceanodroma"
         rank:"species"
-        ac:"matsudairae"
+        sc:"matsudairae"
         ja:"クロウミツバメ"
     }
     {
         "alien":false,
         upper:"oceanodroma"
         rank:"species"
-        ac:"furcata"
+        sc:"furcata"
         ja:"ハイイロウミツバメ"
     }
     {
         "alien":false,
         upper:"ciconia"
         rank:"species"
-        ac:"nigra"
+        sc:"nigra"
         ja:"ナベコウ"
     }
     {
         "alien":false,
         upper:"ciconia"
         rank:"species"
-        ac:"boyciana"
+        sc:"boyciana"
         ja:"コウノトリ"
     }
     {
         "alien":false,
         upper:"fregata"
         rank:"species"
-        ac:"minor"
+        sc:"minor"
         ja:"オオグンカンドリ"
     }
     {
         "alien":false,
         upper:"fregata"
         rank:"species"
-        ac:"ariel"
+        sc:"ariel"
         ja:"コグンカンドリ"
     }
     {
         "alien":false,
         upper:"sula"
         rank:"species"
-        ac:"dactylatra"
+        sc:"dactylatra"
         ja:"アオツラカツオドリ"
     }
     {
         "alien":false,
         upper:"sula"
         rank:"species"
-        ac:"sula"
+        sc:"sula"
         ja:"アカアシカツオドリ"
     }
     {
         "alien":false,
         upper:"sula"
         rank:"species"
-        ac:"leucogaster"
+        sc:"leucogaster"
         ja:"カツオドリ"
     }
     {
         "alien":false,
         upper:"phalacrocorax"
         rank:"species"
-        ac:"pelagicus"
+        sc:"pelagicus"
         ja:"ヒメウ"
     }
     {
         "alien":false,
         upper:"phalacrocorax"
         rank:"species"
-        ac:"urile"
+        sc:"urile"
         ja:"チシマウガラス"
     }
     {
         "alien":false,
         upper:"phalacrocorax"
         rank:"species"
-        ac:"carbo"
+        sc:"carbo"
         ja:"カワウ"
     }
     {
         "alien":false,
         upper:"phalacrocorax"
         rank:"species"
-        ac:"capillatus"
+        sc:"capillatus"
         ja:"ウミウ"
     }
     {
         "alien":false,
         upper:"pelecanus"
         rank:"species"
-        ac:"onocrotalus"
+        sc:"onocrotalus"
         ja:"モモイロペリカン"
     }
     {
         "alien":false,
         upper:"pelecanus"
         rank:"species"
-        ac:"philippensis"
+        sc:"philippensis"
         ja:"ホシバシペリカン"
     }
     {
         "alien":false,
         upper:"pelecanus"
         rank:"species"
-        ac:"crispus"
+        sc:"crispus"
         ja:"ハイイロペリカン"
     }
     {
         "alien":false,
         upper:"botaurus"
         rank:"species"
-        ac:"stellaris"
+        sc:"stellaris"
         ja:"サンカノゴイ"
     }
     {
         "alien":false,
         upper:"ixobrychus"
         rank:"species"
-        ac:"sinensis"
+        sc:"sinensis"
         ja:"ヨシゴイ"
     }
     {
         "alien":false,
         upper:"ixobrychus"
         rank:"species"
-        ac:"eurhythmus"
+        sc:"eurhythmus"
         ja:"オオヨシゴイ"
     }
     {
         "alien":false,
         upper:"ixobrychus"
         rank:"species"
-        ac:"cinnamomeus"
+        sc:"cinnamomeus"
         ja:"リュウキュウヨシゴイ"
     }
     {
         "alien":false,
         upper:"ixobrychus"
         rank:"species"
-        ac:"flavicollis"
+        sc:"flavicollis"
         ja:"タカサゴクロサギ"
     }
     {
         "alien":false,
         upper:"gorsachius"
         rank:"species"
-        ac:"goisagi"
+        sc:"goisagi"
         ja:"ミゾゴイ"
     }
     {
         "alien":false,
         upper:"gorsachius"
         rank:"species"
-        ac:"melanolophus"
+        sc:"melanolophus"
         ja:"ズグロミゾゴイ"
     }
     {
         "alien":false,
         upper:"nycticorax"
         rank:"species"
-        ac:"nycticorax"
+        sc:"nycticorax"
         ja:"ゴイサギ"
     }
     {
         "alien":false,
         upper:"nycticorax"
         rank:"species"
-        ac:"caledonicus"
+        sc:"caledonicus"
         ja:"ハシブトゴイ"
     }
     {
         "alien":false,
         upper:"butorides"
         rank:"species"
-        ac:"striata"
+        sc:"striata"
         ja:"ササゴイ"
     }
     {
         "alien":false,
         upper:"ardeola"
         rank:"species"
-        ac:"bacchus"
+        sc:"bacchus"
         ja:"アカガシラサギ"
     }
     {
         "alien":false,
         upper:"bubulcus"
         rank:"species"
-        ac:"ibis"
+        sc:"ibis"
         ja:"アマサギ"
     }
     {
         "alien":false,
         upper:"ardea"
         rank:"species"
-        ac:"cinerea"
+        sc:"cinerea"
         ja:"アオサギ"
     }
     {
         "alien":false,
         upper:"ardea"
         rank:"species"
-        ac:"purpurea"
+        sc:"purpurea"
         ja:"ムラサキサギ"
     }
     {
         "alien":false,
         upper:"ardea"
         rank:"species"
-        ac:"alba"
+        sc:"alba"
         ja:"ダイサギ"
     }
     {
         "alien":false,
         upper:"egretta"
         rank:"species"
-        ac:"intermedia"
+        sc:"intermedia"
         ja:"チュウサギ"
     }
     {
         "alien":false,
         upper:"egretta"
         rank:"species"
-        ac:"garzetta"
+        sc:"garzetta"
         ja:"コサギ"
     }
     {
         "alien":false,
         upper:"egretta"
         rank:"species"
-        ac:"sacra"
+        sc:"sacra"
         ja:"クロサギ"
     }
     {
         "alien":false,
         upper:"egretta"
         rank:"species"
-        ac:"eulophotes"
+        sc:"eulophotes"
         ja:"カラシラサギ"
     }
     {
         "alien":false,
         upper:"threskiornis"
         rank:"species"
-        ac:"melanocephalus"
+        sc:"melanocephalus"
         ja:"クロトキ"
     }
     {
         "alien":false,
         upper:"nipponia"
         rank:"species"
-        ac:"nippon"
+        sc:"nippon"
         ja:"トキ"
     }
     {
         "alien":false,
         upper:"platalea"
         rank:"species"
-        ac:"leucorodia"
+        sc:"leucorodia"
         ja:"ヘラサギ"
     }
     {
         "alien":false,
         upper:"platalea"
         rank:"species"
-        ac:"minor"
+        sc:"minor"
         ja:"クロツラヘラサギ"
     }
     {
         "alien":false,
         upper:"grus"
         rank:"species"
-        ac:"leucogeranus"
+        sc:"leucogeranus"
         ja:"ソデグロヅル"
     }
     {
         "alien":false,
         upper:"grus"
         rank:"species"
-        ac:"canadensis"
+        sc:"canadensis"
         ja:"カナダヅル"
     }
     {
         "alien":false,
         upper:"grus"
         rank:"species"
-        ac:"vipio"
+        sc:"vipio"
         ja:"マナヅル"
     }
     {
         "alien":false,
         upper:"grus"
         rank:"species"
-        ac:"japonensis"
+        sc:"japonensis"
         ja:"タンチョウ"
     }
     {
         "alien":false,
         upper:"grus"
         rank:"species"
-        ac:"grus"
+        sc:"grus"
         ja:"クロヅル"
     }
     {
         "alien":false,
         upper:"grus"
         rank:"species"
-        ac:"monacha"
+        sc:"monacha"
         ja:"ナベヅル"
     }
     {
         "alien":false,
         upper:"anthropoides"
         rank:"species"
-        ac:"virgo"
+        sc:"virgo"
         ja:"アネハヅル"
     }
     {
         "alien":false,
         upper:"coturnicops"
         rank:"species"
-        ac:"exquisitus"
+        sc:"exquisitus"
         ja:"シマクイナ"
     }
     {
         "alien":false,
         upper:"rallina"
         rank:"species"
-        ac:"eurizonoides"
+        sc:"eurizonoides"
         ja:"オオクイナ"
     }
     {
         "alien":false,
         upper:"gallirallus"
         rank:"species"
-        ac:"okinawae"
+        sc:"okinawae"
         ja:"ヤンバルクイナ"
     }
     {
         "alien":false,
         upper:"gallirallus"
         rank:"species"
-        ac:"striatus"
+        sc:"striatus"
         ja:"ミナミクイナ"
     }
     {
         "alien":false,
         upper:"rallus"
         rank:"species"
-        ac:"aquaticus"
+        sc:"aquaticus"
         ja:"クイナ"
     }
     {
         "alien":false,
         upper:"amaurornis"
         rank:"species"
-        ac:"phoenicurus"
+        sc:"phoenicurus"
         ja:"シロハラクイナ"
     }
     {
         "alien":false,
         upper:"porzana"
         rank:"species"
-        ac:"pusilla"
+        sc:"pusilla"
         ja:"ヒメクイナ"
     }
     {
         "alien":false,
         upper:"porzana"
         rank:"species"
-        ac:"porzana"
+        sc:"porzana"
         ja:"コモンクイナ"
     }
     {
         "alien":false,
         upper:"porzana"
         rank:"species"
-        ac:"fusca"
+        sc:"fusca"
         ja:"ヒクイナ"
     }
     {
         "alien":false,
         upper:"porzana"
         rank:"species"
-        ac:"paykullii"
+        sc:"paykullii"
         ja:"コウライクイナ"
     }
     {
         "alien":false,
         upper:"porzana"
         rank:"species"
-        ac:"cinerea"
+        sc:"cinerea"
         ja:"マミジロクイナ"
     }
     {
         "alien":false,
         upper:"gallicrex"
         rank:"species"
-        ac:"cinerea"
+        sc:"cinerea"
         ja:"ツルクイナ"
     }
     {
         "alien":false,
         upper:"gallinula"
         rank:"species"
-        ac:"chloropus"
+        sc:"chloropus"
         ja:"バン"
     }
     {
         "alien":false,
         upper:"fulica"
         rank:"species"
-        ac:"atra"
+        sc:"atra"
         ja:"オオバン"
     }
     {
         "alien":false,
         upper:"otis"
         rank:"species"
-        ac:"tarda"
+        sc:"tarda"
         ja:"ノガン"
     }
     {
         "alien":false,
         upper:"tetrax"
         rank:"species"
-        ac:"tetrax"
+        sc:"tetrax"
         ja:"ヒメノガン"
     }
     {
         "alien":false,
         upper:"centropus"
         rank:"species"
-        ac:"bengalensis"
+        sc:"bengalensis"
         ja:"バンケン"
     }
     {
         "alien":false,
         upper:"clamator"
         rank:"species"
-        ac:"coromandus"
+        sc:"coromandus"
         ja:"カンムリカッコウ"
     }
     {
         "alien":false,
         upper:"eudynamys"
         rank:"species"
-        ac:"scolopaceus"
+        sc:"scolopaceus"
         ja:"オニカッコウ"
     }
     {
         "alien":false,
         upper:"urodynamis"
         rank:"species"
-        ac:"taitensis"
+        sc:"taitensis"
         ja:"キジカッコウ"
     }
     {
         "alien":false,
         upper:"surniculus"
         rank:"species"
-        ac:"lugubris"
+        sc:"lugubris"
         ja:"オウチュウカッコウ"
     }
     {
         "alien":false,
         upper:"hierococcyx"
         rank:"species"
-        ac:"sparverioides"
+        sc:"sparverioides"
         ja:"オオジュウイチ"
     }
     {
         "alien":false,
         upper:"hierococcyx"
         rank:"species"
-        ac:"hyperythrus"
+        sc:"hyperythrus"
         ja:"ジュウイチ"
     }
     {
         "alien":false,
         upper:"cuculus"
         rank:"species"
-        ac:"poliocephalus"
+        sc:"poliocephalus"
         ja:"ホトトギス"
     }
     {
         "alien":false,
         upper:"cuculus"
         rank:"species"
-        ac:"micropterus"
+        sc:"micropterus"
         ja:"セグロカッコウ"
     }
     {
         "alien":false,
         upper:"cuculus"
         rank:"species"
-        ac:"optatus"
+        sc:"optatus"
         ja:"ツツドリ"
     }
     {
         "alien":false,
         upper:"cuculus"
         rank:"species"
-        ac:"canorus"
+        sc:"canorus"
         ja:"カッコウ"
     }
     {
         "alien":false,
         upper:"caprimulgus"
         rank:"species"
-        ac:"indicus"
+        sc:"indicus"
         ja:"ヨタカ"
     }
     {
         "alien":false,
         upper:"aerodramus"
         rank:"species"
-        ac:"brevirostris"
+        sc:"brevirostris"
         ja:"ヒマラヤアナツバメ"
     }
     {
         "alien":false,
         upper:"hirundapus"
         rank:"species"
-        ac:"caudacutus"
+        sc:"caudacutus"
         ja:"ハリオアマツバメ"
     }
     {
         "alien":false,
         upper:"apus"
         rank:"species"
-        ac:"pacificus"
+        sc:"pacificus"
         ja:"アマツバメ"
     }
     {
         "alien":false,
         upper:"apus"
         rank:"species"
-        ac:"nipalensis"
+        sc:"nipalensis"
         ja:"ヒメアマツバメ"
     }
     {
         "alien":false,
         upper:"vanellus"
         rank:"species"
-        ac:"vanellus"
+        sc:"vanellus"
         ja:"タゲリ"
     }
     {
         "alien":false,
         upper:"vanellus"
         rank:"species"
-        ac:"cinereus"
+        sc:"cinereus"
         ja:"ケリ"
     }
     {
         "alien":false,
         upper:"pluvialis"
         rank:"species"
-        ac:"apricaria"
+        sc:"apricaria"
         ja:"ヨーロッパムナグロ"
     }
     {
         "alien":false,
         upper:"pluvialis"
         rank:"species"
-        ac:"fulva"
+        sc:"fulva"
         ja:"ムナグロ"
     }
     {
         "alien":false,
         upper:"pluvialis"
         rank:"species"
-        ac:"dominica"
+        sc:"dominica"
         ja:"アメリカムナグロ"
     }
     {
         "alien":false,
         upper:"pluvialis"
         rank:"species"
-        ac:"squatarola"
+        sc:"squatarola"
         ja:"ダイゼン"
     }
     {
         "alien":false,
         upper:"charadrius"
         rank:"species"
-        ac:"hiaticula"
+        sc:"hiaticula"
         ja:"ハジロコチドリ"
     }
     {
         "alien":false,
         upper:"charadrius"
         rank:"species"
-        ac:"semipalmatus"
+        sc:"semipalmatus"
         ja:"ミズカキチドリ"
     }
     {
         "alien":false,
         upper:"charadrius"
         rank:"species"
-        ac:"placidus"
+        sc:"placidus"
         ja:"イカルチドリ"
     }
     {
         "alien":false,
         upper:"charadrius"
         rank:"species"
-        ac:"dubius"
+        sc:"dubius"
         ja:"コチドリ"
     }
     {
         "alien":false,
         upper:"charadrius"
         rank:"species"
-        ac:"alexandrinus"
+        sc:"alexandrinus"
         ja:"シロチドリ"
     }
     {
         "alien":false,
         upper:"charadrius"
         rank:"species"
-        ac:"mongolus"
+        sc:"mongolus"
         ja:"メダイチドリ"
     }
     {
         "alien":false,
         upper:"charadrius"
         rank:"species"
-        ac:"leschenaultii"
+        sc:"leschenaultii"
         ja:"オオメダイチドリ"
     }
     {
         "alien":false,
         upper:"charadrius"
         rank:"species"
-        ac:"veredus"
+        sc:"veredus"
         ja:"オオチドリ"
     }
     {
         "alien":false,
         upper:"charadrius"
         rank:"species"
-        ac:"morinellus"
+        sc:"morinellus"
         ja:"コバシチドリ"
     }
     {
         "alien":false,
         upper:"haematopus"
         rank:"species"
-        ac:"ostralegus"
+        sc:"ostralegus"
         ja:"ミヤコドリ"
     }
     {
         "alien":false,
         upper:"himantopus"
         rank:"species"
-        ac:"himantopus"
+        sc:"himantopus"
         ja:"セイタカシギ"
     }
     {
         "alien":false,
         upper:"recurvirostra"
         rank:"species"
-        ac:"avosetta"
+        sc:"avosetta"
         ja:"ソリハシセイタカシギ"
     }
     {
         "alien":false,
         upper:"scolopax"
         rank:"species"
-        ac:"rusticola"
+        sc:"rusticola"
         ja:"ヤマシギ"
     }
     {
         "alien":false,
         upper:"scolopax"
         rank:"species"
-        ac:"mira"
+        sc:"mira"
         ja:"アマミヤマシギ"
     }
     {
         "alien":false,
         upper:"lymnocryptes"
         rank:"species"
-        ac:"minimus"
+        sc:"minimus"
         ja:"コシギ"
     }
     {
         "alien":false,
         upper:"gallinago"
         rank:"species"
-        ac:"solitaria"
+        sc:"solitaria"
         ja:"アオシギ"
     }
     {
         "alien":false,
         upper:"gallinago"
         rank:"species"
-        ac:"hardwickii"
+        sc:"hardwickii"
         ja:"オオジシギ"
     }
     {
         "alien":false,
         upper:"gallinago"
         rank:"species"
-        ac:"stenura"
+        sc:"stenura"
         ja:"ハリオシギ"
     }
     {
         "alien":false,
         upper:"gallinago"
         rank:"species"
-        ac:"megala"
+        sc:"megala"
         ja:"チュウジシギ"
     }
     {
         "alien":false,
         upper:"gallinago"
         rank:"species"
-        ac:"gallinago"
+        sc:"gallinago"
         ja:"タシギ"
     }
     {
         "alien":false,
         upper:"limnodromus"
         rank:"species"
-        ac:"griseus"
+        sc:"griseus"
         ja:"アメリカオオハシシギ"
     }
     {
         "alien":false,
         upper:"limnodromus"
         rank:"species"
-        ac:"scolopaceus"
+        sc:"scolopaceus"
         ja:"オオハシシギ"
     }
     {
         "alien":false,
         upper:"limnodromus"
         rank:"species"
-        ac:"semipalmatus"
+        sc:"semipalmatus"
         ja:"シベリアオオハシシギ"
     }
     {
         "alien":false,
         upper:"limosa"
         rank:"species"
-        ac:"limosa"
+        sc:"limosa"
         ja:"オグロシギ"
     }
     {
         "alien":false,
         upper:"limosa"
         rank:"species"
-        ac:"haemastica"
+        sc:"haemastica"
         ja:"アメリカオグロシギ"
     }
     {
         "alien":false,
         upper:"limosa"
         rank:"species"
-        ac:"lapponica"
+        sc:"lapponica"
         ja:"オオソリハシシギ"
     }
     {
         "alien":false,
         upper:"numenius"
         rank:"species"
-        ac:"minutus"
+        sc:"minutus"
         ja:"コシャクシギ"
     }
     {
         "alien":false,
         upper:"numenius"
         rank:"species"
-        ac:"phaeopus"
+        sc:"phaeopus"
         ja:"チュウシャクシギ"
     }
     {
         "alien":false,
         upper:"numenius"
         rank:"species"
-        ac:"tahitiensis"
+        sc:"tahitiensis"
         ja:"ハリモモチュウシャク"
     }
     {
         "alien":false,
         upper:"numenius"
         rank:"species"
-        ac:"tenuirostris"
+        sc:"tenuirostris"
         ja:"シロハラチュウシャクシギ"
     }
     {
         "alien":false,
         upper:"numenius"
         rank:"species"
-        ac:"arquata"
+        sc:"arquata"
         ja:"ダイシャクシギ"
     }
     {
         "alien":false,
         upper:"numenius"
         rank:"species"
-        ac:"madagascariensis"
+        sc:"madagascariensis"
         ja:"ホウロクシギ"
     }
     {
         "alien":false,
         upper:"tringa"
         rank:"species"
-        ac:"erythropus"
+        sc:"erythropus"
         ja:"ツルシギ"
     }
     {
         "alien":false,
         upper:"tringa"
         rank:"species"
-        ac:"totanus"
+        sc:"totanus"
         ja:"アカアシシギ"
     }
     {
         "alien":false,
         upper:"tringa"
         rank:"species"
-        ac:"stagnatilis"
+        sc:"stagnatilis"
         ja:"コアオアシシギ"
     }
     {
         "alien":false,
         upper:"tringa"
         rank:"species"
-        ac:"nebularia"
+        sc:"nebularia"
         ja:"アオアシシギ"
     }
     {
         "alien":false,
         upper:"tringa"
         rank:"species"
-        ac:"guttifer"
+        sc:"guttifer"
         ja:"カラフトアオアシシギ"
     }
     {
         "alien":false,
         upper:"tringa"
         rank:"species"
-        ac:"melanoleuca"
+        sc:"melanoleuca"
         ja:"オオキアシシギ"
     }
     {
         "alien":false,
         upper:"tringa"
         rank:"species"
-        ac:"flavipes"
+        sc:"flavipes"
         ja:"コキアシシギ"
     }
     {
         "alien":false,
         upper:"tringa"
         rank:"species"
-        ac:"ochropus"
+        sc:"ochropus"
         ja:"クサシギ"
     }
     {
         "alien":false,
         upper:"tringa"
         rank:"species"
-        ac:"glareola"
+        sc:"glareola"
         ja:"タカブシギ"
     }
     {
         "alien":false,
         upper:"heteroscelus"
         rank:"species"
-        ac:"brevipes"
+        sc:"brevipes"
         ja:"キアシシギ"
     }
     {
         "alien":false,
         upper:"heteroscelus"
         rank:"species"
-        ac:"incanus"
+        sc:"incanus"
         ja:"メリケンキアシシギ"
     }
     {
         "alien":false,
         upper:"xenus"
         rank:"species"
-        ac:"cinereus"
+        sc:"cinereus"
         ja:"ソリハシシギ"
     }
     {
         "alien":false,
         upper:"actitis"
         rank:"species"
-        ac:"hypoleucos"
+        sc:"hypoleucos"
         ja:"イソシギ"
     }
     {
         "alien":false,
         upper:"actitis"
         rank:"species"
-        ac:"macularius"
+        sc:"macularius"
         ja:"アメリカイソシギ"
     }
     {
         "alien":false,
         upper:"arenaria"
         rank:"species"
-        ac:"interpres"
+        sc:"interpres"
         ja:"キョウジョシギ"
     }
     {
         "alien":false,
         upper:"calidris"
         rank:"species"
-        ac:"tenuirostris"
+        sc:"tenuirostris"
         ja:"オバシギ"
     }
     {
         "alien":false,
         upper:"calidris"
         rank:"species"
-        ac:"canutus"
+        sc:"canutus"
         ja:"コオバシギ"
     }
     {
         "alien":false,
         upper:"calidris"
         rank:"species"
-        ac:"alba"
+        sc:"alba"
         ja:"ミユビシギ"
     }
     {
         "alien":false,
         upper:"calidris"
         rank:"species"
-        ac:"mauri"
+        sc:"mauri"
         ja:"ヒメハマシギ"
     }
     {
         "alien":false,
         upper:"calidris"
         rank:"species"
-        ac:"ruficollis"
+        sc:"ruficollis"
         ja:"トウネン"
     }
     {
         "alien":false,
         upper:"calidris"
         rank:"species"
-        ac:"minuta"
+        sc:"minuta"
         ja:"ヨーロッパトウネン"
     }
     {
         "alien":false,
         upper:"calidris"
         rank:"species"
-        ac:"temminckii"
+        sc:"temminckii"
         ja:"オジロトウネン"
     }
     {
         "alien":false,
         upper:"calidris"
         rank:"species"
-        ac:"subminuta"
+        sc:"subminuta"
         ja:"ヒバリシギ"
     }
     {
         "alien":false,
         upper:"calidris"
         rank:"species"
-        ac:"fuscicollis"
+        sc:"fuscicollis"
         ja:"コシジロウズラシギ"
     }
     {
         "alien":false,
         upper:"calidris"
         rank:"species"
-        ac:"bairdii"
+        sc:"bairdii"
         ja:"ヒメウズラシギ"
     }
     {
         "alien":false,
         upper:"calidris"
         rank:"species"
-        ac:"melanotos"
+        sc:"melanotos"
         ja:"アメリカウズラシギ"
     }
     {
         "alien":false,
         upper:"calidris"
         rank:"species"
-        ac:"acuminata"
+        sc:"acuminata"
         ja:"ウズラシギ"
     }
     {
         "alien":false,
         upper:"calidris"
         rank:"species"
-        ac:"ferruginea"
+        sc:"ferruginea"
         ja:"サルハマシギ"
     }
     {
         "alien":false,
         upper:"calidris"
         rank:"species"
-        ac:"ptilocnemis"
+        sc:"ptilocnemis"
         ja:"チシマシギ"
     }
     {
         "alien":false,
         upper:"calidris"
         rank:"species"
-        ac:"alpina"
+        sc:"alpina"
         ja:"ハマシギ"
     }
     {
         "alien":false,
         upper:"calidris"
         rank:"species"
-        ac:"himantopus"
+        sc:"himantopus"
         ja:"アシナガシギ"
     }
     {
         "alien":false,
         upper:"eurynorhynchus"
         rank:"species"
-        ac:"pygmeus"
+        sc:"pygmeus"
         ja:"ヘラシギ"
     }
     {
         "alien":false,
         upper:"limicola"
         rank:"species"
-        ac:"falcinellus"
+        sc:"falcinellus"
         ja:"キリアイ"
     }
     {
         "alien":false,
         upper:"tryngites"
         rank:"species"
-        ac:"subruficollis"
+        sc:"subruficollis"
         ja:"コモンシギ"
     }
     {
         "alien":false,
         upper:"philomachus"
         rank:"species"
-        ac:"pugnax"
+        sc:"pugnax"
         ja:"エリマキシギ"
     }
     {
         "alien":false,
         upper:"phalaropus"
         rank:"species"
-        ac:"tricolor"
+        sc:"tricolor"
         ja:"アメリカヒレアシシギ"
     }
     {
         "alien":false,
         upper:"phalaropus"
         rank:"species"
-        ac:"lobatus"
+        sc:"lobatus"
         ja:"アカエリヒレアシシギ"
     }
     {
         "alien":false,
         upper:"phalaropus"
         rank:"species"
-        ac:"fulicarius"
+        sc:"fulicarius"
         ja:"ハイイロヒレアシシギ"
     }
     {
         "alien":false,
         upper:"hydrophasianus"
         rank:"species"
-        ac:"chirurgus"
+        sc:"chirurgus"
         ja:"レンカク"
     }
     {
         "alien":false,
         upper:"rostratula"
         rank:"species"
-        ac:"benghalensis"
+        sc:"benghalensis"
         ja:"タマシギ"
     }
     {
         "alien":false,
         upper:"turnix"
         rank:"species"
-        ac:"suscitator"
+        sc:"suscitator"
         ja:"ミフウズラ"
     }
     {
         "alien":false,
         upper:"glareola"
         rank:"species"
-        ac:"maldivarum"
+        sc:"maldivarum"
         ja:"ツバメチドリ"
     }
     {
         "alien":false,
         upper:"anous"
         rank:"species"
-        ac:"stolidus"
+        sc:"stolidus"
         ja:"クロアジサシ"
     }
     {
         "alien":false,
         upper:"anous"
         rank:"species"
-        ac:"minutus"
+        sc:"minutus"
         ja:"ヒメクロアジサシ"
     }
     {
         "alien":false,
         upper:"procelsterna"
         rank:"species"
-        ac:"cerulea"
+        sc:"cerulea"
         ja:"ハイイロアジサシ"
     }
     {
         "alien":false,
         upper:"gygis"
         rank:"species"
-        ac:"alba"
+        sc:"alba"
         ja:"シロアジサシ"
     }
     {
         "alien":false,
         upper:"rissa"
         rank:"species"
-        ac:"tridactyla"
+        sc:"tridactyla"
         ja:"ミツユビカモメ"
     }
     {
         "alien":false,
         upper:"rissa"
         rank:"species"
-        ac:"brevirostris"
+        sc:"brevirostris"
         ja:"アカアシミツユビカモメ"
     }
     {
         "alien":false,
         upper:"pagophila"
         rank:"species"
-        ac:"eburnea"
+        sc:"eburnea"
         ja:"ゾウゲカモメ"
     }
     {
         "alien":false,
         upper:"xema"
         rank:"species"
-        ac:"sabini"
+        sc:"sabini"
         ja:"クビワカモメ"
     }
     {
         "alien":false,
         upper:"rhodostethia"
         rank:"species"
-        ac:"rosea"
+        sc:"rosea"
         ja:"ヒメクビワカモメ"
     }
     {
         "alien":false,
         upper:"larus"
         rank:"species"
-        ac:"genei"
+        sc:"genei"
         ja:"ハシボソカモメ"
     }
     {
         "alien":false,
         upper:"larus"
         rank:"species"
-        ac:"philadelphia"
+        sc:"philadelphia"
         ja:"ボナパルトカモメ"
     }
     {
         "alien":false,
         upper:"larus"
         rank:"species"
-        ac:"brunnicephalus"
+        sc:"brunnicephalus"
         ja:"チャガシラカモメ"
     }
     {
         "alien":false,
         upper:"larus"
         rank:"species"
-        ac:"ridibundus"
+        sc:"ridibundus"
         ja:"ユリカモメ"
     }
     {
         "alien":false,
         upper:"larus"
         rank:"species"
-        ac:"saundersi"
+        sc:"saundersi"
         ja:"ズグロカモメ"
     }
     {
         "alien":false,
         upper:"larus"
         rank:"species"
-        ac:"minutus"
+        sc:"minutus"
         ja:"ヒメカモメ"
     }
     {
         "alien":false,
         upper:"larus"
         rank:"species"
-        ac:"atricilla"
+        sc:"atricilla"
         ja:"ワライカモメ"
     }
     {
         "alien":false,
         upper:"larus"
         rank:"species"
-        ac:"pipixcan"
+        sc:"pipixcan"
         ja:"アメリカズグロカモメ"
     }
     {
         "alien":false,
         upper:"larus"
         rank:"species"
-        ac:"relictus"
+        sc:"relictus"
         ja:"ゴビズキンカモメ"
     }
     {
         "alien":false,
         upper:"larus"
         rank:"species"
-        ac:"ichthyaetus"
+        sc:"ichthyaetus"
         ja:"オオズグロカモメ"
     }
     {
         "alien":false,
         upper:"larus"
         rank:"species"
-        ac:"crassirostris"
+        sc:"crassirostris"
         ja:"ウミネコ"
     }
     {
         "alien":false,
         upper:"larus"
         rank:"species"
-        ac:"canus"
+        sc:"canus"
         ja:"カモメ"
     }
     {
         "alien":false,
         upper:"larus"
         rank:"species"
-        ac:"glaucescens"
+        sc:"glaucescens"
         ja:"ワシカモメ"
     }
     {
         "alien":false,
         upper:"larus"
         rank:"species"
-        ac:"hyperboreus"
+        sc:"hyperboreus"
         ja:"シロカモメ"
     }
     {
         "alien":false,
         upper:"larus"
         rank:"species"
-        ac:"glaucoides"
+        sc:"glaucoides"
         ja:"アイスランドカモメ"
     }
     {
         "alien":false,
         upper:"larus"
         rank:"species"
-        ac:"thayeri"
+        sc:"thayeri"
         ja:"カナダカモメ"
     }
     {
         "alien":false,
         upper:"larus"
         rank:"species"
-        ac:"argentatus"
+        sc:"argentatus"
         ja:"セグロカモメ"
     }
     {
         "alien":false,
         upper:"larus"
         rank:"species"
-        ac:"cachinnans"
+        sc:"cachinnans"
         ja:"キアシセグロカモメ"
     }
     {
         "alien":false,
         upper:"larus"
         rank:"species"
-        ac:"schistisagus"
+        sc:"schistisagus"
         ja:"オオセグロカモメ"
     }
     {
         "alien":false,
         upper:"larus"
         rank:"species"
-        ac:"fuscus"
+        sc:"fuscus"
         ja:"ニシセグロカモメ"
     }
     {
         "alien":false,
         upper:"gelochelidon"
         rank:"species"
-        ac:"nilotica"
+        sc:"nilotica"
         ja:"ハシブトアジサシ"
     }
     {
         "alien":false,
         upper:"sterna"
         rank:"species"
-        ac:"caspia"
+        sc:"caspia"
         ja:"オニアジサシ"
     }
     {
         "alien":false,
         upper:"sterna"
         rank:"species"
-        ac:"bergii"
+        sc:"bergii"
         ja:"オオアジサシ"
     }
     {
         "alien":false,
         upper:"sterna"
         rank:"species"
-        ac:"bengalensis"
+        sc:"bengalensis"
         ja:"ベンガルアジサシ"
     }
     {
         "alien":false,
         upper:"sterna"
         rank:"species"
-        ac:"albifrons"
+        sc:"albifrons"
         ja:"コアジサシ"
     }
     {
         "alien":false,
         upper:"sterna"
         rank:"species"
-        ac:"aleutica"
+        sc:"aleutica"
         ja:"コシジロアジサシ"
     }
     {
         "alien":false,
         upper:"sterna"
         rank:"species"
-        ac:"lunata"
+        sc:"lunata"
         ja:"ナンヨウマミジロアジサシ"
     }
     {
         "alien":false,
         upper:"sterna"
         rank:"species"
-        ac:"anaethetus"
+        sc:"anaethetus"
         ja:"マミジロアジサシ"
     }
     {
         "alien":false,
         upper:"sterna"
         rank:"species"
-        ac:"fuscata"
+        sc:"fuscata"
         ja:"セグロアジサシ"
     }
     {
         "alien":false,
         upper:"sterna"
         rank:"species"
-        ac:"dougallii"
+        sc:"dougallii"
         ja:"ベニアジサシ"
     }
     {
         "alien":false,
         upper:"sterna"
         rank:"species"
-        ac:"sumatrana"
+        sc:"sumatrana"
         ja:"エリグロアジサシ"
     }
     {
         "alien":false,
         upper:"sterna"
         rank:"species"
-        ac:"hirundo"
+        sc:"hirundo"
         ja:"アジサシ"
     }
     {
         "alien":false,
         upper:"sterna"
         rank:"species"
-        ac:"paradisaea"
+        sc:"paradisaea"
         ja:"キョクアジサシ"
     }
     {
         "alien":false,
         upper:"chlidonias"
         rank:"species"
-        ac:"hybrida"
+        sc:"hybrida"
         ja:"クロハラアジサシ"
     }
     {
         "alien":false,
         upper:"chlidonias"
         rank:"species"
-        ac:"leucopterus"
+        sc:"leucopterus"
         ja:"ハジロクロハラアジサシ"
     }
     {
         "alien":false,
         upper:"chlidonias"
         rank:"species"
-        ac:"niger"
+        sc:"niger"
         ja:"ハシグロクロハラアジサシ"
     }
     {
         "alien":false,
         upper:"stercorarius"
         rank:"species"
-        ac:"maccormicki"
+        sc:"maccormicki"
         ja:"オオトウゾクカモメ"
     }
     {
         "alien":false,
         upper:"stercorarius"
         rank:"species"
-        ac:"pomarinus"
+        sc:"pomarinus"
         ja:"トウゾクカモメ"
     }
     {
         "alien":false,
         upper:"stercorarius"
         rank:"species"
-        ac:"parasiticus"
+        sc:"parasiticus"
         ja:"クロトウゾクカモメ"
     }
     {
         "alien":false,
         upper:"stercorarius"
         rank:"species"
-        ac:"longicaudus"
+        sc:"longicaudus"
         ja:"シロハラトウゾクカモメ"
     }
     {
         "alien":false,
         upper:"alle"
         rank:"species"
-        ac:"alle"
+        sc:"alle"
         ja:"ヒメウミスズメ"
     }
     {
         "alien":false,
         upper:"uria"
         rank:"species"
-        ac:"lomvia"
+        sc:"lomvia"
         ja:"ハシブトウミガラス"
     }
     {
         "alien":false,
         upper:"uria"
         rank:"species"
-        ac:"aalge"
+        sc:"aalge"
         ja:"ウミガラス"
     }
     {
         "alien":false,
         upper:"alca"
         rank:"species"
-        ac:"torda"
+        sc:"torda"
         ja:"オオハシウミガラス"
     }
     {
         "alien":false,
         upper:"cepphus"
         rank:"species"
-        ac:"columba"
+        sc:"columba"
         ja:"ウミバト"
     }
     {
         "alien":false,
         upper:"cepphus"
         rank:"species"
-        ac:"carbo"
+        sc:"carbo"
         ja:"ケイマフリ"
     }
     {
         "alien":false,
         upper:"brachyramphus"
         rank:"species"
-        ac:"perdix"
+        sc:"perdix"
         ja:"マダラウミスズメ"
     }
     {
         "alien":false,
         upper:"synthliboramphus"
         rank:"species"
-        ac:"antiquus"
+        sc:"antiquus"
         ja:"ウミスズメ"
     }
     {
         "alien":false,
         upper:"synthliboramphus"
         rank:"species"
-        ac:"wumizusume"
+        sc:"wumizusume"
         ja:"カンムリウミスズメ"
     }
     {
         "alien":false,
         upper:"aethia"
         rank:"species"
-        ac:"psittacula"
+        sc:"psittacula"
         ja:"ウミオウム"
     }
     {
         "alien":false,
         upper:"aethia"
         rank:"species"
-        ac:"pusilla"
+        sc:"pusilla"
         ja:"コウミスズメ"
     }
     {
         "alien":false,
         upper:"aethia"
         rank:"species"
-        ac:"pygmaea"
+        sc:"pygmaea"
         ja:"シラヒゲウミスズメ"
     }
     {
         "alien":false,
         upper:"aethia"
         rank:"species"
-        ac:"cristatella"
+        sc:"cristatella"
         ja:"エトロフウミスズメ"
     }
     {
         "alien":false,
         upper:"cerorhinca"
         rank:"species"
-        ac:"monocerata"
+        sc:"monocerata"
         ja:"ウトウ"
     }
     {
         "alien":false,
         upper:"fratercula"
         rank:"species"
-        ac:"corniculata"
+        sc:"corniculata"
         ja:"ツノメドリ"
     }
     {
         "alien":false,
         upper:"fratercula"
         rank:"species"
-        ac:"cirrhata"
+        sc:"cirrhata"
         ja:"エトピリカ"
     }
     {
         "alien":false,
         upper:"pandion"
         rank:"species"
-        ac:"haliaetus"
+        sc:"haliaetus"
         ja:"ミサゴ"
     }
     {
         "alien":false,
         upper:"pernis"
         rank:"species"
-        ac:"ptilorhynchus"
+        sc:"ptilorhynchus"
         ja:"ハチクマ"
     }
     {
         "alien":false,
         upper:"elanus"
         rank:"species"
-        ac:"caeruleus"
+        sc:"caeruleus"
         ja:"カタグロトビ"
     }
     {
         "alien":false,
         upper:"milvus"
         rank:"species"
-        ac:"migrans"
+        sc:"migrans"
         ja:"トビ"
     }
     {
         "alien":false,
         upper:"haliaeetus"
         rank:"species"
-        ac:"albicilla"
+        sc:"albicilla"
         ja:"オジロワシ"
     }
     {
         "alien":false,
         upper:"haliaeetus"
         rank:"species"
-        ac:"leucocephalus"
+        sc:"leucocephalus"
         ja:"ハクトウワシ"
     }
     {
         "alien":false,
         upper:"haliaeetus"
         rank:"species"
-        ac:"pelagicus"
+        sc:"pelagicus"
         ja:"オオワシ"
     }
     {
         "alien":false,
         upper:"aegypius"
         rank:"species"
-        ac:"monachus"
+        sc:"monachus"
         ja:"クロハゲワシ"
     }
     {
         "alien":false,
         upper:"spilornis"
         rank:"species"
-        ac:"cheela"
+        sc:"cheela"
         ja:"カンムリワシ"
     }
     {
         "alien":false,
         upper:"circus"
         rank:"species"
-        ac:"aeruginosus"
+        sc:"aeruginosus"
         ja:"ヨーロッパチュウヒ"
     }
     {
         "alien":false,
         upper:"circus"
         rank:"species"
-        ac:"spilonotus"
+        sc:"spilonotus"
         ja:"チュウヒ"
     }
     {
         "alien":false,
         upper:"circus"
         rank:"species"
-        ac:"cyaneus"
+        sc:"cyaneus"
         ja:"ハイイロチュウヒ"
     }
     {
         "alien":false,
         upper:"circus"
         rank:"species"
-        ac:"macrourus"
+        sc:"macrourus"
         ja:"ウスハイイロチュウヒ"
     }
     {
         "alien":false,
         upper:"circus"
         rank:"species"
-        ac:"melanoleucos"
+        sc:"melanoleucos"
         ja:"マダラチュウヒ"
     }
     {
         "alien":false,
         upper:"accipiter"
         rank:"species"
-        ac:"soloensis"
+        sc:"soloensis"
         ja:"アカハラダカ"
     }
     {
         "alien":false,
         upper:"accipiter"
         rank:"species"
-        ac:"gularis"
+        sc:"gularis"
         ja:"ツミ"
     }
     {
         "alien":false,
         upper:"accipiter"
         rank:"species"
-        ac:"nisus"
+        sc:"nisus"
         ja:"ハイタカ"
     }
     {
         "alien":false,
         upper:"accipiter"
         rank:"species"
-        ac:"gentilis"
+        sc:"gentilis"
         ja:"オオタカ"
     }
     {
         "alien":false,
         upper:"butastur"
         rank:"species"
-        ac:"indicus"
+        sc:"indicus"
         ja:"サシバ"
     }
     {
         "alien":false,
         upper:"buteo"
         rank:"species"
-        ac:"buteo"
+        sc:"buteo"
         ja:"ノスリ"
     }
     {
         "alien":false,
         upper:"buteo"
         rank:"species"
-        ac:"hemilasius"
+        sc:"hemilasius"
         ja:"オオノスリ"
     }
     {
         "alien":false,
         upper:"buteo"
         rank:"species"
-        ac:"lagopus"
+        sc:"lagopus"
         ja:"ケアシノスリ"
     }
     {
         "alien":false,
         upper:"aquila"
         rank:"species"
-        ac:"clanga"
+        sc:"clanga"
         ja:"カラフトワシ"
     }
     {
         "alien":false,
         upper:"aquila"
         rank:"species"
-        ac:"heliaca"
+        sc:"heliaca"
         ja:"カタシロワシ"
     }
     {
         "alien":false,
         upper:"aquila"
         rank:"species"
-        ac:"chrysaetos"
+        sc:"chrysaetos"
         ja:"イヌワシ"
     }
     {
         "alien":false,
         upper:"nisaetus"
         rank:"species"
-        ac:"nipalensis"
+        sc:"nipalensis"
         ja:"クマタカ"
     }
     {
         "alien":false,
         upper:"tyto"
         rank:"species"
-        ac:"longimembris"
+        sc:"longimembris"
         ja:"ヒガシメンフクロウ"
     }
     {
         "alien":false,
         upper:"otus"
         rank:"species"
-        ac:"lempiji"
+        sc:"lempiji"
         ja:"オオコノハズク"
     }
     {
         "alien":false,
         upper:"otus"
         rank:"species"
-        ac:"sunia"
+        sc:"sunia"
         ja:"コノハズク"
     }
     {
         "alien":false,
         upper:"otus"
         rank:"species"
-        ac:"elegans"
+        sc:"elegans"
         ja:"リュウキュウコノハズク"
     }
     {
         "alien":false,
         upper:"bubo"
         rank:"species"
-        ac:"scandiacus"
+        sc:"scandiacus"
         ja:"シロフクロウ"
     }
     {
         "alien":false,
         upper:"bubo"
         rank:"species"
-        ac:"bubo"
+        sc:"bubo"
         ja:"ワシミミズク"
     }
     {
         "alien":false,
         upper:"ketupa"
         rank:"species"
-        ac:"blakistoni"
+        sc:"blakistoni"
         ja:"シマフクロウ"
     }
     {
         "alien":false,
         upper:"strix"
         rank:"species"
-        ac:"uralensis"
+        sc:"uralensis"
         ja:"フクロウ"
     }
     {
         "alien":false,
         upper:"aegolius"
         rank:"species"
-        ac:"funereus"
+        sc:"funereus"
         ja:"キンメフクロウ"
     }
     {
         "alien":false,
         upper:"ninox"
         rank:"species"
-        ac:"scutulata"
+        sc:"scutulata"
         ja:"アオバズク"
     }
     {
         "alien":false,
         upper:"asio"
         rank:"species"
-        ac:"otus"
+        sc:"otus"
         ja:"トラフズク"
     }
     {
         "alien":false,
         upper:"asio"
         rank:"species"
-        ac:"flammeus"
+        sc:"flammeus"
         ja:"コミミズク"
     }
     {
         "alien":false,
         upper:"upupa"
         rank:"species"
-        ac:"epops"
+        sc:"epops"
         ja:"ヤツガシラ"
     }
     {
         "alien":false,
         upper:"halcyon"
         rank:"species"
-        ac:"coromanda"
+        sc:"coromanda"
         ja:"アカショウビン"
     }
     {
         "alien":false,
         upper:"halcyon"
         rank:"species"
-        ac:"smyrnensis"
+        sc:"smyrnensis"
         ja:"アオショウビン"
     }
     {
         "alien":false,
         upper:"halcyon"
         rank:"species"
-        ac:"pileata"
+        sc:"pileata"
         ja:"ヤマショウビン"
     }
     {
         "alien":false,
         upper:"todiramphus"
         rank:"species"
-        ac:"chloris"
+        sc:"chloris"
         ja:"ナンヨウショウビン"
     }
     {
         "alien":false,
         upper:"todiramphus"
         rank:"species"
-        ac:"miyakoensis"
+        sc:"miyakoensis"
         ja:"ミヤコショウビン"
     }
     {
         "alien":false,
         upper:"alcedo"
         rank:"species"
-        ac:"atthis"
+        sc:"atthis"
         ja:"カワセミ"
     }
     {
         "alien":false,
         upper:"ceyx"
         rank:"species"
-        ac:"erithaca"
+        sc:"erithaca"
         ja:"ミツユビカワセミ"
     }
     {
         "alien":false,
         upper:"megaceryle"
         rank:"species"
-        ac:"lugubris"
+        sc:"lugubris"
         ja:"ヤマセミ"
     }
     {
         "alien":false,
         upper:"merops"
         rank:"species"
-        ac:"ornatus"
+        sc:"ornatus"
         ja:"ハチクイ"
     }
     {
         "alien":false,
         upper:"eurystomus"
         rank:"species"
-        ac:"orientalis"
+        sc:"orientalis"
         ja:"ブッポウソウ"
     }
     {
         "alien":false,
         upper:"jynx"
         rank:"species"
-        ac:"torquilla"
+        sc:"torquilla"
         ja:"アリスイ"
     }
     {
         "alien":false,
         upper:"dendrocopos"
         rank:"species"
-        ac:"hyperythrus"
+        sc:"hyperythrus"
         ja:"チャバラアカゲラ"
     }
     {
         "alien":false,
         upper:"dendrocopos"
         rank:"species"
-        ac:"kizuki"
+        sc:"kizuki"
         ja:"コゲラ"
     }
     {
         "alien":false,
         upper:"dendrocopos"
         rank:"species"
-        ac:"minor"
+        sc:"minor"
         ja:"コアカゲラ"
     }
     {
         "alien":false,
         upper:"dendrocopos"
         rank:"species"
-        ac:"leucotos"
+        sc:"leucotos"
         ja:"オオアカゲラ"
     }
     {
         "alien":false,
         upper:"dendrocopos"
         rank:"species"
-        ac:"major"
+        sc:"major"
         ja:"アカゲラ"
     }
     {
         "alien":false,
         upper:"picoides"
         rank:"species"
-        ac:"tridactylus"
+        sc:"tridactylus"
         ja:"ミユビゲラ"
     }
     {
         "alien":false,
         upper:"dryocopus"
         rank:"species"
-        ac:"javensis"
+        sc:"javensis"
         ja:"キタタキ"
     }
     {
         "alien":false,
         upper:"dryocopus"
         rank:"species"
-        ac:"martius"
+        sc:"martius"
         ja:"クマゲラ"
     }
     {
         "alien":false,
         upper:"picus"
         rank:"species"
-        ac:"awokera"
+        sc:"awokera"
         ja:"アオゲラ"
     }
     {
         "alien":false,
         upper:"picus"
         rank:"species"
-        ac:"canus"
+        sc:"canus"
         ja:"ヤマゲラ"
     }
     {
         "alien":false,
         upper:"sapheopipo"
         rank:"species"
-        ac:"noguchii"
+        sc:"noguchii"
         ja:"ノグチゲラ"
     }
     {
         "alien":false,
         upper:"falco"
         rank:"species"
-        ac:"naumanni"
+        sc:"naumanni"
         ja:"ヒメチョウゲンボウ"
     }
     {
         "alien":false,
         upper:"falco"
         rank:"species"
-        ac:"tinnunculus"
+        sc:"tinnunculus"
         ja:"チョウゲンボウ"
     }
     {
         "alien":false,
         upper:"falco"
         rank:"species"
-        ac:"amurensis"
+        sc:"amurensis"
         ja:"アカアシチョウゲンボウ"
     }
     {
         "alien":false,
         upper:"falco"
         rank:"species"
-        ac:"columbarius"
+        sc:"columbarius"
         ja:"コチョウゲンボウ"
     }
     {
         "alien":false,
         upper:"falco"
         rank:"species"
-        ac:"subbuteo"
+        sc:"subbuteo"
         ja:"チゴハヤブサ"
     }
     {
         "alien":false,
         upper:"falco"
         rank:"species"
-        ac:"cherrug"
+        sc:"cherrug"
         ja:"ワキスジハヤブサ"
     }
     {
         "alien":false,
         upper:"falco"
         rank:"species"
-        ac:"rusticolus"
+        sc:"rusticolus"
         ja:"シロハヤブサ"
     }
     {
         "alien":false,
         upper:"falco"
         rank:"species"
-        ac:"peregrinus"
+        sc:"peregrinus"
         ja:"ハヤブサ"
     }
     {
         "alien":false,
         upper:"pitta"
         rank:"species"
-        ac:"sordida"
+        sc:"sordida"
         ja:"ズグロヤイロチョウ"
     }
     {
         "alien":false,
         upper:"pitta"
         rank:"species"
-        ac:"nympha"
+        sc:"nympha"
         ja:"ヤイロチョウ"
     }
     {
         "alien":false,
         upper:"artamus"
         rank:"species"
-        ac:"leucorynchus"
+        sc:"leucorynchus"
         ja:"モリツバメ"
     }
     {
         "alien":false,
         upper:"coracina"
         rank:"species"
-        ac:"melaschistos"
+        sc:"melaschistos"
         ja:"アサクラサンショウクイ"
     }
     {
         "alien":false,
         upper:"pericrocotus"
         rank:"species"
-        ac:"divaricatus"
+        sc:"divaricatus"
         ja:"サンショウクイ"
     }
     {
         "alien":false,
         upper:"oriolus"
         rank:"species"
-        ac:"chinensis"
+        sc:"chinensis"
         ja:"コウライウグイス"
     }
     {
         "alien":false,
         upper:"dicrurus"
         rank:"species"
-        ac:"macrocercus"
+        sc:"macrocercus"
         ja:"オウチュウ"
     }
     {
         "alien":false,
         upper:"dicrurus"
         rank:"species"
-        ac:"leucophaeus"
+        sc:"leucophaeus"
         ja:"ハイイロオウチュウ"
     }
     {
         "alien":false,
         upper:"dicrurus"
         rank:"species"
-        ac:"hottentottus"
+        sc:"hottentottus"
         ja:"カンムリオウチュウ"
     }
     {
         "alien":false,
         upper:"hypothymis"
         rank:"species"
-        ac:"azurea"
+        sc:"azurea"
         ja:"クロエリヒタキ"
     }
     {
         "alien":false,
         upper:"terpsiphone"
         rank:"species"
-        ac:"atrocaudata"
+        sc:"atrocaudata"
         ja:"サンコウチョウ"
     }
     {
         "alien":false,
         upper:"lanius"
         rank:"species"
-        ac:"tigrinus"
+        sc:"tigrinus"
         ja:"チゴモズ"
     }
     {
         "alien":false,
         upper:"lanius"
         rank:"species"
-        ac:"bucephalus"
+        sc:"bucephalus"
         ja:"モズ"
     }
     {
         "alien":false,
         upper:"lanius"
         rank:"species"
-        ac:"cristatus"
+        sc:"cristatus"
         ja:"アカモズ"
     }
     {
         "alien":false,
         upper:"lanius"
         rank:"species"
-        ac:"collurio"
+        sc:"collurio"
         ja:"セアカモズ"
     }
     {
         "alien":false,
         upper:"lanius"
         rank:"species"
-        ac:"isabellinus"
+        sc:"isabellinus"
         ja:"モウコアカモズ"
     }
     {
         "alien":false,
         upper:"lanius"
         rank:"species"
-        ac:"schach"
+        sc:"schach"
         ja:"タカサゴモズ"
     }
     {
         "alien":false,
         upper:"lanius"
         rank:"species"
-        ac:"excubitor"
+        sc:"excubitor"
         ja:"オオモズ"
     }
     {
         "alien":false,
         upper:"lanius"
         rank:"species"
-        ac:"sphenocercus"
+        sc:"sphenocercus"
         ja:"オオカラモズ"
     }
     {
         "alien":false,
         upper:"garrulus"
         rank:"species"
-        ac:"glandarius"
+        sc:"glandarius"
         ja:"カケス"
     }
     {
         "alien":false,
         upper:"garrulus"
         rank:"species"
-        ac:"lidthi"
+        sc:"lidthi"
         ja:"ルリカケス"
     }
     {
         "alien":false,
         upper:"cyanopica"
         rank:"species"
-        ac:"cyanus"
+        sc:"cyanus"
         ja:"オナガ"
     }
     {
         "alien":false,
         upper:"pica"
         rank:"species"
-        ac:"pica"
+        sc:"pica"
         ja:"カササギ"
     }
     {
         "alien":false,
         upper:"nucifraga"
         rank:"species"
-        ac:"caryocatactes"
+        sc:"caryocatactes"
         ja:"ホシガラス"
     }
     {
         "alien":false,
         upper:"corvus"
         rank:"species"
-        ac:"monedula"
+        sc:"monedula"
         ja:"ニシコクマルガラス"
     }
     {
         "alien":false,
         upper:"corvus"
         rank:"species"
-        ac:"dauuricus"
+        sc:"dauuricus"
         ja:"コクマルガラス"
     }
     {
         "alien":false,
         upper:"corvus"
         rank:"species"
-        ac:"frugilegus"
+        sc:"frugilegus"
         ja:"ミヤマガラス"
     }
     {
         "alien":false,
         upper:"corvus"
         rank:"species"
-        ac:"corone"
+        sc:"corone"
         ja:"ハシボソガラス"
     }
     {
         "alien":false,
         upper:"corvus"
         rank:"species"
-        ac:"macrorhynchos"
+        sc:"macrorhynchos"
         ja:"ハシブトガラス"
     }
     {
         "alien":false,
         upper:"corvus"
         rank:"species"
-        ac:"corax"
+        sc:"corax"
         ja:"ワタリガラス"
     }
     {
         "alien":false,
         upper:"regulus"
         rank:"species"
-        ac:"regulus"
+        sc:"regulus"
         ja:"キクイタダキ"
     }
     {
         "alien":false,
         upper:"remiz"
         rank:"species"
-        ac:"pendulinus"
+        sc:"pendulinus"
         ja:"ツリスガラ"
     }
     {
         "alien":false,
         upper:"poecile"
         rank:"species"
-        ac:"palustris"
+        sc:"palustris"
         ja:"ハシブトガラ"
     }
     {
         "alien":false,
         upper:"poecile"
         rank:"species"
-        ac:"montanus"
+        sc:"montanus"
         ja:"コガラ"
     }
     {
         "alien":false,
         upper:"poecile"
         rank:"species"
-        ac:"varius"
+        sc:"varius"
         ja:"ヤマガラ"
     }
     {
         "alien":false,
         upper:"periparus"
         rank:"species"
-        ac:"ater"
+        sc:"ater"
         ja:"ヒガラ"
     }
     {
         "alien":false,
         upper:"periparus"
         rank:"species"
-        ac:"venustulus"
+        sc:"venustulus"
         ja:"キバラガラ"
     }
     {
         "alien":false,
         upper:"parus"
         rank:"species"
-        ac:"minor"
+        sc:"minor"
         ja:"シジュウカラ"
     }
     {
         "alien":false,
         upper:"cyanistes"
         rank:"species"
-        ac:"cyanus"
+        sc:"cyanus"
         ja:"ルリガラ"
     }
     {
         "alien":false,
         upper:"panurus"
         rank:"species"
-        ac:"biarmicus"
+        sc:"biarmicus"
         ja:"ヒゲガラ"
     }
     {
         "alien":false,
         upper:"melanocorypha"
         rank:"species"
-        ac:"bimaculata"
+        sc:"bimaculata"
         ja:"クビワコウテンシ"
     }
     {
         "alien":false,
         upper:"melanocorypha"
         rank:"species"
-        ac:"mongolica"
+        sc:"mongolica"
         ja:"コウテンシ"
     }
     {
         "alien":false,
         upper:"calandrella"
         rank:"species"
-        ac:"brachydactyla"
+        sc:"brachydactyla"
         ja:"ヒメコウテンシ"
     }
     {
         "alien":false,
         upper:"calandrella"
         rank:"species"
-        ac:"cheleensis"
+        sc:"cheleensis"
         ja:"コヒバリ"
     }
     {
         "alien":false,
         upper:"alauda"
         rank:"species"
-        ac:"arvensis"
+        sc:"arvensis"
         ja:"ヒバリ"
     }
     {
         "alien":false,
         upper:"eremophila"
         rank:"species"
-        ac:"alpestris"
+        sc:"alpestris"
         ja:"ハマヒバリ"
     }
     {
         "alien":false,
         upper:"riparia"
         rank:"species"
-        ac:"paludicola"
+        sc:"paludicola"
         ja:"タイワンショウドウツバメ"
     }
     {
         "alien":false,
         upper:"riparia"
         rank:"species"
-        ac:"riparia"
+        sc:"riparia"
         ja:"ショウドウツバメ"
     }
     {
         "alien":false,
         upper:"tachycineta"
         rank:"species"
-        ac:"bicolor"
+        sc:"bicolor"
         ja:"ミドリツバメ"
     }
     {
         "alien":false,
         upper:"hirundo"
         rank:"species"
-        ac:"rustica"
+        sc:"rustica"
         ja:"ツバメ"
     }
     {
         "alien":false,
         upper:"hirundo"
         rank:"species"
-        ac:"tahitica"
+        sc:"tahitica"
         ja:"リュウキュウツバメ"
     }
     {
         "alien":false,
         upper:"hirundo"
         rank:"species"
-        ac:"daurica"
+        sc:"daurica"
         ja:"コシアカツバメ"
     }
     {
         "alien":false,
         upper:"delichon"
         rank:"species"
-        ac:"urbicum"
+        sc:"urbicum"
         ja:"ニシイワツバメ"
     }
     {
         "alien":false,
         upper:"delichon"
         rank:"species"
-        ac:"dasypus"
+        sc:"dasypus"
         ja:"イワツバメ"
     }
     {
         "alien":false,
         upper:"pycnonotus"
         rank:"species"
-        ac:"sinensis"
+        sc:"sinensis"
         ja:"シロガシラ"
     }
     {
         "alien":false,
         upper:"hypsipetes"
         rank:"species"
-        ac:"amaurotis"
+        sc:"amaurotis"
         ja:"ヒヨドリ"
     }
     {
         "alien":false,
         upper:"cettia"
         rank:"species"
-        ac:"diphone"
+        sc:"diphone"
         ja:"ウグイス"
     }
     {
         "alien":false,
         upper:"urosphena"
         rank:"species"
-        ac:"squameiceps"
+        sc:"squameiceps"
         ja:"ヤブサメ"
     }
     {
         "alien":false,
         upper:"aegithalos"
         rank:"species"
-        ac:"caudatus"
+        sc:"caudatus"
         ja:"エナガ"
     }
     {
         "alien":false,
         upper:"phylloscopus"
         rank:"species"
-        ac:"trochilus"
+        sc:"trochilus"
         ja:"キタヤナギムシクイ"
     }
     {
         "alien":false,
         upper:"phylloscopus"
         rank:"species"
-        ac:"collybita"
+        sc:"collybita"
         ja:"チフチャフ"
     }
     {
         "alien":false,
         upper:"phylloscopus"
         rank:"species"
-        ac:"sibilatrix"
+        sc:"sibilatrix"
         ja:"モリムシクイ"
     }
     {
         "alien":false,
         upper:"phylloscopus"
         rank:"species"
-        ac:"fuscatus"
+        sc:"fuscatus"
         ja:"ムジセッカ"
     }
     {
         "alien":false,
         upper:"phylloscopus"
         rank:"species"
-        ac:"affinis"
+        sc:"affinis"
         ja:"キバラムシクイ"
     }
     {
         "alien":false,
         upper:"phylloscopus"
         rank:"species"
-        ac:"schwarzi"
+        sc:"schwarzi"
         ja:"カラフトムジセッカ"
     }
     {
         "alien":false,
         upper:"phylloscopus"
         rank:"species"
-        ac:"proregulus"
+        sc:"proregulus"
         ja:"カラフトムシクイ"
     }
     {
         "alien":false,
         upper:"phylloscopus"
         rank:"species"
-        ac:"inornatus"
+        sc:"inornatus"
         ja:"キマユムシクイ"
     }
     {
         "alien":false,
         upper:"phylloscopus"
         rank:"species"
-        ac:"borealis"
+        sc:"borealis"
         ja:"コムシクイ"
     }
     {
         "alien":false,
         upper:"phylloscopus"
         rank:"species"
-        ac:"examinandus"
+        sc:"examinandus"
         ja:"オオムシクイ"
     }
     {
         "alien":false,
         upper:"phylloscopus"
         rank:"species"
-        ac:"xanthodryas"
+        sc:"xanthodryas"
         ja:"メボソムシクイ"
     }
     {
         "alien":false,
         upper:"phylloscopus"
         rank:"species"
-        ac:"plumbeitarsus"
+        sc:"plumbeitarsus"
         ja:"ヤナギムシクイ"
     }
     {
         "alien":false,
         upper:"phylloscopus"
         rank:"species"
-        ac:"borealoides"
+        sc:"borealoides"
         ja:"エゾムシクイ"
     }
     {
         "alien":false,
         upper:"phylloscopus"
         rank:"species"
-        ac:"coronatus"
+        sc:"coronatus"
         ja:"センダイムシクイ"
     }
     {
         "alien":false,
         upper:"phylloscopus"
         rank:"species"
-        ac:"ijimae"
+        sc:"ijimae"
         ja:"イイジマムシクイ"
     }
     {
         "alien":false,
         upper:"sylvia"
         rank:"species"
-        ac:"curruca"
+        sc:"curruca"
         ja:"コノドジロムシクイ"
     }
     {
         "alien":false,
         upper:"apalopteron"
         rank:"species"
-        ac:"familiare"
+        sc:"familiare"
         ja:"メグロ"
     }
     {
         "alien":false,
         upper:"zosterops"
         rank:"species"
-        ac:"erythropleurus"
+        sc:"erythropleurus"
         ja:"チョウセンメジロ"
     }
     {
         "alien":false,
         upper:"zosterops"
         rank:"species"
-        ac:"japonicus"
+        sc:"japonicus"
         ja:"メジロ"
     }
     {
         "alien":false,
         upper:"locustella"
         rank:"species"
-        ac:"lanceolata"
+        sc:"lanceolata"
         ja:"マキノセンニュウ"
     }
     {
         "alien":false,
         upper:"locustella"
         rank:"species"
-        ac:"ochotensis"
+        sc:"ochotensis"
         ja:"シマセンニュウ"
     }
     {
         "alien":false,
         upper:"locustella"
         rank:"species"
-        ac:"pleskei"
+        sc:"pleskei"
         ja:"ウチヤマセンニュウ"
     }
     {
         "alien":false,
         upper:"locustella"
         rank:"species"
-        ac:"certhiola"
+        sc:"certhiola"
         ja:"シベリアセンニュウ"
     }
     {
         "alien":false,
         upper:"locustella"
         rank:"species"
-        ac:"pryeri"
+        sc:"pryeri"
         ja:"オオセッカ"
     }
     {
         "alien":false,
         upper:"locustella"
         rank:"species"
-        ac:"fasciolata"
+        sc:"fasciolata"
         ja:"エゾセンニュウ"
     }
     {
         "alien":false,
         upper:"acrocephalus"
         rank:"species"
-        ac:"orientalis"
+        sc:"orientalis"
         ja:"オオヨシキリ"
     }
     {
         "alien":false,
         upper:"acrocephalus"
         rank:"species"
-        ac:"bistrigiceps"
+        sc:"bistrigiceps"
         ja:"コヨシキリ"
     }
     {
         "alien":false,
         upper:"acrocephalus"
         rank:"species"
-        ac:"sorghophilus"
+        sc:"sorghophilus"
         ja:"セスジコヨシキリ"
     }
     {
         "alien":false,
         upper:"acrocephalus"
         rank:"species"
-        ac:"agricola"
+        sc:"agricola"
         ja:"イナダヨシキリ"
     }
     {
         "alien":false,
         upper:"acrocephalus"
         rank:"species"
-        ac:"dumetorum"
+        sc:"dumetorum"
         ja:"ヤブヨシキリ"
     }
     {
         "alien":false,
         upper:"acrocephalus"
         rank:"species"
-        ac:"aedon"
+        sc:"aedon"
         ja:"ハシブトオオヨシキリ"
     }
     {
         "alien":false,
         upper:"iduna"
         rank:"species"
-        ac:"caligata"
+        sc:"caligata"
         ja:"ヒメウタイムシクイ"
     }
     {
         "alien":false,
         upper:"cisticola"
         rank:"species"
-        ac:"juncidis"
+        sc:"juncidis"
         ja:"セッカ"
     }
     {
         "alien":false,
         upper:"bombycilla"
         rank:"species"
-        ac:"garrulus"
+        sc:"garrulus"
         ja:"キレンジャク"
     }
     {
         "alien":false,
         upper:"bombycilla"
         rank:"species"
-        ac:"japonica"
+        sc:"japonica"
         ja:"ヒレンジャク"
     }
     {
         "alien":false,
         upper:"sitta"
         rank:"species"
-        ac:"europaea"
+        sc:"europaea"
         ja:"ゴジュウカラ"
     }
     {
         "alien":false,
         upper:"certhia"
         rank:"species"
-        ac:"familiaris"
+        sc:"familiaris"
         ja:"キバシリ"
     }
     {
         "alien":false,
         upper:"troglodytes"
         rank:"species"
-        ac:"troglodytes"
+        sc:"troglodytes"
         ja:"ミソサザイ"
     }
     {
         "alien":false,
         upper:"spodiopsar"
         rank:"species"
-        ac:"sericeus"
+        sc:"sericeus"
         ja:"ギンムクドリ"
     }
     {
         "alien":false,
         upper:"spodiopsar"
         rank:"species"
-        ac:"cineraceus"
+        sc:"cineraceus"
         ja:"ムクドリ"
     }
     {
         "alien":false,
         upper:"agropsar"
         rank:"species"
-        ac:"sturninus"
+        sc:"sturninus"
         ja:"シベリアムクドリ"
     }
     {
         "alien":false,
         upper:"agropsar"
         rank:"species"
-        ac:"philippensis"
+        sc:"philippensis"
         ja:"コムクドリ"
     }
     {
         "alien":false,
         upper:"sturnia"
         rank:"species"
-        ac:"sinensis"
+        sc:"sinensis"
         ja:"カラムクドリ"
     }
     {
         "alien":false,
         upper:"pastor"
         rank:"species"
-        ac:"roseus"
+        sc:"roseus"
         ja:"バライロムクドリ"
     }
     {
         "alien":false,
         upper:"sturnus"
         rank:"species"
-        ac:"vulgaris"
+        sc:"vulgaris"
         ja:"ホシムクドリ"
     }
     {
         "alien":false,
         upper:"cinclus"
         rank:"species"
-        ac:"pallasii"
+        sc:"pallasii"
         ja:"カワガラス"
     }
     {
         "alien":false,
         upper:"zoothera"
         rank:"species"
-        ac:"sibirica"
+        sc:"sibirica"
         ja:"マミジロ"
     }
     {
         "alien":false,
         upper:"zoothera"
         rank:"species"
-        ac:"dauma"
+        sc:"dauma"
         ja:"トラツグミ"
     }
     {
         "alien":false,
         upper:"cichlopasser"
         rank:"species"
-        ac:"terrestris"
+        sc:"terrestris"
         ja:"オガサワラガビチョウ"
     }
     {
         "alien":false,
         upper:"catharus"
         rank:"species"
-        ac:"minimus"
+        sc:"minimus"
         ja:"ハイイロチャツグミ"
     }
     {
         "alien":false,
         upper:"turdus"
         rank:"species"
-        ac:"hortulorum"
+        sc:"hortulorum"
         ja:"カラアカハラ"
     }
     {
         "alien":false,
         upper:"turdus"
         rank:"species"
-        ac:"cardis"
+        sc:"cardis"
         ja:"クロツグミ"
     }
     {
         "alien":false,
         upper:"turdus"
         rank:"species"
-        ac:"merula"
+        sc:"merula"
         ja:"クロウタドリ"
     }
     {
         "alien":false,
         upper:"turdus"
         rank:"species"
-        ac:"obscurus"
+        sc:"obscurus"
         ja:"マミチャジナイ"
     }
     {
         "alien":false,
         upper:"turdus"
         rank:"species"
-        ac:"pallidus"
+        sc:"pallidus"
         ja:"シロハラ"
     }
     {
         "alien":false,
         upper:"turdus"
         rank:"species"
-        ac:"chrysolaus"
+        sc:"chrysolaus"
         ja:"アカハラ"
     }
     {
         "alien":false,
         upper:"turdus"
         rank:"species"
-        ac:"celaenops"
+        sc:"celaenops"
         ja:"アカコッコ"
     }
     {
         "alien":false,
         upper:"turdus"
         rank:"species"
-        ac:"ruficollis"
+        sc:"ruficollis"
         ja:"ノドグロツグミ"
     }
     {
         "alien":false,
         upper:"turdus"
         rank:"species"
-        ac:"naumanni"
+        sc:"naumanni"
         ja:"ツグミ"
     }
     {
         "alien":false,
         upper:"turdus"
         rank:"species"
-        ac:"pilaris"
+        sc:"pilaris"
         ja:"ノハラツグミ"
     }
     {
         "alien":false,
         upper:"turdus"
         rank:"species"
-        ac:"iliacus"
+        sc:"iliacus"
         ja:"ワキアカツグミ"
     }
     {
         "alien":false,
         upper:"turdus"
         rank:"species"
-        ac:"viscivorus"
+        sc:"viscivorus"
         ja:"ヤドリギツグミ"
     }
     {
         "alien":false,
         upper:"erithacus"
         rank:"species"
-        ac:"rubecula"
+        sc:"rubecula"
         ja:"ヨーロッパコマドリ"
     }
     {
         "alien":false,
         upper:"luscinia"
         rank:"species"
-        ac:"akahige"
+        sc:"akahige"
         ja:"コマドリ"
     }
     {
         "alien":false,
         upper:"luscinia"
         rank:"species"
-        ac:"komadori"
+        sc:"komadori"
         ja:"アカヒゲ"
     }
     {
         "alien":false,
         upper:"luscinia"
         rank:"species"
-        ac:"svecica"
+        sc:"svecica"
         ja:"オガワコマドリ"
     }
     {
         "alien":false,
         upper:"luscinia"
         rank:"species"
-        ac:"calliope"
+        sc:"calliope"
         ja:"ノゴマ"
     }
     {
         "alien":false,
         upper:"luscinia"
         rank:"species"
-        ac:"cyane"
+        sc:"cyane"
         ja:"コルリ"
     }
     {
         "alien":false,
         upper:"luscinia"
         rank:"species"
-        ac:"sibilans"
+        sc:"sibilans"
         ja:"シマゴマ"
     }
     {
         "alien":false,
         upper:"tarsiger"
         rank:"species"
-        ac:"cyanurus"
+        sc:"cyanurus"
         ja:"ルリビタキ"
     }
     {
         "alien":false,
         upper:"phoenicurus"
         rank:"species"
-        ac:"erythronotus"
+        sc:"erythronotus"
         ja:"セアカジョウビタキ"
     }
     {
         "alien":false,
         upper:"phoenicurus"
         rank:"species"
-        ac:"ochruros"
+        sc:"ochruros"
         ja:"クロジョウビタキ"
     }
     {
         "alien":false,
         upper:"phoenicurus"
         rank:"species"
-        ac:"phoenicurus"
+        sc:"phoenicurus"
         ja:"シロビタイジョウビタキ"
     }
     {
         "alien":false,
         upper:"phoenicurus"
         rank:"species"
-        ac:"auroreus"
+        sc:"auroreus"
         ja:"ジョウビタキ"
     }
     {
         "alien":false,
         upper:"saxicola"
         rank:"species"
-        ac:"rubetra"
+        sc:"rubetra"
         ja:"マミジロノビタキ"
     }
     {
         "alien":false,
         upper:"saxicola"
         rank:"species"
-        ac:"torquatus"
+        sc:"torquatus"
         ja:"ノビタキ"
     }
     {
         "alien":false,
         upper:"saxicola"
         rank:"species"
-        ac:"caprata"
+        sc:"caprata"
         ja:"クロノビタキ"
     }
     {
         "alien":false,
         upper:"saxicola"
         rank:"species"
-        ac:"ferreus"
+        sc:"ferreus"
         ja:"ヤマザキヒタキ"
     }
     {
         "alien":false,
         upper:"oenanthe"
         rank:"species"
-        ac:"isabellina"
+        sc:"isabellina"
         ja:"イナバヒタキ"
     }
     {
         "alien":false,
         upper:"oenanthe"
         rank:"species"
-        ac:"oenanthe"
+        sc:"oenanthe"
         ja:"ハシグロヒタキ"
     }
     {
         "alien":false,
         upper:"oenanthe"
         rank:"species"
-        ac:"pleschanka"
+        sc:"pleschanka"
         ja:"セグロサバクヒタキ"
     }
     {
         "alien":false,
         upper:"oenanthe"
         rank:"species"
-        ac:"deserti"
+        sc:"deserti"
         ja:"サバクヒタキ"
     }
     {
         "alien":false,
         upper:"monticola"
         rank:"species"
-        ac:"solitarius"
+        sc:"solitarius"
         ja:"イソヒヨドリ"
     }
     {
         "alien":false,
         upper:"monticola"
         rank:"species"
-        ac:"gularis"
+        sc:"gularis"
         ja:"ヒメイソヒヨ"
     }
     {
         "alien":false,
         upper:"muscicapa"
         rank:"species"
-        ac:"striata"
+        sc:"striata"
         ja:"ムナフヒタキ"
     }
     {
         "alien":false,
         upper:"muscicapa"
         rank:"species"
-        ac:"griseisticta"
+        sc:"griseisticta"
         ja:"エゾビタキ"
     }
     {
         "alien":false,
         upper:"muscicapa"
         rank:"species"
-        ac:"sibirica"
+        sc:"sibirica"
         ja:"サメビタキ"
     }
     {
         "alien":false,
         upper:"muscicapa"
         rank:"species"
-        ac:"dauurica"
+        sc:"dauurica"
         ja:"コサメビタキ"
     }
     {
         "alien":false,
         upper:"muscicapa"
         rank:"species"
-        ac:"ferruginea"
+        sc:"ferruginea"
         ja:"ミヤマヒタキ"
     }
     {
         "alien":false,
         upper:"ficedula"
         rank:"species"
-        ac:"hypoleuca"
+        sc:"hypoleuca"
         ja:"マダラヒタキ"
     }
     {
         "alien":false,
         upper:"ficedula"
         rank:"species"
-        ac:"zanthopygia"
+        sc:"zanthopygia"
         ja:"マミジロキビタキ"
     }
     {
         "alien":false,
         upper:"ficedula"
         rank:"species"
-        ac:"narcissina"
+        sc:"narcissina"
         ja:"キビタキ"
     }
     {
         "alien":false,
         upper:"ficedula"
         rank:"species"
-        ac:"mugimaki"
+        sc:"mugimaki"
         ja:"ムギマキ"
     }
     {
         "alien":false,
         upper:"ficedula"
         rank:"species"
-        ac:"albicilla"
+        sc:"albicilla"
         ja:"オジロビタキ"
     }
     {
         "alien":false,
         upper:"cyanoptila"
         rank:"species"
-        ac:"cyanomelana"
+        sc:"cyanomelana"
         ja:"オオルリ"
     }
     {
         "alien":false,
         upper:"eumyias"
         rank:"species"
-        ac:"thalassinus"
+        sc:"thalassinus"
         ja:"ロクショウヒタキ"
     }
     {
         "alien":false,
         upper:"niltava"
         rank:"species"
-        ac:"vivida"
+        sc:"vivida"
         ja:"チャバラオオルリ"
     }
     {
         "alien":false,
         upper:"prunella"
         rank:"species"
-        ac:"collaris"
+        sc:"collaris"
         ja:"イワヒバリ"
     }
     {
         "alien":false,
         upper:"prunella"
         rank:"species"
-        ac:"montanella"
+        sc:"montanella"
         ja:"ヤマヒバリ"
     }
     {
         "alien":false,
         upper:"prunella"
         rank:"species"
-        ac:"rubida"
+        sc:"rubida"
         ja:"カヤクグリ"
     }
     {
         "alien":false,
         upper:"passer"
         rank:"species"
-        ac:"domesticus"
+        sc:"domesticus"
         ja:"イエスズメ"
     }
     {
         "alien":false,
         upper:"passer"
         rank:"species"
-        ac:"rutilans"
+        sc:"rutilans"
         ja:"ニュウナイスズメ"
     }
     {
         "alien":false,
         upper:"passer"
         rank:"species"
-        ac:"montanus"
+        sc:"montanus"
         ja:"スズメ"
     }
     {
         "alien":false,
         upper:"dendronanthus"
         rank:"species"
-        ac:"indicus"
+        sc:"indicus"
         ja:"イワミセキレイ"
     }
     {
         "alien":false,
         upper:"motacilla"
         rank:"species"
-        ac:"flava"
+        sc:"flava"
         ja:"ツメナガセキレイ"
     }
     {
         "alien":false,
         upper:"motacilla"
         rank:"species"
-        ac:"citreola"
+        sc:"citreola"
         ja:"キガシラセキレイ"
     }
     {
         "alien":false,
         upper:"motacilla"
         rank:"species"
-        ac:"cinerea"
+        sc:"cinerea"
         ja:"キセキレイ"
     }
     {
         "alien":false,
         upper:"motacilla"
         rank:"species"
-        ac:"alba"
+        sc:"alba"
         ja:"ハクセキレイ"
     }
     {
         "alien":false,
         upper:"motacilla"
         rank:"species"
-        ac:"grandis"
+        sc:"grandis"
         ja:"セグロセキレイ"
     }
     {
         "alien":false,
         upper:"anthus"
         rank:"species"
-        ac:"richardi"
+        sc:"richardi"
         ja:"マミジロタヒバリ"
     }
     {
         "alien":false,
         upper:"anthus"
         rank:"species"
-        ac:"godlewskii"
+        sc:"godlewskii"
         ja:"コマミジロタヒバリ"
     }
     {
         "alien":false,
         upper:"anthus"
         rank:"species"
-        ac:"pratensis"
+        sc:"pratensis"
         ja:"マキバタヒバリ"
     }
     {
         "alien":false,
         upper:"anthus"
         rank:"species"
-        ac:"trivialis"
+        sc:"trivialis"
         ja:"ヨーロッパビンズイ"
     }
     {
         "alien":false,
         upper:"anthus"
         rank:"species"
-        ac:"hodgsoni"
+        sc:"hodgsoni"
         ja:"ビンズイ"
     }
     {
         "alien":false,
         upper:"anthus"
         rank:"species"
-        ac:"gustavi"
+        sc:"gustavi"
         ja:"セジロタヒバリ"
     }
     {
         "alien":false,
         upper:"anthus"
         rank:"species"
-        ac:"roseatus"
+        sc:"roseatus"
         ja:"ウスベニタヒバリ"
     }
     {
         "alien":false,
         upper:"anthus"
         rank:"species"
-        ac:"cervinus"
+        sc:"cervinus"
         ja:"ムネアカタヒバリ"
     }
     {
         "alien":false,
         upper:"anthus"
         rank:"species"
-        ac:"rubescens"
+        sc:"rubescens"
         ja:"タヒバリ"
     }
     {
         "alien":false,
         upper:"fringilla"
         rank:"species"
-        ac:"coelebs"
+        sc:"coelebs"
         ja:"ズアオアトリ"
     }
     {
         "alien":false,
         upper:"fringilla"
         rank:"species"
-        ac:"montifringilla"
+        sc:"montifringilla"
         ja:"アトリ"
     }
     {
         "alien":false,
         upper:"chloris"
         rank:"species"
-        ac:"sinica"
+        sc:"sinica"
         ja:"カワラヒワ"
     }
     {
         "alien":false,
         upper:"carduelis"
         rank:"species"
-        ac:"spinus"
+        sc:"spinus"
         ja:"マヒワ"
     }
     {
         "alien":false,
         upper:"carduelis"
         rank:"species"
-        ac:"flammea"
+        sc:"flammea"
         ja:"ベニヒワ"
     }
     {
         "alien":false,
         upper:"carduelis"
         rank:"species"
-        ac:"hornemanni"
+        sc:"hornemanni"
         ja:"コベニヒワ"
     }
     {
         "alien":false,
         upper:"leucosticte"
         rank:"species"
-        ac:"arctoa"
+        sc:"arctoa"
         ja:"ハギマシコ"
     }
     {
         "alien":false,
         upper:"uragus"
         rank:"species"
-        ac:"sibiricus"
+        sc:"sibiricus"
         ja:"ベニマシコ"
     }
     {
         "alien":false,
         upper:"chaunoproctus"
         rank:"species"
-        ac:"ferreorostris"
+        sc:"ferreorostris"
         ja:"オガサワラマシコ"
     }
     {
         "alien":false,
         upper:"carpodacus"
         rank:"species"
-        ac:"erythrinus"
+        sc:"erythrinus"
         ja:"アカマシコ"
     }
     {
         "alien":false,
         upper:"carpodacus"
         rank:"species"
-        ac:"roseus"
+        sc:"roseus"
         ja:"オオマシコ"
     }
     {
         "alien":false,
         upper:"pinicola"
         rank:"species"
-        ac:"enucleator"
+        sc:"enucleator"
         ja:"ギンザンマシコ"
     }
     {
         "alien":false,
         upper:"loxia"
         rank:"species"
-        ac:"curvirostra"
+        sc:"curvirostra"
         ja:"イスカ"
     }
     {
         "alien":false,
         upper:"loxia"
         rank:"species"
-        ac:"leucoptera"
+        sc:"leucoptera"
         ja:"ナキイスカ"
     }
     {
         "alien":false,
         upper:"pyrrhula"
         rank:"species"
-        ac:"pyrrhula"
+        sc:"pyrrhula"
         ja:"ウソ"
     }
     {
         "alien":false,
         upper:"coccothraustes"
         rank:"species"
-        ac:"coccothraustes"
+        sc:"coccothraustes"
         ja:"シメ"
     }
     {
         "alien":false,
         upper:"eophona"
         rank:"species"
-        ac:"migratoria"
+        sc:"migratoria"
         ja:"コイカル"
     }
     {
         "alien":false,
         upper:"eophona"
         rank:"species"
-        ac:"personata"
+        sc:"personata"
         ja:"イカル"
     }
     {
         "alien":false,
         upper:"calcarius"
         rank:"species"
-        ac:"lapponicus"
+        sc:"lapponicus"
         ja:"ツメナガホオジロ"
     }
     {
         "alien":false,
         upper:"plectrophenax"
         rank:"species"
-        ac:"nivalis"
+        sc:"nivalis"
         ja:"ユキホオジロ"
     }
     {
         "alien":false,
         upper:"setophaga"
         rank:"species"
-        ac:"coronata"
+        sc:"coronata"
         ja:"キヅタアメリカムシクイ"
     }
     {
         "alien":false,
         upper:"cardellina"
         rank:"species"
-        ac:"pusilla"
+        sc:"pusilla"
         ja:"ウィルソンアメリカムシクイ"
     }
     {
         "alien":false,
         upper:"emberiza"
         rank:"species"
-        ac:"lathami"
+        sc:"lathami"
         ja:"レンジャクノジコ"
     }
     {
         "alien":false,
         upper:"emberiza"
         rank:"species"
-        ac:"citrinella"
+        sc:"citrinella"
         ja:"キアオジ"
     }
     {
         "alien":false,
         upper:"emberiza"
         rank:"species"
-        ac:"leucocephalos"
+        sc:"leucocephalos"
         ja:"シラガホオジロ"
     }
     {
         "alien":false,
         upper:"emberiza"
         rank:"species"
-        ac:"cioides"
+        sc:"cioides"
         ja:"ホオジロ"
     }
     {
         "alien":false,
         upper:"emberiza"
         rank:"species"
-        ac:"buchanani"
+        sc:"buchanani"
         ja:"イワバホオジロ"
     }
     {
         "alien":false,
         upper:"emberiza"
         rank:"species"
-        ac:"hortulana"
+        sc:"hortulana"
         ja:"ズアオホオジロ"
     }
     {
         "alien":false,
         upper:"emberiza"
         rank:"species"
-        ac:"tristrami"
+        sc:"tristrami"
         ja:"シロハラホオジロ"
     }
     {
         "alien":false,
         upper:"emberiza"
         rank:"species"
-        ac:"fucata"
+        sc:"fucata"
         ja:"ホオアカ"
     }
     {
         "alien":false,
         upper:"emberiza"
         rank:"species"
-        ac:"pusilla"
+        sc:"pusilla"
         ja:"コホオアカ"
     }
     {
         "alien":false,
         upper:"emberiza"
         rank:"species"
-        ac:"chrysophrys"
+        sc:"chrysophrys"
         ja:"キマユホオジロ"
     }
     {
         "alien":false,
         upper:"emberiza"
         rank:"species"
-        ac:"rustica"
+        sc:"rustica"
         ja:"カシラダカ"
     }
     {
         "alien":false,
         upper:"emberiza"
         rank:"species"
-        ac:"elegans"
+        sc:"elegans"
         ja:"ミヤマホオジロ"
     }
     {
         "alien":false,
         upper:"emberiza"
         rank:"species"
-        ac:"aureola"
+        sc:"aureola"
         ja:"シマアオジ"
     }
     {
         "alien":false,
         upper:"emberiza"
         rank:"species"
-        ac:"rutila"
+        sc:"rutila"
         ja:"シマノジコ"
     }
     {
         "alien":false,
         upper:"emberiza"
         rank:"species"
-        ac:"melanocephala"
+        sc:"melanocephala"
         ja:"ズグロチャキンチョウ"
     }
     {
         "alien":false,
         upper:"emberiza"
         rank:"species"
-        ac:"bruniceps"
+        sc:"bruniceps"
         ja:"チャキンチョウ"
     }
     {
         "alien":false,
         upper:"emberiza"
         rank:"species"
-        ac:"sulphurata"
+        sc:"sulphurata"
         ja:"ノジコ"
     }
     {
         "alien":false,
         upper:"emberiza"
         rank:"species"
-        ac:"spodocephala"
+        sc:"spodocephala"
         ja:"アオジ"
     }
     {
         "alien":false,
         upper:"emberiza"
         rank:"species"
-        ac:"variabilis"
+        sc:"variabilis"
         ja:"クロジ"
     }
     {
         "alien":false,
         upper:"emberiza"
         rank:"species"
-        ac:"pallasi"
+        sc:"pallasi"
         ja:"シベリアジュリン"
     }
     {
         "alien":false,
         upper:"emberiza"
         rank:"species"
-        ac:"yessoensis"
+        sc:"yessoensis"
         ja:"コジュリン"
     }
     {
         "alien":false,
         upper:"emberiza"
         rank:"species"
-        ac:"schoeniclus"
+        sc:"schoeniclus"
         ja:"オオジュリン"
     }
     {
         "alien":false,
         upper:"passerella"
         rank:"species"
-        ac:"iliaca"
+        sc:"iliaca"
         ja:"ゴマフスズメ"
     }
     {
         "alien":false,
         upper:"melospiza"
         rank:"species"
-        ac:"melodia"
+        sc:"melodia"
         ja:"ウタスズメ"
     }
     {
         "alien":false,
         upper:"zonotrichia"
         rank:"species"
-        ac:"leucophrys"
+        sc:"leucophrys"
         ja:"ミヤマシトド"
     }
     {
         "alien":false,
         upper:"zonotrichia"
         rank:"species"
-        ac:"atricapilla"
+        sc:"atricapilla"
         ja:"キガシラシトド"
     }
     {
         "alien":false,
         upper:"passerculus"
         rank:"species"
-        ac:"sandwichensis"
+        sc:"sandwichensis"
         ja:"サバンナシトド"
     }
     {
         "alien":true,
         upper:"bambusicola"
         rank:"species"
-        ac:"thoracicus"
+        sc:"thoracicus"
         ja:"コジュケイ"
     }
     {
         "alien":true,
         upper:"syrmaticus"
         rank:"species"
-        ac:"soemmerringii"
+        sc:"soemmerringii"
         ja:"ヤマドリ"
     }
     {
         "alien":true,
         upper:"phasianus"
         rank:"species"
-        ac:"colchicus"
+        sc:"colchicus"
         ja:"キジ"
     }
     {
         "alien":true,
         upper:"pavo"
         rank:"species"
-        ac:"cristatus"
+        sc:"cristatus"
         ja:"インドクジャク"
     }
     {
         "alien":true,
         upper:"branta"
         rank:"species"
-        ac:"canadensis"
+        sc:"canadensis"
         ja:"カナダガン"
     }
     {
         "alien":true,
         upper:"cygnus"
         rank:"species"
-        ac:"atratus"
+        sc:"atratus"
         ja:"コクチョウ"
     }
     {
         "alien":true,
         upper:"cygnus"
         rank:"species"
-        ac:"olor"
+        sc:"olor"
         ja:"コブハクチョウ"
     }
     {
         "alien":true,
         upper:"columba"
         rank:"species"
-        ac:"livia"
+        sc:"livia"
         ja:"カワラバト(ドバト)"
     }
     {
         "alien":true,
         upper:"streptopelia"
         rank:"species"
-        ac:"decaocto"
+        sc:"decaocto"
         ja:"シラコバト"
     }
     {
         "alien":true,
         upper:"ciconia"
         rank:"species"
-        ac:"boyciana"
+        sc:"boyciana"
         ja:"コウノトリ"
     }
     {
         "alien":true,
         upper:"nipponia"
         rank:"species"
-        ac:"nippon"
+        sc:"nippon"
         ja:"トキ"
     }
     {
         "alien":true,
         upper:"himantopus"
         rank:"species"
-        ac:"himantopus"
+        sc:"himantopus"
         ja:"セイタカシギ"
     }
     {
         "alien":true,
         upper:"melopsittacus"
         rank:"species"
-        ac:"undulatus"
+        sc:"undulatus"
         ja:"セキセイインコ"
     }
     {
         "alien":true,
         upper:"psittacula"
         rank:"species"
-        ac:"eupatria"
+        sc:"eupatria"
         ja:"オオホンセイインコ"
     }
     {
         "alien":true,
         upper:"psittacula"
         rank:"species"
-        ac:"krameri"
+        sc:"krameri"
         ja:"ホンセイインコ"
     }
     {
         "alien":true,
         upper:"psittacula"
         rank:"species"
-        ac:"alexandri"
+        sc:"alexandri"
         ja:"ダルマインコ"
     }
     {
         "alien":true,
         upper:"myiopsitta"
         rank:"species"
-        ac:"monachus"
+        sc:"monachus"
         ja:"オキナインコ"
     }
     {
         "alien":true,
         upper:"urocissa"
         rank:"species"
-        ac:"caerulea"
+        sc:"caerulea"
         ja:"ヤマムスメ"
     }
     {
         "alien":true,
         upper:"pica"
         rank:"species"
-        ac:"pica"
+        sc:"pica"
         ja:"カササギ"
     }
     {
         "alien":true,
         upper:"zosterops"
         rank:"species"
-        ac:"japonicus"
+        sc:"japonicus"
         ja:"メジロ"
     }
     {
         "alien":true,
         upper:"garrulax"
         rank:"species"
-        ac:"canorus"
+        sc:"canorus"
         ja:"ガビチョウ"
     }
     {
         "alien":true,
         upper:"garrulax"
         rank:"species"
-        ac:"cineraceus"
+        sc:"cineraceus"
         ja:"ヒゲガビチョウ"
     }
     {
         "alien":true,
         upper:"garrulax"
         rank:"species"
-        ac:"perspicillatus"
+        sc:"perspicillatus"
         ja:"カオグロガビチョウ"
     }
     {
         "alien":true,
         upper:"garrulax"
         rank:"species"
-        ac:"sannio"
+        sc:"sannio"
         ja:"カオジロガビチョウ"
     }
     {
         "alien":true,
         upper:"leiothrix"
         rank:"species"
-        ac:"lutea"
+        sc:"lutea"
         ja:"ソウシチョウ"
     }
     {
         "alien":true,
         upper:"acridotheres"
         rank:"species"
-        ac:"cristatellus"
+        sc:"cristatellus"
         ja:"ハッカチョウ"
     }
     {
         "alien":true,
         upper:"acridotheres"
         rank:"species"
-        ac:"javanicus"
+        sc:"javanicus"
         ja:"モリハッカ"
     }
     {
         "alien":true,
         upper:"acridotheres"
         rank:"species"
-        ac:"ginginianus"
+        sc:"ginginianus"
         ja:"ハイイロハッカ"
     }
     {
         "alien":true,
         upper:"acridotheres"
         rank:"species"
-        ac:"tristis"
+        sc:"tristis"
         ja:"インドハッカ"
     }
     {
         "alien":true,
         upper:"gracupica"
         rank:"species"
-        ac:"contra"
+        sc:"contra"
         ja:"ホオジロムクドリ"
     }
     {
         "alien":true,
         upper:"ploceus"
         rank:"species"
-        ac:"intermedius"
+        sc:"intermedius"
         ja:"メンハタオリドリ"
     }
     {
         "alien":true,
         upper:"euplectes"
         rank:"species"
-        ac:"orix"
+        sc:"orix"
         ja:"オオキンランチョウ"
     }
     {
         "alien":true,
         upper:"estrilda"
         rank:"species"
-        ac:"melpoda"
+        sc:"melpoda"
         ja:"ホオアカカエデチョウ"
     }
     {
         "alien":true,
         upper:"estrilda"
         rank:"species"
-        ac:"troglodytes"
+        sc:"troglodytes"
         ja:"カエデチョウ"
     }
     {
         "alien":true,
         upper:"amandava"
         rank:"species"
-        ac:"amandava"
+        sc:"amandava"
         ja:"ベニスズメ"
     }
     {
         "alien":true,
         upper:"lonchura"
         rank:"species"
-        ac:"striata"
+        sc:"striata"
         ja:"コシジロキンパラ"
     }
     {
         "alien":true,
         upper:"lonchura"
         rank:"species"
-        ac:"punctulata"
+        sc:"punctulata"
         ja:"シマキンパラ"
     }
     {
         "alien":true,
         upper:"lonchura"
         rank:"species"
-        ac:"malacca"
+        sc:"malacca"
         ja:"ギンパラ"
     }
     {
         "alien":true,
         upper:"lonchura"
         rank:"species"
-        ac:"atricapilla"
+        sc:"atricapilla"
         ja:"キンパラ"
     }
     {
         "alien":true,
         upper:"lonchura"
         rank:"species"
-        ac:"maja"
+        sc:"maja"
         ja:"ヘキチョウ"
     }
     {
         "alien":true,
         upper:"lonchura"
         rank:"species"
-        ac:"oryzivora"
+        sc:"oryzivora"
         ja:"ブンチョウ"
     }
     {
         "alien":true,
         upper:"vidua"
         rank:"species"
-        ac:"paradisaea"
+        sc:"paradisaea"
         ja:"ホウオウジャク"
     }
     {
         "alien":true,
         upper:"paroaria"
         rank:"species"
-        ac:"coronata"
+        sc:"coronata"
         ja:"コウカンチョウ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"bonasia"
-        ac:"vicinitas"
+        sc:"vicinitas"
         ja:"エゾライチョウ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"muta"
-        ac:"japonica"
+        sc:"japonica"
         ja:"ライチョウ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"soemmerringii"
-        ac:"scintillans"
+        sc:"scintillans"
         ja:"ヤマドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"soemmerringii"
-        ac:"subrufus"
+        sc:"subrufus"
         ja:"ウスアカヤマドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"soemmerringii"
-        ac:"intermedius"
+        sc:"intermedius"
         ja:"シコクヤマドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"soemmerringii"
-        ac:"soemmerringii"
+        sc:"soemmerringii"
         ja:"アカヤマドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"soemmerringii"
-        ac:"ijimae"
+        sc:"ijimae"
         ja:"コシジロヤマドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"colchicus"
-        ac:"robustipes"
+        sc:"robustipes"
         ja:"キジ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"colchicus"
-        ac:"tohkaidi"
+        sc:"tohkaidi"
         ja:"トウカイキジ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"colchicus"
-        ac:"tanensis"
+        sc:"tanensis"
         ja:"シマキジ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"colchicus"
-        ac:"versicolor"
+        sc:"versicolor"
         ja:"キュウシュウキジ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"fabalis"
-        ac:"middendorffii"
+        sc:"middendorffii"
         ja:"オオヒシクイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"fabalis"
-        ac:"curtus"
+        sc:"curtus"
         ja:"ヒメヒシクイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"fabalis"
-        ac:"serrirostris"
+        sc:"serrirostris"
         ja:"ヒシクイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"anser"
-        ac:"rubrirostris"
+        sc:"rubrirostris"
         ja:"ハイイロガン"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"albifrons"
-        ac:"albifrons"
+        sc:"albifrons"
         ja:"マガン"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"caerulescens"
-        ac:"caerulescens"
+        sc:"caerulescens"
         ja:"ハクガン"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"caerulescens"
-        ac:"atlanticus"
+        sc:"atlanticus"
         ja:"オオハクガン"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"hutchinsii"
-        ac:"leucopareia"
+        sc:"leucopareia"
         ja:"シジュウカラガン"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"hutchinsii"
-        ac:"minima"
+        sc:"minima"
         ja:"ヒメシジュウカラガン"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"bernicla"
-        ac:"orientalis"
+        sc:"orientalis"
         ja:"コクガン"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"columbianus"
-        ac:"jankowskyi"
+        sc:"jankowskyi"
         ja:"コハクチョウ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"columbianus"
-        ac:"columbianus"
+        sc:"columbianus"
         ja:"アメリカコハクチョウ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"coromandelianus"
-        ac:"coromandelianus"
+        sc:"coromandelianus"
         ja:"ナンキンオシ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"strepera"
-        ac:"strepera"
+        sc:"strepera"
         ja:"オカヨシガモ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"platyrhynchos"
-        ac:"platyrhynchos"
+        sc:"platyrhynchos"
         ja:"マガモ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"crecca"
-        ac:"crecca"
+        sc:"crecca"
         ja:"コガモ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"crecca"
-        ac:"carolinensis"
+        sc:"carolinensis"
         ja:"アメリカコガモ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"marila"
-        ac:"marila"
+        sc:"marila"
         ja:"スズガモ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"fusca"
-        ac:"stejnegeri"
+        sc:"stejnegeri"
         ja:"ビロードキンクロ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"clangula"
-        ac:"clangula"
+        sc:"clangula"
         ja:"ホオジロガモ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"merganser"
-        ac:"merganser"
+        sc:"merganser"
         ja:"カワアイサ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"merganser"
-        ac:"orientalis"
+        sc:"orientalis"
         ja:"コカワアイサ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"ruficollis"
-        ac:"poggei"
+        sc:"poggei"
         ja:"カイツブリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"ruficollis"
-        ac:"kunikyonis"
+        sc:"kunikyonis"
         ja:"ダイトウカイツブリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"grisegena"
-        ac:"holbollii"
+        sc:"holbollii"
         ja:"アカエリカイツブリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"cristatus"
-        ac:"cristatus"
+        sc:"cristatus"
         ja:"カンムリカイツブリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"auritus"
-        ac:"auritus"
+        sc:"auritus"
         ja:"ミミカイツブリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"nigricollis"
-        ac:"nigricollis"
+        sc:"nigricollis"
         ja:"ハジロカイツブリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"rubricauda"
-        ac:"rothschildi"
+        sc:"rothschildi"
         ja:"アカオネッタイチョウ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"lepturus"
-        ac:"dorotheae"
+        sc:"dorotheae"
         ja:"シラオネッタイチョウ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"oenas"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"janthina"
-        ac:"janthina"
+        sc:"janthina"
         ja:"カラスバト"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"janthina"
-        ac:"nitens"
+        sc:"nitens"
         ja:"アカガシラカラスバト"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"janthina"
-        ac:"stejnegeri"
+        sc:"stejnegeri"
         ja:"ヨナグニカラスバト"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"orientalis"
-        ac:"orientalis"
+        sc:"orientalis"
         ja:"キジバト"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"orientalis"
-        ac:"stimpsoni"
+        sc:"stimpsoni"
         ja:"リュウキュウキジバト"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"decaocto"
-        ac:"decaocto"
+        sc:"decaocto"
         ja:"シラコバト"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"tranquebarica"
-        ac:"humilis"
+        sc:"humilis"
         ja:"ベニバト"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"indica"
-        ac:"yamashinai"
+        sc:"yamashinai"
         ja:"キンバト"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"sieboldii"
-        ac:"sieboldii"
+        sc:"sieboldii"
         ja:"アオバト"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"formosae"
-        ac:"permagnus"
+        sc:"permagnus"
         ja:"ズアカアオバト"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"formosae"
-        ac:"medioximus"
+        sc:"medioximus"
         ja:"チュウダイズアカアオバト"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"leclancheri"
-        ac:"taiwanus"
+        sc:"taiwanus"
         ja:"クロアゴヒメアオバト"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"arctica"
-        ac:"viridigularis"
+        sc:"viridigularis"
         ja:"オオハム"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"glacialis"
-        ac:"rodgersii"
+        sc:"rodgersii"
         ja:"フルマカモメ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"phaeopygia"
-        ac:"sandwichensis"
+        sc:"sandwichensis"
         ja:"ハワイシロハラミズナギドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"pacificus"
-        ac:"cuneatus"
+        sc:"cuneatus"
         ja:"オナガミズナギドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"lherminieri"
-        ac:"bannermani"
+        sc:"bannermani"
         ja:"セグロミズナギドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"oceanicus"
-        ac:"exasperatus"
+        sc:"exasperatus"
         ja:"アシナガウミツバメ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"leucorhoa"
-        ac:"leucorhoa"
+        sc:"leucorhoa"
         ja:"コシジロウミツバメ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"furcata"
-        ac:"furcata"
+        sc:"furcata"
         ja:"ハイイロウミツバメ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"minor"
-        ac:"minor"
+        sc:"minor"
         ja:"オオグンカンドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"ariel"
-        ac:"ariel"
+        sc:"ariel"
         ja:"コグンカンドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"dactylatra"
-        ac:"personata"
+        sc:"personata"
         ja:"アオツラカツオドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"sula"
-        ac:"rubripes"
+        sc:"rubripes"
         ja:"アカアシカツオドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"leucogaster"
-        ac:"plotus"
+        sc:"plotus"
         ja:"カツオドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"leucogaster"
-        ac:"brewsteri"
+        sc:"brewsteri"
         ja:"シロガシラカツオドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"pelagicus"
-        ac:"pelagicus"
+        sc:"pelagicus"
         ja:"ヒメウ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"carbo"
-        ac:"hanedae"
+        sc:"hanedae"
         ja:"カワウ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"stellaris"
-        ac:"stellaris"
+        sc:"stellaris"
         ja:"サンカノゴイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"sinensis"
-        ac:"sinensis"
+        sc:"sinensis"
         ja:"ヨシゴイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"sinensis"
-        ac:"bryani"
+        sc:"bryani"
         ja:"マリアナヨシゴイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"flavicollis"
-        ac:"flavicollis"
+        sc:"flavicollis"
         ja:"タカサゴクロサギ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"nycticorax"
-        ac:"nycticorax"
+        sc:"nycticorax"
         ja:"ゴイサギ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"caledonicus"
-        ac:"crassirostris"
+        sc:"crassirostris"
         ja:"ハシブトゴイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"striata"
-        ac:"amurensis"
+        sc:"amurensis"
         ja:"ササゴイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"ibis"
-        ac:"coromandus"
+        sc:"coromandus"
         ja:"アマサギ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"cinerea"
-        ac:"jouyi"
+        sc:"jouyi"
         ja:"アオサギ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"purpurea"
-        ac:"manilensis"
+        sc:"manilensis"
         ja:"ムラサキサギ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"alba"
-        ac:"alba"
+        sc:"alba"
         ja:"ダイサギ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"alba"
-        ac:"modesta"
+        sc:"modesta"
         ja:"チュウダイサギ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"intermedia"
-        ac:"intermedia"
+        sc:"intermedia"
         ja:"チュウサギ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"garzetta"
-        ac:"garzetta"
+        sc:"garzetta"
         ja:"コサギ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"sacra"
-        ac:"sacra"
+        sc:"sacra"
         ja:"クロサギ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"leucorodia"
-        ac:"leucorodia"
+        sc:"leucorodia"
         ja:"ヘラサギ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"canadensis"
-        ac:"canadensis"
+        sc:"canadensis"
         ja:"カナダヅル"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"grus"
-        ac:"lilfordi"
+        sc:"lilfordi"
         ja:"クロヅル"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"eurizonoides"
-        ac:"sepiaria"
+        sc:"sepiaria"
         ja:"オオクイナ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"striatus"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"aquaticus"
-        ac:"indicus"
+        sc:"indicus"
         ja:"クイナ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"phoenicurus"
-        ac:"phoenicurus"
+        sc:"phoenicurus"
         ja:"シロハラクイナ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"pusilla"
-        ac:"pusilla"
+        sc:"pusilla"
         ja:"ヒメクイナ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"fusca"
-        ac:"erythrothorax"
+        sc:"erythrothorax"
         ja:"ヒクイナ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"fusca"
-        ac:"phaeopyga"
+        sc:"phaeopyga"
         ja:"リュウキュウヒクイナ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"cinerea"
-        ac:"brevipes"
+        sc:"brevipes"
         ja:"マミジロクイナ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"chloropus"
-        ac:"chloropus"
+        sc:"chloropus"
         ja:"バン"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"atra"
-        ac:"atra"
+        sc:"atra"
         ja:"オオバン"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"tarda"
-        ac:"dybowskii"
+        sc:"dybowskii"
         ja:"ノガン"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"bengalensis"
-        ac:"lignator"
+        sc:"lignator"
         ja:"バンケン"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"scolopaceus"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"lugubris"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"micropterus"
-        ac:"micropterus"
+        sc:"micropterus"
         ja:"セグロカッコウ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"canorus"
-        ac:"telephonus"
+        sc:"telephonus"
         ja:"カッコウ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"indicus"
-        ac:"jotaka"
+        sc:"jotaka"
         ja:"ヨタカ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"brevirostris"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"caudacutus"
-        ac:"caudacutus"
+        sc:"caudacutus"
         ja:"ハリオアマツバメ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"pacificus"
-        ac:"pacificus"
+        sc:"pacificus"
         ja:"キタアマツバメ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"pacificus"
-        ac:"kurodae"
+        sc:"kurodae"
         ja:"アマツバメ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"nipalensis"
-        ac:"kuntzi"
+        sc:"kuntzi"
         ja:"ヒメアマツバメ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"apricaria"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"hiaticula"
-        ac:"tundrae"
+        sc:"tundrae"
         ja:"ハジロコチドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"dubius"
-        ac:"curonicus"
+        sc:"curonicus"
         ja:"コチドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"alexandrinus"
-        ac:"alexandrinus"
+        sc:"alexandrinus"
         ja:"ハシボソシロチドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"alexandrinus"
-        ac:"dealbatus"
+        sc:"dealbatus"
         ja:"シロチドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"mongolus"
-        ac:"mongolus"
+        sc:"mongolus"
         ja:"モウコメダイチドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"mongolus"
-        ac:"stegmanni"
+        sc:"stegmanni"
         ja:"メダイチドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"ostralegus"
-        ac:"osculans"
+        sc:"osculans"
         ja:"ミヤコドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"himantopus"
-        ac:"himantopus"
+        sc:"himantopus"
         ja:"セイタカシギ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"himantopus"
-        ac:"leucocephalus"
+        sc:"leucocephalus"
         ja:"オーストラリアセイタカシギ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"solitaria"
-        ac:"japonica"
+        sc:"japonica"
         ja:"アオシギ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"gallinago"
-        ac:"gallinago"
+        sc:"gallinago"
         ja:"タシギ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"griseus"
-        ac:"hendersoni"
+        sc:"hendersoni"
         ja:"アメリカオオハシシギ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"limosa"
-        ac:"melanuroides"
+        sc:"melanuroides"
         ja:"オグロシギ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"lapponica"
-        ac:"menzbieri"
+        sc:"menzbieri"
         ja:"コシジロオオソリハシシギ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"lapponica"
-        ac:"baueri"
+        sc:"baueri"
         ja:"オオソリハシシギ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"phaeopus"
-        ac:"variegatus"
+        sc:"variegatus"
         ja:"チュウシャクシギ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"arquata"
-        ac:"orientalis"
+        sc:"orientalis"
         ja:"ダイシャクシギ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"totanus"
-        ac:"ussuriensis"
+        sc:"ussuriensis"
         ja:"アカアシシギ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"interpres"
-        ac:"interpres"
+        sc:"interpres"
         ja:"キョウジョシギ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"canutus"
-        ac:"rogersi"
+        sc:"rogersi"
         ja:"コオバシギ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"ptilocnemis"
-        ac:"quarta"
+        sc:"quarta"
         ja:"チシマシギ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"alpina"
-        ac:"sakhalina"
+        sc:"sakhalina"
         ja:"ハマシギ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"alpina"
-        ac:"arcticola"
+        sc:"arcticola"
         ja:"キタアラスカハマシギ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"falcinellus"
-        ac:"sibirica"
+        sc:"sibirica"
         ja:"キリアイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"benghalensis"
-        ac:"benghalensis"
+        sc:"benghalensis"
         ja:"タマシギ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"suscitator"
-        ac:"okinavensis"
+        sc:"okinavensis"
         ja:"ミフウズラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"stolidus"
-        ac:"pileatus"
+        sc:"pileatus"
         ja:"クロアジサシ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"stolidus"
-        ac:"pullus"
+        sc:"pullus"
         ja:"リュウキュウクロアジサシ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"minutus"
-        ac:"marcusi"
+        sc:"marcusi"
         ja:"ヒメクロアジサシ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"cerulea"
-        ac:"saxatilis"
+        sc:"saxatilis"
         ja:"ハイイロアジサシ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"alba"
-        ac:"candida"
+        sc:"candida"
         ja:"シロアジサシ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"tridactyla"
-        ac:"pollicaris"
+        sc:"pollicaris"
         ja:"ミツユビカモメ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"atricilla"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"canus"
-        ac:"kamtschatschensis"
+        sc:"kamtschatschensis"
         ja:"カモメ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"canus"
-        ac:"heinei"
+        sc:"heinei"
         ja:"ニシシベリアカモメ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"canus"
-        ac:"brachyrhynchus"
+        sc:"brachyrhynchus"
         ja:"コカモメ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"hyperboreus"
-        ac:"pallidissimus"
+        sc:"pallidissimus"
         ja:"シロカモメ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"glaucoides"
-        ac:"glaucoides"
+        sc:"glaucoides"
         ja:"アイスランドカモメ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"glaucoides"
-        ac:"kumlieni"
+        sc:"kumlieni"
         ja:"クムリーンアイスランドカモメ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"argentatus"
-        ac:"vegae"
+        sc:"vegae"
         ja:"セグロカモメ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"argentatus"
-        ac:"smithsonianus"
+        sc:"smithsonianus"
         ja:"アメリカセグロカモメ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"cachinnans"
-        ac:"mongolicus"
+        sc:"mongolicus"
         ja:"キアシセグロカモメ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"fuscus"
-        ac:"heuglini"
+        sc:"heuglini"
         ja:"ニシセグロカモメ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"fuscus"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"nilotica"
-        ac:"nilotica"
+        sc:"nilotica"
         ja:"ハシブトアジサシ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"bergii"
-        ac:"cristata"
+        sc:"cristata"
         ja:"オオアジサシ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"bengalensis"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"albifrons"
-        ac:"sinensis"
+        sc:"sinensis"
         ja:"コアジサシ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"anaethetus"
-        ac:"anaethetus"
+        sc:"anaethetus"
         ja:"マミジロアジサシ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"fuscata"
-        ac:"nubilosa"
+        sc:"nubilosa"
         ja:"セグロアジサシ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"dougallii"
-        ac:"bangsi"
+        sc:"bangsi"
         ja:"ベニアジサシ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"hirundo"
-        ac:"minussensis"
+        sc:"minussensis"
         ja:"アカアシアジサシ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"hirundo"
-        ac:"longipennis"
+        sc:"longipennis"
         ja:"アジサシ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"hybrida"
-        ac:"javanicus"
+        sc:"javanicus"
         ja:"クロハラアジサシ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"niger"
-        ac:"niger"
+        sc:"niger"
         ja:"ハシグロクロハラアジサシ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"niger"
-        ac:"surinamensis"
+        sc:"surinamensis"
         ja:"アメリカハシグロクロハラアジサシ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"alle"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"lomvia"
-        ac:"arra"
+        sc:"arra"
         ja:"ハシブトウミガラス"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"aalge"
-        ac:"inornata"
+        sc:"inornata"
         ja:"ウミガラス"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"torda"
-        ac:"islandica"
+        sc:"islandica"
         ja:"オオハシウミガラス"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"columba"
-        ac:"snowi"
+        sc:"snowi"
         ja:"ウミバト"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"columba"
-        ac:"kaiurka"
+        sc:"kaiurka"
         ja:"アリューシャンウミバト"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"haliaetus"
-        ac:"haliaetus"
+        sc:"haliaetus"
         ja:"ミサゴ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"ptilorhynchus"
-        ac:"orientalis"
+        sc:"orientalis"
         ja:"ハチクマ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"caeruleus"
-        ac:"hypoleucus"
+        sc:"hypoleucus"
         ja:"カタグロトビ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"migrans"
-        ac:"lineatus"
+        sc:"lineatus"
         ja:"トビ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"albicilla"
-        ac:"albicilla"
+        sc:"albicilla"
         ja:"オジロワシ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"leucocephalus"
-        ac:"washingtoniensis"
+        sc:"washingtoniensis"
         ja:"ハクトウワシ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"cheela"
-        ac:"perplexus"
+        sc:"perplexus"
         ja:"カンムリワシ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"aeruginosus"
-        ac:"aeruginosus"
+        sc:"aeruginosus"
         ja:"ヨーロッパチュウヒ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"spilonotus"
-        ac:"spilonotus"
+        sc:"spilonotus"
         ja:"チュウヒ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"cyaneus"
-        ac:"cyaneus"
+        sc:"cyaneus"
         ja:"ハイイロチュウヒ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"gularis"
-        ac:"gularis"
+        sc:"gularis"
         ja:"ツミ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"gularis"
-        ac:"iwasakii"
+        sc:"iwasakii"
         ja:"リュウキュウツミ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"nisus"
-        ac:"nisosimilis"
+        sc:"nisosimilis"
         ja:"ハイタカ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"gentilis"
-        ac:"albidus"
+        sc:"albidus"
         ja:"シロオオタカ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"gentilis"
-        ac:"fujiyamae"
+        sc:"fujiyamae"
         ja:"オオタカ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"buteo"
-        ac:"japonicus"
+        sc:"japonicus"
         ja:"ノスリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"buteo"
-        ac:"toyoshimai"
+        sc:"toyoshimai"
         ja:"オガサワラノスリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"buteo"
-        ac:"oshiroi"
+        sc:"oshiroi"
         ja:"ダイトウノスリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"lagopus"
-        ac:"menzbieri"
+        sc:"menzbieri"
         ja:"ケアシノスリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"chrysaetos"
-        ac:"japonica"
+        sc:"japonica"
         ja:"イヌワシ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"nipalensis"
-        ac:"orientalis"
+        sc:"orientalis"
         ja:"クマタカ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"longimembris"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"lempiji"
-        ac:"ussuriensis"
+        sc:"ussuriensis"
         ja:"サメイロオオコノハズク"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"lempiji"
-        ac:"semitorques"
+        sc:"semitorques"
         ja:"オオコノハズク"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"lempiji"
-        ac:"pryeri"
+        sc:"pryeri"
         ja:"リュウキュウオオコノハズク"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"sunia"
-        ac:"japonicus"
+        sc:"japonicus"
         ja:"コノハズク"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"elegans"
-        ac:"interpositus"
+        sc:"interpositus"
         ja:"ダイトウコノハズク"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"elegans"
-        ac:"elegans"
+        sc:"elegans"
         ja:"リュウキュウコノハズク"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"bubo"
-        ac:"kiautschensis"
+        sc:"kiautschensis"
         ja:"タイリクワシミミズク"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"bubo"
-        ac:"borissowi"
+        sc:"borissowi"
         ja:"ワシミミズク"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"blakistoni"
-        ac:"blakistoni"
+        sc:"blakistoni"
         ja:"シマフクロウ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"uralensis"
-        ac:"japonica"
+        sc:"japonica"
         ja:"エゾフクロウ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"uralensis"
-        ac:"hondoensis"
+        sc:"hondoensis"
         ja:"フクロウ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"uralensis"
-        ac:"momiyamae"
+        sc:"momiyamae"
         ja:"モミヤマフクロウ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"uralensis"
-        ac:"fuscescens"
+        sc:"fuscescens"
         ja:"キュウシュウフクロウ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"uralensis"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"funereus"
-        ac:"magnus"
+        sc:"magnus"
         ja:"キンメフクロウ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"scutulata"
-        ac:"macroptera"
+        sc:"macroptera"
         ja:"チョウセンアオバズク"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"scutulata"
-        ac:"japonica"
+        sc:"japonica"
         ja:"アオバズク"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"scutulata"
-        ac:"totogo"
+        sc:"totogo"
         ja:"リュウキュウアオバズク"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"otus"
-        ac:"otus"
+        sc:"otus"
         ja:"トラフズク"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"flammeus"
-        ac:"flammeus"
+        sc:"flammeus"
         ja:"コミミズク"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"epops"
-        ac:"saturata"
+        sc:"saturata"
         ja:"ヤツガシラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"coromanda"
-        ac:"major"
+        sc:"major"
         ja:"アカショウビン"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"coromanda"
-        ac:"bangsi"
+        sc:"bangsi"
         ja:"リュウキュウアカショウビン"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"smyrnensis"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"chloris"
-        ac:"collaris"
+        sc:"collaris"
         ja:"ナンヨウショウビン"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"atthis"
-        ac:"bengalensis"
+        sc:"bengalensis"
         ja:"カワセミ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"erithaca"
-        ac:"erithaca"
+        sc:"erithaca"
         ja:"ミツユビカワセミ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"lugubris"
-        ac:"pallida"
+        sc:"pallida"
         ja:"エゾヤマセミ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"lugubris"
-        ac:"lugubris"
+        sc:"lugubris"
         ja:"ヤマセミ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"orientalis"
-        ac:"calonyx"
+        sc:"calonyx"
         ja:"ブッポウソウ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"torquilla"
-        ac:"chinensis"
+        sc:"chinensis"
         ja:"シベリアアリスイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"torquilla"
-        ac:"japonica"
+        sc:"japonica"
         ja:"アリスイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"hyperythrus"
-        ac:"subrufinus"
+        sc:"subrufinus"
         ja:"チャバラアカゲラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"kizuki"
-        ac:"seebohmi"
+        sc:"seebohmi"
         ja:"エゾコゲラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"kizuki"
-        ac:"nippon"
+        sc:"nippon"
         ja:"コゲラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"kizuki"
-        ac:"matsudairai"
+        sc:"matsudairai"
         ja:"ミヤケコゲラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"kizuki"
-        ac:"shikokuensis"
+        sc:"shikokuensis"
         ja:"シコクコゲラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"kizuki"
-        ac:"kotataki"
+        sc:"kotataki"
         ja:"ツシマコゲラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"kizuki"
-        ac:"kizuki"
+        sc:"kizuki"
         ja:"キュウシュウコゲラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"kizuki"
-        ac:"amamii"
+        sc:"amamii"
         ja:"アマミコゲラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"kizuki"
-        ac:"nigrescens"
+        sc:"nigrescens"
         ja:"リュウキュウコゲラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"kizuki"
-        ac:"orii"
+        sc:"orii"
         ja:"オリイコゲラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"kizuki"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"minor"
-        ac:"amurensis"
+        sc:"amurensis"
         ja:"コアカゲラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"leucotos"
-        ac:"subcirris"
+        sc:"subcirris"
         ja:"エゾオオアカゲラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"leucotos"
-        ac:"stejnegeri"
+        sc:"stejnegeri"
         ja:"オオアカゲラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"leucotos"
-        ac:"namiyei"
+        sc:"namiyei"
         ja:"ナミエオオアカゲラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"leucotos"
-        ac:"owstoni"
+        sc:"owstoni"
         ja:"オーストンオオアカゲラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"leucotos"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"major"
-        ac:"brevirostris"
+        sc:"brevirostris"
         ja:"ハシブトアカゲラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"major"
-        ac:"japonicus"
+        sc:"japonicus"
         ja:"エゾアカゲラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"major"
-        ac:"hondoensis"
+        sc:"hondoensis"
         ja:"アカゲラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"tridactylus"
-        ac:"inouyei"
+        sc:"inouyei"
         ja:"ミユビゲラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"javensis"
-        ac:"richardsi"
+        sc:"richardsi"
         ja:"キタタキ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"martius"
-        ac:"martius"
+        sc:"martius"
         ja:"クマゲラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"awokera"
-        ac:"awokera"
+        sc:"awokera"
         ja:"アオゲラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"awokera"
-        ac:"horii"
+        sc:"horii"
         ja:"カゴシマアオゲラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"awokera"
-        ac:"takatsukasae"
+        sc:"takatsukasae"
         ja:"タネアオゲラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"canus"
-        ac:"jessoensis"
+        sc:"jessoensis"
         ja:"ヤマゲラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"tinnunculus"
-        ac:"interstinctus"
+        sc:"interstinctus"
         ja:"チョウゲンボウ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"columbarius"
-        ac:"insignis"
+        sc:"insignis"
         ja:"コチョウゲンボウ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"columbarius"
-        ac:"pacificus"
+        sc:"pacificus"
         ja:"ヒガシコチョウゲンボウ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"subbuteo"
-        ac:"subbuteo"
+        sc:"subbuteo"
         ja:"チゴハヤブサ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"cherrug"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"peregrinus"
-        ac:"japonensis"
+        sc:"japonensis"
         ja:"ハヤブサ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"peregrinus"
-        ac:"pealei"
+        sc:"pealei"
         ja:"オオハヤブサ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"peregrinus"
-        ac:"furuitii"
+        sc:"furuitii"
         ja:"シマハヤブサ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"peregrinus"
-        ac:"anatum"
+        sc:"anatum"
         ja:"アメリカハヤブサ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"sordida"
-        ac:"cucullata"
+        sc:"cucullata"
         ja:"ズグロヤイロチョウ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"leucorynchus"
-        ac:"leucorynchus"
+        sc:"leucorynchus"
         ja:"モリツバメ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"melaschistos"
-        ac:"intermedia"
+        sc:"intermedia"
         ja:"アサクラサンショウクイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"divaricatus"
-        ac:"divaricatus"
+        sc:"divaricatus"
         ja:"サンショウクイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"divaricatus"
-        ac:"tegimae"
+        sc:"tegimae"
         ja:"リュウキュウサンショウクイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"chinensis"
-        ac:"diffusus"
+        sc:"diffusus"
         ja:"コウライウグイス"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"macrocercus"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"leucophaeus"
-        ac:"leucogenis"
+        sc:"leucogenis"
         ja:"ハイイロオウチュウ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"hottentottus"
-        ac:"brevirostris"
+        sc:"brevirostris"
         ja:"カンムリオウチュウ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"azurea"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"atrocaudata"
-        ac:"atrocaudata"
+        sc:"atrocaudata"
         ja:"サンコウチョウ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"atrocaudata"
-        ac:"illex"
+        sc:"illex"
         ja:"リュウキュウサンコウチョウ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"bucephalus"
-        ac:"bucephalus"
+        sc:"bucephalus"
         ja:"モズ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"cristatus"
-        ac:"lucionensis"
+        sc:"lucionensis"
         ja:"シマアカモズ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"cristatus"
-        ac:"superciliosus"
+        sc:"superciliosus"
         ja:"アカモズ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"collurio"
-        ac:"pallidifrons"
+        sc:"pallidifrons"
         ja:"セアカモズ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"isabellinus"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"schach"
-        ac:"schach"
+        sc:"schach"
         ja:"タカサゴモズ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"excubitor"
-        ac:"mollis"
+        sc:"mollis"
         ja:"シベリアオオモズ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"excubitor"
-        ac:"bianchii"
+        sc:"bianchii"
         ja:"オオモズ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"sphenocercus"
-        ac:"sphenocercus"
+        sc:"sphenocercus"
         ja:"オオカラモズ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"glandarius"
-        ac:"brandtii"
+        sc:"brandtii"
         ja:"ミヤマカケス"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"glandarius"
-        ac:"japonicus"
+        sc:"japonicus"
         ja:"カケス"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"glandarius"
-        ac:"tokugawae"
+        sc:"tokugawae"
         ja:"サドカケス"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"glandarius"
-        ac:"orii"
+        sc:"orii"
         ja:"ヤクシマカケス"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"cyanus"
-        ac:"japonica"
+        sc:"japonica"
         ja:"オナガ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"pica"
-        ac:"serica"
+        sc:"serica"
         ja:"カササギ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"caryocatactes"
-        ac:"macrorhynchos"
+        sc:"macrorhynchos"
         ja:"ハシナガホシガラス"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"caryocatactes"
-        ac:"japonica"
+        sc:"japonica"
         ja:"ホシガラス"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"monedula"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"frugilegus"
-        ac:"pastinator"
+        sc:"pastinator"
         ja:"ミヤマガラス"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"corone"
-        ac:"orientalis"
+        sc:"orientalis"
         ja:"ハシボソガラス"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"macrorhynchos"
-        ac:"mandshuricus"
+        sc:"mandshuricus"
         ja:"チョウセンハシブトガラス"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"macrorhynchos"
-        ac:"japonensis"
+        sc:"japonensis"
         ja:"ハシブトガラス"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"macrorhynchos"
-        ac:"connectens"
+        sc:"connectens"
         ja:"リュウキュウハシブトガラス"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"macrorhynchos"
-        ac:"osai"
+        sc:"osai"
         ja:"オサハシブトガラス"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"corax"
-        ac:"kamtschaticus"
+        sc:"kamtschaticus"
         ja:"ワタリガラス"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"regulus"
-        ac:"japonensis"
+        sc:"japonensis"
         ja:"キクイタダキ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"pendulinus"
-        ac:"consobrinus"
+        sc:"consobrinus"
         ja:"ツリスガラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"palustris"
-        ac:"hensoni"
+        sc:"hensoni"
         ja:"ハシブトガラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"montanus"
-        ac:"sachalinensis"
+        sc:"sachalinensis"
         ja:"カラフトコガラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"montanus"
-        ac:"restrictus"
+        sc:"restrictus"
         ja:"コガラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"varius"
-        ac:"varius"
+        sc:"varius"
         ja:"ヤマガラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"varius"
-        ac:"namiyei"
+        sc:"namiyei"
         ja:"ナミエヤマガラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"varius"
-        ac:"owstoni"
+        sc:"owstoni"
         ja:"オーストンヤマガラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"varius"
-        ac:"orii"
+        sc:"orii"
         ja:"ダイトウヤマガラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"varius"
-        ac:"sunsunpi"
+        sc:"sunsunpi"
         ja:"タネヤマガラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"varius"
-        ac:"yakushimensis"
+        sc:"yakushimensis"
         ja:"ヤクシマヤマガラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"varius"
-        ac:"amamii"
+        sc:"amamii"
         ja:"アマミヤマガラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"varius"
-        ac:"olivaceus"
+        sc:"olivaceus"
         ja:"オリイヤマガラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"ater"
-        ac:"insularis"
+        sc:"insularis"
         ja:"ヒガラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"minor"
-        ac:"minor"
+        sc:"minor"
         ja:"シジュウカラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"minor"
-        ac:"amamiensis"
+        sc:"amamiensis"
         ja:"アマミシジュウカラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"minor"
-        ac:"okinawae"
+        sc:"okinawae"
         ja:"オキナワシジュウカラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"minor"
-        ac:"nigriloris"
+        sc:"nigriloris"
         ja:"イシガキシジュウカラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"minor"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"cyanus"
-        ac:"tianschanicus"
+        sc:"tianschanicus"
         ja:"ルリガラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"biarmicus"
-        ac:"russicus"
+        sc:"russicus"
         ja:"ヒゲガラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"bimaculata"
-        ac:"torquata"
+        sc:"torquata"
         ja:"クビワコウテンシ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"brachydactyla"
-        ac:"longipennis"
+        sc:"longipennis"
         ja:"ヒメコウテンシ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"cheleensis"
-        ac:"cheleensis"
+        sc:"cheleensis"
         ja:"コヒバリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"arvensis"
-        ac:"pekinensis"
+        sc:"pekinensis"
         ja:"オオヒバリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"arvensis"
-        ac:"lonnbergi"
+        sc:"lonnbergi"
         ja:"カラフトチュウヒバリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"arvensis"
-        ac:"japonica"
+        sc:"japonica"
         ja:"ヒバリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"alpestris"
-        ac:"flava"
+        sc:"flava"
         ja:"ハマヒバリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"paludicola"
-        ac:"chinensis"
+        sc:"chinensis"
         ja:"タイワンショウドウツバメ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"riparia"
-        ac:"ijimae"
+        sc:"ijimae"
         ja:"ショウドウツバメ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"rustica"
-        ac:"saturata"
+        sc:"saturata"
         ja:"アカハラツバメ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"rustica"
-        ac:"gutturalis"
+        sc:"gutturalis"
         ja:"ツバメ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"tahitica"
-        ac:"namiyei"
+        sc:"namiyei"
         ja:"リュウキュウツバメ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"daurica"
-        ac:"japonica"
+        sc:"japonica"
         ja:"コシアカツバメ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"urbicum"
-        ac:"lagopodum"
+        sc:"lagopodum"
         ja:"ニシイワツバメ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"dasypus"
-        ac:"dasypus"
+        sc:"dasypus"
         ja:"イワツバメ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"sinensis"
-        ac:"sinensis"
+        sc:"sinensis"
         ja:"シロガシラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"sinensis"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"amaurotis"
-        ac:"amaurotis"
+        sc:"amaurotis"
         ja:"ヒヨドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"amaurotis"
-        ac:"squamiceps"
+        sc:"squamiceps"
         ja:"オガサワラヒヨドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"amaurotis"
-        ac:"magnirostris"
+        sc:"magnirostris"
         ja:"ハシブトヒヨドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"amaurotis"
-        ac:"borodinonis"
+        sc:"borodinonis"
         ja:"ダイトウヒヨドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"amaurotis"
-        ac:"ogawae"
+        sc:"ogawae"
         ja:"アマミヒヨドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"amaurotis"
-        ac:"pryeri"
+        sc:"pryeri"
         ja:"リュウキュウヒヨドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"amaurotis"
-        ac:"stejnegeri"
+        sc:"stejnegeri"
         ja:"イシガキヒヨドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"amaurotis"
-        ac:"nagamichii"
+        sc:"nagamichii"
         ja:"タイワンヒヨドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"diphone"
-        ac:"sakhalinensis"
+        sc:"sakhalinensis"
         ja:"カラフトウグイス"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"diphone"
-        ac:"borealis"
+        sc:"borealis"
         ja:"チョウセンウグイス"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"diphone"
-        ac:"cantans"
+        sc:"cantans"
         ja:"ウグイス"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"diphone"
-        ac:"diphone"
+        sc:"diphone"
         ja:"ハシナガウグイス"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"diphone"
-        ac:"restricta"
+        sc:"restricta"
         ja:"ダイトウウグイス"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"diphone"
-        ac:"riukiuensis"
+        sc:"riukiuensis"
         ja:"リュウキュウウグイス"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"caudatus"
-        ac:"japonicus"
+        sc:"japonicus"
         ja:"シマエナガ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"caudatus"
-        ac:"magnus"
+        sc:"magnus"
         ja:"チョウセンエナガ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"caudatus"
-        ac:"trivirgatus"
+        sc:"trivirgatus"
         ja:"エナガ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"caudatus"
-        ac:"kiusiuensis"
+        sc:"kiusiuensis"
         ja:"キュウシュウエナガ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"trochilus"
-        ac:"yakutensis"
+        sc:"yakutensis"
         ja:"キタヤナギムシクイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"collybita"
-        ac:"tristis"
+        sc:"tristis"
         ja:"チフチャフ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"fuscatus"
-        ac:"fuscatus"
+        sc:"fuscatus"
         ja:"ムジセッカ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"affinis"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"borealis"
-        ac:"borealis"
+        sc:"borealis"
         ja:"コムシクイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"borealis"
-        ac:"kennicotti"
+        sc:"kennicotti"
         ja:"アメリカコムシクイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"curruca"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"familiare"
-        ac:"familiare"
+        sc:"familiare"
         ja:"メグロ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"familiare"
-        ac:"hahasima"
+        sc:"hahasima"
         ja:"ハハジマメグロ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"japonicus"
-        ac:"japonicus"
+        sc:"japonicus"
         ja:"メジロ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"japonicus"
-        ac:"stejnegeri"
+        sc:"stejnegeri"
         ja:"シチトウメジロ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"japonicus"
-        ac:"alani"
+        sc:"alani"
         ja:"イオウトウメジロ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"japonicus"
-        ac:"daitoensis"
+        sc:"daitoensis"
         ja:"ダイトウメジロ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"japonicus"
-        ac:"insularis"
+        sc:"insularis"
         ja:"シマメジロ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"japonicus"
-        ac:"loochooensis"
+        sc:"loochooensis"
         ja:"リュウキュウメジロ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"certhiola"
-        ac:"rubescens"
+        sc:"rubescens"
         ja:"シベリアセンニュウ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"pryeri"
-        ac:"pryeri"
+        sc:"pryeri"
         ja:"オオセッカ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"fasciolata"
-        ac:"amnicola"
+        sc:"amnicola"
         ja:"エゾセンニュウ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"bistrigiceps"
-        ac:"bistrigiceps"
+        sc:"bistrigiceps"
         ja:"コヨシキリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"agricola"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"aedon"
-        ac:"stegmanni"
+        sc:"stegmanni"
         ja:"ハシブトオオヨシキリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"juncidis"
-        ac:"brunniceps"
+        sc:"brunniceps"
         ja:"セッカ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"garrulus"
-        ac:"centralasiae"
+        sc:"centralasiae"
         ja:"キレンジャク"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"europaea"
-        ac:"asiatica"
+        sc:"asiatica"
         ja:"シロハラゴジュウカラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"europaea"
-        ac:"amurensis"
+        sc:"amurensis"
         ja:"ゴジュウカラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"europaea"
-        ac:"roseilia"
+        sc:"roseilia"
         ja:"キュウシュウゴジュウカラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"familiaris"
-        ac:"daurica"
+        sc:"daurica"
         ja:"キタキバシリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"familiaris"
-        ac:"japonica"
+        sc:"japonica"
         ja:"キバシリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"troglodytes"
-        ac:"dauricus"
+        sc:"dauricus"
         ja:"チョウセンミソサザイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"troglodytes"
-        ac:"fumigatus"
+        sc:"fumigatus"
         ja:"ミソサザイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"troglodytes"
-        ac:"mosukei"
+        sc:"mosukei"
         ja:"モスケミソサザイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"troglodytes"
-        ac:"orii"
+        sc:"orii"
         ja:"ダイトウミソサザイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"troglodytes"
-        ac:"ogawae"
+        sc:"ogawae"
         ja:"オガワミソサザイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"vulgaris"
-        ac:"poltaratskyi"
+        sc:"poltaratskyi"
         ja:"ホシムクドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"pallasii"
-        ac:"pallasii"
+        sc:"pallasii"
         ja:"カワガラス"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"sibirica"
-        ac:"davisoni"
+        sc:"davisoni"
         ja:"マミジロ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"dauma"
-        ac:"aurea"
+        sc:"aurea"
         ja:"トラツグミ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"dauma"
-        ac:"major"
+        sc:"major"
         ja:"オオトラツグミ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"dauma"
-        ac:"iriomotensis"
+        sc:"iriomotensis"
         ja:"コトラツグミ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"minimus"
-        ac:"aliciae"
+        sc:"aliciae"
         ja:"ハイイロチャツグミ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"merula"
-        ac:"mandarinus"
+        sc:"mandarinus"
         ja:"クロウタドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"chrysolaus"
-        ac:"orii"
+        sc:"orii"
         ja:"オオアカハラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"chrysolaus"
-        ac:"chrysolaus"
+        sc:"chrysolaus"
         ja:"アカハラ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"ruficollis"
-        ac:"atrogularis"
+        sc:"atrogularis"
         ja:"ノドグロツグミ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"ruficollis"
-        ac:"ruficollis"
+        sc:"ruficollis"
         ja:"ノドアカツグミ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"naumanni"
-        ac:"eunomus"
+        sc:"eunomus"
         ja:"ツグミ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"naumanni"
-        ac:"naumanni"
+        sc:"naumanni"
         ja:"ハチジョウツグミ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"iliacus"
-        ac:"iliacus"
+        sc:"iliacus"
         ja:"ワキアカツグミ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"viscivorus"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"rubecula"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"akahige"
-        ac:"akahige"
+        sc:"akahige"
         ja:"コマドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"akahige"
-        ac:"tanensis"
+        sc:"tanensis"
         ja:"タネコマドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"komadori"
-        ac:"komadori"
+        sc:"komadori"
         ja:"アカヒゲ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"komadori"
-        ac:"namiyei"
+        sc:"namiyei"
         ja:"ホントウアカヒゲ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"komadori"
-        ac:"subrufus"
+        sc:"subrufus"
         ja:"ウスアカヒゲ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"svecica"
-        ac:"svecica"
+        sc:"svecica"
         ja:"オガワコマドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"cyane"
-        ac:"bochaiensis"
+        sc:"bochaiensis"
         ja:"コルリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"cyanurus"
-        ac:"cyanurus"
+        sc:"cyanurus"
         ja:"ルリビタキ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"ochruros"
-        ac:"rufiventris"
+        sc:"rufiventris"
         ja:"クロジョウビタキ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"phoenicurus"
-        ac:"phoenicurus"
+        sc:"phoenicurus"
         ja:"シロビタイジョウビタキ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"auroreus"
-        ac:"auroreus"
+        sc:"auroreus"
         ja:"ジョウビタキ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"torquatus"
-        ac:"stejnegeri"
+        sc:"stejnegeri"
         ja:"ノビタキ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"caprata"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"oenanthe"
-        ac:"oenanthe"
+        sc:"oenanthe"
         ja:"ハシグロヒタキ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"deserti"
-        ac:"oreophila"
+        sc:"oreophila"
         ja:"サバクヒタキ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"solitarius"
-        ac:"pandoo"
+        sc:"pandoo"
         ja:"アオハライソヒヨドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"solitarius"
-        ac:"philippensis"
+        sc:"philippensis"
         ja:"イソヒヨドリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"striata"
-        ac:"mongola"
+        sc:"mongola"
         ja:"ムナフヒタキ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"sibirica"
-        ac:"sibirica"
+        sc:"sibirica"
         ja:"サメビタキ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"dauurica"
-        ac:"dauurica"
+        sc:"dauurica"
         ja:"コサメビタキ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"hypoleuca"
-        ac:"sibirica"
+        sc:"sibirica"
         ja:"マダラヒタキ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"narcissina"
-        ac:"narcissina"
+        sc:"narcissina"
         ja:"キビタキ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"narcissina"
-        ac:"owstoni"
+        sc:"owstoni"
         ja:"リュウキュウキビタキ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"cyanomelana"
-        ac:"cumatilis"
+        sc:"cumatilis"
         ja:"チョウセンオオルリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"cyanomelana"
-        ac:"cyanomelana"
+        sc:"cyanomelana"
         ja:"オオルリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"thalassinus"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"vivida"
-        ac:"vivida"
+        sc:"vivida"
         ja:"チャバラオオルリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"collaris"
-        ac:"erythropygia"
+        sc:"erythropygia"
         ja:"イワヒバリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"montanella"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"domesticus"
-        ac:"domesticus"
+        sc:"domesticus"
         ja:"イエスズメ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"rutilans"
-        ac:"rutilans"
+        sc:"rutilans"
         ja:"ニュウナイスズメ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"montanus"
-        ac:"saturatus"
+        sc:"saturatus"
         ja:"スズメ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"flava"
-        ac:"plexa"
+        sc:"plexa"
         ja:"シベリアツメナガセキレイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"flava"
-        ac:"leucocephala"
+        sc:"leucocephala"
         ja:"カオジロツメナガセキレイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"flava"
-        ac:"macronyx"
+        sc:"macronyx"
         ja:"キタツメナガセキレイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"flava"
-        ac:"simillima"
+        sc:"simillima"
         ja:"マミジロツメナガセキレイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"flava"
-        ac:"taivana"
+        sc:"taivana"
         ja:"ツメナガセキレイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"citreola"
-        ac:"citreola"
+        sc:"citreola"
         ja:"キガシラセキレイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"cinerea"
-        ac:"cinerea"
+        sc:"cinerea"
         ja:"キセキレイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"alba"
-        ac:"dukhunensis"
+        sc:"dukhunensis"
         ja:"ニシシベリアハクセキレイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"alba"
-        ac:"personata"
+        sc:"personata"
         ja:"メンガタハクセキレイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"alba"
-        ac:"alboides"
+        sc:"alboides"
         ja:"ネパールハクセキレイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"alba"
-        ac:"baicalensis"
+        sc:"baicalensis"
         ja:"シベリアハクセキレイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"alba"
-        ac:"ocularis"
+        sc:"ocularis"
         ja:"タイワンハクセキレイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"alba"
-        ac:"lugens"
+        sc:"lugens"
         ja:"ハクセキレイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"alba"
-        ac:"leucopsis"
+        sc:"leucopsis"
         ja:"ホオジロハクセキレイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"richardi"
-        ac:"richardi"
+        sc:"richardi"
         ja:"マミジロタヒバリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"pratensis"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"trivialis"
-        ac:"trivialis"
+        sc:"trivialis"
         ja:"ヨーロッパビンズイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"hodgsoni"
-        ac:"yunnanensis"
+        sc:"yunnanensis"
         ja:"カラフトビンズイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"hodgsoni"
-        ac:"hodgsoni"
+        sc:"hodgsoni"
         ja:"ビンズイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"gustavi"
-        ac:"gustavi"
+        sc:"gustavi"
         ja:"セジロタヒバリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"rubescens"
-        ac:"japonicus"
+        sc:"japonicus"
         ja:"タヒバリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"coelebs"
-        ac:"coelebs"
+        sc:"coelebs"
         ja:"ズアオアトリ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"sinica"
-        ac:"kawarahiba"
+        sc:"kawarahiba"
         ja:"オオカワラヒワ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"sinica"
-        ac:"minor"
+        sc:"minor"
         ja:"カワラヒワ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"sinica"
-        ac:"kittlitzi"
+        sc:"kittlitzi"
         ja:"オガサワラカワラヒワ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"flammea"
-        ac:"flammea"
+        sc:"flammea"
         ja:"ベニヒワ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"hornemanni"
-        ac:"exilipes"
+        sc:"exilipes"
         ja:"コベニヒワ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"arctoa"
-        ac:"brunneonucha"
+        sc:"brunneonucha"
         ja:"ハギマシコ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"sibiricus"
-        ac:"sanguinolentus"
+        sc:"sanguinolentus"
         ja:"ベニマシコ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"erythrinus"
-        ac:"grebnitskii"
+        sc:"grebnitskii"
         ja:"アカマシコ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"enucleator"
-        ac:"kamtschatkensis"
+        sc:"kamtschatkensis"
         ja:"コバシギンザンマシコ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"enucleator"
-        ac:"sakhalinensis"
+        sc:"sakhalinensis"
         ja:"ギンザンマシコ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"curvirostra"
-        ac:"japonica"
+        sc:"japonica"
         ja:"イスカ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"leucoptera"
-        ac:"bifasciata"
+        sc:"bifasciata"
         ja:"ナキイスカ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"pyrrhula"
-        ac:"cassinii"
+        sc:"cassinii"
         ja:"ベニバラウソ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"pyrrhula"
-        ac:"rosacea"
+        sc:"rosacea"
         ja:"アカウソ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"pyrrhula"
-        ac:"griseiventris"
+        sc:"griseiventris"
         ja:"ウソ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"coccothraustes"
-        ac:"coccothraustes"
+        sc:"coccothraustes"
         ja:"シベリアシメ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"coccothraustes"
-        ac:"japonicus"
+        sc:"japonicus"
         ja:"シメ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"migratoria"
-        ac:"migratoria"
+        sc:"migratoria"
         ja:"コイカル"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"personata"
-        ac:"personata"
+        sc:"personata"
         ja:"イカル"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"lapponicus"
-        ac:"coloratus"
+        sc:"coloratus"
         ja:"ツメナガホオジロ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"nivalis"
-        ac:"vlasowae"
+        sc:"vlasowae"
         ja:"ユキホオジロ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"nivalis"
-        ac:"townsendi"
+        sc:"townsendi"
         ja:"オオユキホオジロ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"coronata"
-        ac:"coronata"
+        sc:"coronata"
         ja:"キヅタアメリカムシクイ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"pusilla"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"citrinella"
-        ac:"erythrogenys"
+        sc:"erythrogenys"
         ja:"キアオジ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"leucocephalos"
-        ac:"leucocephalos"
+        sc:"leucocephalos"
         ja:"シラガホオジロ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"cioides"
-        ac:"ciopsis"
+        sc:"ciopsis"
         ja:"ホオジロ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"buchanani"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"fucata"
-        ac:"fucata"
+        sc:"fucata"
         ja:"ホオアカ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"rustica"
-        ac:"latifascia"
+        sc:"latifascia"
         ja:"カシラダカ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"elegans"
-        ac:"elegans"
+        sc:"elegans"
         ja:"ミヤマホオジロ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"aureola"
-        ac:"ornata"
+        sc:"ornata"
         ja:"シマアオジ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"spodocephala"
-        ac:"spodocephala"
+        sc:"spodocephala"
         ja:"シベリアアオジ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"spodocephala"
-        ac:"personata"
+        sc:"personata"
         ja:"アオジ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"pallasi"
-        ac:"polaris"
+        sc:"polaris"
         ja:"シベリアジュリン"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"pallasi"
-        ac:"pallasi"
+        sc:"pallasi"
         ja:"オオシベリアジュリン"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"yessoensis"
-        ac:"yessoensis"
+        sc:"yessoensis"
         ja:"コジュリン"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"schoeniclus"
-        ac:"pyrrhulina"
+        sc:"pyrrhulina"
         ja:"オオジュリン"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"iliaca"
-        ac:"unalaschcensis"
+        sc:"unalaschcensis"
         ja:"ゴマフスズメ"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"melodia"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"leucophrys"
-        ac:"gambelii"
+        sc:"gambelii"
         ja:"ミヤマシトド"
     }
     {
         "alien":false,
         rank:"subspecies"
         upper:"sandwichensis"
-        ac:"sandwichensis"
+        sc:"sandwichensis"
         ja:"サバンナシトド"
     }
     {
         "alien":true,
         rank:"subspecies"
         upper:"thoracicus"
-        ac:"thoracicus"
+        sc:"thoracicus"
         ja:"コジュケイ"
     }
     {
         "alien":true,
         rank:"subspecies"
         upper:"thoracicus"
-        ac:"sonorivox"
+        sc:"sonorivox"
         ja:"テッケイ"
     }
     {
         "alien":true,
         rank:"subspecies"
         upper:"soemmerringii"
-        ac:"scintillans"
+        sc:"scintillans"
         ja:"ヤマドリ"
     }
     {
         "alien":true,
         rank:"subspecies"
         upper:"soemmerringii"
-        ac:"subrufus"
+        sc:"subrufus"
         ja:"ウスアカヤマドリ"
     }
     {
         "alien":true,
         rank:"subspecies"
         upper:"soemmerringii"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":true,
         rank:"subspecies"
         upper:"colchicus"
-        ac:"karpowi"
+        sc:"karpowi"
         ja:"コウライキジ"
     }
     {
         "alien":true,
         rank:"subspecies"
         upper:"colchicus"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":true,
         rank:"subspecies"
         upper:"canadensis"
-        ac:"moffitti"
+        sc:"moffitti"
         ja:"オオカナダガン"
     }
     {
         "alien":true,
         rank:"subspecies"
         upper:"decaocto"
-        ac:"decaocto"
+        sc:"decaocto"
         ja:"シラコバト"
     }
     {
         "alien":true,
         rank:"subspecies"
         upper:"himantopus"
-        ac:"mexicanus"
+        sc:"mexicanus"
         ja:"クロエリセイタカシギ"
     }
     {
         "alien":true,
         rank:"subspecies"
         upper:"krameri"
-        ac:"manillensis"
+        sc:"manillensis"
         ja:"ワカケホンセイインコ"
     }
     {
         "alien":true,
         rank:"subspecies"
         upper:"alexandri"
-        ac:"fasciata"
+        sc:"fasciata"
         ja:"ダルマインコ"
     }
     {
         "alien":true,
         rank:"subspecies"
         upper:"monachus"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":true,
         rank:"subspecies"
         upper:"pica"
-        ac:"serica"
+        sc:"serica"
         ja:"カササギ"
     }
     {
         "alien":true,
         rank:"subspecies"
         upper:"japonicus"
-        ac:"stejnegeri"
+        sc:"stejnegeri"
         ja:"シチトウメジロ"
     }
     {
         "alien":true,
         rank:"subspecies"
         upper:"japonicus"
-        ac:"alani"
+        sc:"alani"
         ja:"イオウトウメジロ"
     }
     {
         "alien":true,
         rank:"subspecies"
         upper:"canorus"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":true,
         rank:"subspecies"
         upper:"cineraceus"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":true,
         rank:"subspecies"
         upper:"sannio"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":true,
         rank:"subspecies"
         upper:"lutea"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":true,
         rank:"subspecies"
         upper:"cristatellus"
-        ac:"cristatellus"
+        sc:"cristatellus"
         ja:"ハッカチョウ"
     }
     {
         "alien":true,
         rank:"subspecies"
         upper:"tristis"
-        ac:"tristis"
+        sc:"tristis"
         ja:"インドハッカ"
     }
     {
         "alien":true,
         rank:"subspecies"
         upper:"contra"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":true,
         rank:"subspecies"
         upper:"intermedius"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":true,
         rank:"subspecies"
         upper:"orix"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":true,
         rank:"subspecies"
         upper:"melpoda"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":true,
         rank:"subspecies"
         upper:"amandava"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":true,
         rank:"subspecies"
         upper:"striata"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
     {
         "alien":true,
         rank:"subspecies"
         upper:"punctulata"
-        ac:"topela"
+        sc:"topela"
         ja:"シマキンパラ"
     }
     {
         "alien":true,
         rank:"subspecies"
         upper:"atricapilla"
-        ac:"ssp."
+        sc:"ssp."
         ja:"亜種不明"
     }
 ]
@@ -11172,7 +11172,7 @@ for name in data_names
                 subspecies: "species"
             upper_id = db.names.find({
                 rank: upper_relation[name.rank]
-                ac: name.upper
+                sc: name.upper
             })[0]._id
             name.upper = upper_id
         db.names.insert name
