@@ -1,21 +1,29 @@
 gulp     = require 'gulp'
 plumber  = require 'gulp-plumber'
 coffee   = require 'gulp-coffee'
-uglify   = require 'gulp-uglify'
 notify   = require 'gulp-notify'
 
-src =
-    coffee: ['./**/*.coffee', '!./gulpfile.coffee']
+srcs =
+    migrations: ['./migrations/*.coffee']
+    specs:      ['./specs/**/*.coffee']
+    app:        ['./app/**/*.coffee', './server.coffee']
 
-gulp.task 'coffee', ()->
-    gulp.src src['coffee']
-        .pipe plumber(errorHandler: notify.onError '<%= error.message %>')
-        .pipe coffee { bare:true }
-        .pipe uglify()
-        .pipe gulp.dest './'
+coffeePipeline = (src, dest) ->
+    return ->
+        dest = dest or './'
+        gulp.src src
+            .pipe plumber(errorHandler: notify.onError '<%= error.message %>')
+            .pipe coffee { bare:false }
+            .pipe gulp.dest dest
 
-gulp.task 'watch', ()->
-    gulp.watch src.coffee, ['coffee']
+gulp.task 'coffee_migrations', coffeePipeline(srcs.migrations, './migrations')
+gulp.task 'coffee_specs',      coffeePipeline(srcs.specs, './specs')
+gulp.task 'coffee_app',        coffeePipeline(srcs.app, './app')
+
+gulp.task 'coffee', [
+    'coffee_migrations'
+    'coffee_specs'
+    'coffee_app'
+]
 
 gulp.task 'default', ['coffee']
-gulp.task 'dev', ['coffee','watch']

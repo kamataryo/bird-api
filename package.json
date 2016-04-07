@@ -4,12 +4,16 @@
   "description": "鳥の名前のAPIサーバ",
   "main": "server.js",
   "scripts": {
-    "migrate": "mongo birdAPI ./migrations/",
-    "build": "./node_modules/gulp/bin/gulp.js",
-    "start": "node server.js &",
-    "stop": "psid=$(ps ar | grep \"node server.js\" | grep -v \"grep\" | cut -d\" \" -f1);if [[ $psid -ne '' ]];then kill $psid;fi",
-    "pretest": "npm run migrate;npm run build;npm start;sleep 3",
-    "test": "./node_modules/jasmine-node/bin/jasmine-node tests/"
+    "migrate":   "mongo birdAPI ./migrations/",
+    "build":     "./node_modules/gulp/bin/gulp.js coffee",
+    "start":     "node server.js &",
+    "poststart": "sleep 3",
+    "stop":      "psid=$(ps ar | grep \"node server.js\" | grep -v \"grep\" | cut -d\" \" -f1);if [[ $psid -ne '' ]];then kill $psid;fi",
+    "do-test":   "./node_modules/jasmine-node/bin/jasmine-node specs/",
+
+    "pretest":  "npm run migrate; npm run build; npm stop; npm start",
+    "test":     "npm run do-test",
+    "posttest": "npm stop"
   },
   "keywords": [
     "bird",
