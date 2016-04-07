@@ -1,27 +1,32 @@
+# external
 express    = require 'express'
-bodyParser = require 'body-parser'
-mongoose   = require 'mongoose'
 app        = express()
 router     = express.Router()
-routes     = require './routes/'
-Name       = require './models/'
-meta       = require('../package.json')
-version    = meta.version.split('.')[0]
+
+bodyParser = require 'body-parser'
+mongoose   = require 'mongoose'
 _          = require 'underscore'
 
+# internal
+routes     = require './routes/'
+Name       = require './models/'
+lib        = require './lib/'
 
 mongoose.connect 'mongodb://localhost/birdAPI'
-port = process.env.PORT || 3000
+port = process.env.PORT || lib.port
 
 
 app.use bodyParser.urlencoded(extended: true)
 app.use bodyParser.json()
-app.use "/#{version}", router
+app.use lib.getapibase(), router
 
 
 router.use (req, res, next) ->
     console.log 'Detect access.'
-
+    res = {
+        "message": "Not Found",
+        "documentation_url": lib.url ''
+    }
     next()
 
 router.get '/', routes.docs
@@ -30,4 +35,4 @@ router.route('/birds').get routes.species
 router.route('/birds/:identifier').get routes.identifySpecies
 
 app.listen port,'localhost', ->
-    console.log "server #{meta.name} start listenning on port #{port}."
+    console.log "server start listenning.."

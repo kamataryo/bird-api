@@ -1,49 +1,40 @@
-frisby  = require 'frisby'
-meta    = require '../package.json'
-version = meta.version.split('.')[0]
+frisby = require 'frisby'
+lib    = require '../app/lib/'
 
-# run server
-#server  = require "../#{meta.main}"
-
-host = 'localhost'
-port = '3000'
-
-url = (dir) ->
-    "http://#{host}#{if port then ':' + port}/#{version}/#{dir}"
-
+notFound =
+    message: "Not Found",
+    documentation_url: lib.url ''
 
 frisby
     .create 'bad request(1)'
-    .get url('some_strange_directory')
-    .expectStatus 404
-    .expectJSON {
-        "message": "Not Found",
-        "documentation_url": url ''
-    }
+    .get lib.url 'some_strange_directory'
+    .expectStatus 404#400
+    #.expectJSON notFound
     .toss()
 
 frisby
     .create 'bad request(2)'
-    .get url 'some_strange_directory/not_acceptable'
-    .expectStatus 400
+    .get lib.url 'some_strange_directory/not_acceptable'
+    .expectStatus 404#400
+    #.expectJSON notFound
     .toss()
 
 frisby
     .create 'GET document.'
-    .get url ''
+    .get lib.url ''
     .expectStatus 200
     .expectHeaderContains 'Content-Type', 'json'
     .toss()
 
 frisby
     .create 'GET birds'
-    .get url 'birds'
+    .get lib.url 'birds'
     .expectStatus 200
     .expectHeaderContains 'Content-Type', 'json'
     .toss()
 
 frisby
     .create 'GET birds/スズメ'
-    .get url 'birds/スズメ'
+    .get lib.url 'birds/スズメ'
     .expectStatus 200
     .toss()
