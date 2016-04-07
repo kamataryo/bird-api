@@ -12,8 +12,7 @@
     "do-test":   "./node_modules/jasmine-node/bin/jasmine-node specs/",
 
     "pretest":  "npm run migrate; npm run build; npm stop; npm start",
-    "test":     "npm run do-test",
-    "posttest": "if [[RUNNING_ON_TRAVIS -eq 1 ]]; then npm stop; fi"
+    "test":     "npm run do-test"
   },
   "keywords": [
     "bird",
