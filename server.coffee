@@ -25,7 +25,7 @@ router.use (req, res, next) ->
 router.get '/', routes.docs
 router.route('/index').get routes.index
 router.route('/birds').get routes.species
-
+router.route('/birds/:identifier').get routes.identifySpecies
 
 app.listen port,'localhost', ->
     console.log "server #{meta.name} start listenning on port #{port}."

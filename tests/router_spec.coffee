@@ -5,25 +5,45 @@ version = meta.version.split('.')[0]
 # run server
 #server  = require "../#{meta.main}"
 
+host = 'localhost'
+port = '3000'
+
 url = (dir) ->
-    "http://localhost:3000/#{version}/#{dir}"
+    "http://#{host}#{if port then ':' + port}/#{version}/#{dir}"
+
 
 frisby
-    .create 'Test run of frisby.'
-    .get url('')
+    .create 'bad request(1)'
+    .get url('some_strange_directory')
+    .expectStatus 404
+    .expectJSON {
+        "message": "Not Found",
+        "documentation_url": url ''
+    }
+    .toss()
+
+frisby
+    .create 'bad request(2)'
+    .get url 'some_strange_directory/not_acceptable'
+    .expectStatus 400
+    .toss()
+
+frisby
+    .create 'GET document.'
+    .get url ''
     .expectStatus 200
     .expectHeaderContains 'Content-Type', 'json'
     .toss()
 
 frisby
-    .create 'Test of GET birds'
-    .get url('birds')
+    .create 'GET birds'
+    .get url 'birds'
     .expectStatus 200
     .expectHeaderContains 'Content-Type', 'json'
     .toss()
 
 frisby
-    .create 'Test of GET birds/スズメ'
-    .get url('birds/スズメ')
+    .create 'GET birds/スズメ'
+    .get url 'birds/スズメ'
     .expectStatus 200
     .toss()

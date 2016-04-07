@@ -11161,21 +11161,25 @@ var data_names = [
 db.createCollection('names');
 
 data_names.forEach(function(name){
-    // if (db.names.find(name).count() === 0 || name.upper !== undefined) {
-    //     var upper_id;
-    //     upper_relation = {
-    //         "family":"order",
-    //         "genus":"family",
-    //         "species":"genus",
-    //         "subspecies": "species"
-    //     }
-    //
-    //     upper_id = db.names.find({
-    //         "rank": upper_relation[name.rank],
-    //         "ac":name.order
-    //     })[0]._id
-    //
-    //     name.upper = upper_id;
+    if (db.names.find(name).count() === 0 ) {
+
+        if (name.upper) {
+            var upper_id;
+            upper_relation = {
+                "family":"order",
+                "genus":"family",
+                "species":"genus",
+                "subspecies": "species"
+            }
+
+            upper_id = db.names.find({
+                "rank": upper_relation[name.rank],
+                "ac": name.ac
+            })[0]._id
+
+            name.upper = upper_id;
+        }
+
         db.names.insert(name);
-    // }
+    }
 });
