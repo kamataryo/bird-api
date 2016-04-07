@@ -18,8 +18,10 @@ app.use bodyParser.urlencoded(extended: true)
 app.use bodyParser.json()
 app.use "/#{version}", router
 
+
 router.use (req, res, next) ->
     console.log 'Detect access.'
+    
     next()
 
 router.get '/', routes.docs

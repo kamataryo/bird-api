@@ -4,7 +4,7 @@
   "description": "鳥の名前のAPIサーバ",
   "main": "server.js",
   "scripts": {
-    "migrate": "mongo birdAPI ./migrations/mongo.provision.js",
+    "migrate": "mongo birdAPI ./migrations/",
     "build": "./node_modules/gulp/bin/gulp.js",
     "start": "node server.js &",
     "stop": "psid=$(ps ar | grep \"node server.js\" | grep -v \"grep\" | cut -d\" \" -f1);if [[ $psid -ne '' ]];then kill $psid;fi",
