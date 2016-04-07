@@ -6,7 +6,7 @@ notify   = require 'gulp-notify'
 srcs =
     migrations: ['./migrations/*.coffee']
     specs:      ['./specs/**/*.coffee']
-    app:        ['./app/**/*.coffee', './server.coffee']
+    app:        ['./app/**/*.coffee']
 
 coffeePipeline = (src, dest) ->
     return ->
