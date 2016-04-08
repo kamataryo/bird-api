@@ -9,5 +9,6 @@ module.exports = {
     port
     version
     getapibase: -> "/v#{version}"
-    url: (dir) -> "http://#{host}#{if port then ':' + port}/v#{version}/#{dir}"
+    url: (dir) ->
+        "http://#{host}#{if port then ':' + port}/v#{version}/#{encodeURI dir}"
 }

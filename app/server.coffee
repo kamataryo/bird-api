@@ -29,8 +29,7 @@ router.use (req, res, next) ->
     }
     next()
 
-router.get '/', routes.docs
-router.route('/index').get routes.index
+router.route('/').get routes.document
 router.route('/birds').get routes.species
 router.route('/birds/:identifier').get routes.identifySpecies
 

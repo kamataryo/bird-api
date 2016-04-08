@@ -5,7 +5,6 @@ notify   = require 'gulp-notify'
 
 srcs =
     migrations: ['./migrations/*.coffee']
-    specs:      ['./specs/**/*.coffee']
     app:        ['./app/**/*.coffee']
 
 coffeePipeline = (src, dest) ->
@@ -17,12 +16,10 @@ coffeePipeline = (src, dest) ->
             .pipe gulp.dest dest
 
 gulp.task 'coffee_migrations', coffeePipeline(srcs.migrations, './migrations')
-gulp.task 'coffee_specs',      coffeePipeline(srcs.specs, './specs')
 gulp.task 'coffee_app',        coffeePipeline(srcs.app, './app')
 
 gulp.task 'coffee', [
     'coffee_migrations'
-    'coffee_specs'
     'coffee_app'
 ]
 

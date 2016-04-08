@@ -11160,19 +11160,21 @@ data_names = [
 
 db.createCollection 'names'
 
+rank_relationships =
+    family:     "order"
+    genus:      "family"
+    species:    "genus"
+    subspecies: "species"
 
 for name in data_names
     if db.names.find(name).count() is 0
 
         if name.upper
-            upper_relation =
-                family:     "order"
-                genus:      "family"
-                species:    "genus"
-                subspecies: "species"
+            upper_rank = rank_relationships[name.rank]
             upper_id = db.names.find({
-                rank: upper_relation[name.rank]
+                rank: upper_rank
                 sc: name.upper
             })[0]._id
-            name.upper = upper_id
+            name.upper = upper_rank
+            name.upper_id = upper_id
         db.names.insert name
