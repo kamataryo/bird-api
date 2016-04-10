@@ -1,7 +1,8 @@
-gulp     = require 'gulp'
-plumber  = require 'gulp-plumber'
-coffee   = require 'gulp-coffee'
-notify   = require 'gulp-notify'
+gulp       = require 'gulp'
+plumber    = require 'gulp-plumber'
+coffee     = require 'gulp-coffee'
+notify     = require 'gulp-notify'
+sourcemaps = require 'gulp-sourcemaps'
 
 srcs =
     migrations: ['./migrations/*.coffee']
@@ -11,16 +12,18 @@ coffeePipeline = (src, dest) ->
     return ->
         dest = dest or './'
         gulp.src src
+            .pipe sourcemaps.init()
             .pipe plumber(errorHandler: notify.onError '<%= error.message %>')
             .pipe coffee { bare:false }
+            .pipe sourcemaps.write()
             .pipe gulp.dest dest
 
-gulp.task 'coffee_migrations', coffeePipeline(srcs.migrations, './migrations')
-gulp.task 'coffee_app',        coffeePipeline(srcs.app, './app')
+gulp.task 'coffee-migrations', coffeePipeline(srcs.migrations, './migrations')
+gulp.task 'coffee-app',        coffeePipeline(srcs.app, './app')
 
 gulp.task 'coffee', [
-    'coffee_migrations'
-    'coffee_app'
+    'coffee-migrations'
+    'coffee-app'
 ]
 
 gulp.task 'default', ['coffee']

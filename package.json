@@ -4,15 +4,15 @@
   "description": "鳥の名前のAPIサーバ",
   "main": "./app/server.js",
   "scripts": {
-    "migrate":   "mongo birdAPI ./migrations/",
-    "build":     "./node_modules/gulp/bin/gulp.js coffee",
-    "start":     "node ./app/server.js &",
+    "start-mongod-local": "sudo mongod --dbpath /usr/local/var/mongodb/",
+    "migrate": "mongo birdAPI ./migrations/",
+    "build": "./node_modules/gulp/bin/gulp.js coffee",
+    "start": "node ./app/server.js &",
     "poststart": "sleep 3",
-    "stop":      "psid=$(ps ar | grep \"node ./app/server.js\" | grep -v \"grep\" | cut -d\" \" -f1); if [[ $psid -ne '' ]]; then kill $psid; fi",
-    "do-test":   "./node_modules/jasmine-node/bin/jasmine-node ./app/specs/",
-
-    "pretest":  "npm run migrate; npm run build; npm stop; npm start",
-    "test":     "npm run do-test"
+    "stop": "psid=$(ps ar | grep \"node ./app/server.js\" | grep -v \"grep\" | cut -d\" \" -f1); if [[ $psid -ne '' ]]; then kill $psid; fi",
+    "do-test": "./node_modules/jasmine-node/bin/jasmine-node ./app/specs/",
+    "pretest": "npm run migrate; npm run build; npm stop; npm start",
+    "test": "npm run do-test"
   },
   "keywords": [
     "bird",
@@ -20,8 +20,8 @@
     "academic-name"
   ],
   "repositoyy": {
-      "type": "git",
-      "url": "git@github.com:KamataRyo/bird-api.git"
+    "type": "git",
+    "url": "git@github.com:KamataRyo/bird-api.git"
   },
   "author": "KamataRyo",
   "license": "MIT",
@@ -38,16 +38,18 @@
     "gulp-coffee": "^2.3.2",
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.1.0",
+    "gulp-sourcemap": "^1.0.1",
+    "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.3",
     "jasmine-node": "^1.14.5"
   },
   "settings": {
-      "development": {
-          "host": "localhost",
-          "port": "3000"
-      },
-      "staging": {
-          "host": "bird-api.biwako.io"
-      }
+    "development": {
+      "host": "localhost",
+      "port": "3000"
+    },
+    "staging": {
+      "host": "bird-api.biwako.io"
+    }
   }
 }
