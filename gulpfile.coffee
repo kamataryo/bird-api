@@ -26,4 +26,7 @@ gulp.task 'coffee', [
     'coffee-app'
 ]
 
+gulp.task 'watch-app',['coffee-app'], ->
+    gulp.watch srcs.app, ['coffee-app']
+
 gulp.task 'default', ['coffee']

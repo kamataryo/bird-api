@@ -18,14 +18,14 @@ port = process.env.PORT || lib.port
 
 app.use bodyParser.urlencoded(extended: true)
 app.use bodyParser.json()
-app.use lib.getapibase(), router
+app.use lib.getAPIbase(), router
 
 
 router.use (req, res, next) ->
     console.log 'Detect access.'
     res = {
-        "message": "Not Found",
-        "documentation_url": lib.url ''
+        message: "Not Found"
+        documentation_url: lib.getAPIurl ''
     }
     next()
 

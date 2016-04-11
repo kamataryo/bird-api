@@ -1,10 +1,11 @@
+# app/routes
+
 Name    = require '../models/'
-apibase = require('../lib/').getapibase()
+lib     = require '../lib/'
+APIbase = lib.getAPIbase()
 
 findUpperRankFromSpecies = (sp) ->
     Name.find {_id:sp.upper_id }, (err, genus)->
-
-
 
 module.exports =
     document: (req, res) ->
@@ -13,13 +14,13 @@ module.exports =
             title:'とりAPIドキュメント'
             body:
                 APIs: [{
-                    API: "GET #{apibase}"
+                    API: "GET #{APIbase}"
                     description: 'このドキュメント'
                 },{
-                    API: "GET #{apibase}/birds"
+                    API: "GET #{APIbase}/birds"
                     description: '日本で見られるすべての鳥について、名前Objectをすべて取得'
                 },{
-                    API: "GET #{apibase}/birds/鳥の名前"
+                    API: "GET #{APIbase}/birds/{:鳥の名前}"
                     description: '標準和名を指定して該当する種の名前Objectを取得'
                 }]
 
@@ -34,10 +35,10 @@ module.exports =
 
     identifySpecies: (req, res) ->
         res.header("Content-Type", "application/json; charset=utf-8");
-        console.log req.params
-        Name.find {rank:"species", ja:req.params.identifier}, (err, sp) ->
-            Name.findById sp.upper_id, (err, genus) ->
-                if (err)
-                    res.send err
-                else
-                    res.json { species:sp }
+        Name.find {rank:"species", ja:req.params.identifier}, (err, result) ->
+            # resultが複数帰ってきた場合は？
+            if (err)
+                res.send err
+            else
+                lib.attachUpperTaxonomies result[0], result[0].upper_id, (body) ->
+                    res.json body
