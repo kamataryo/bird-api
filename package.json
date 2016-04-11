@@ -22,7 +22,7 @@
     "name",
     "academic-name"
   ],
-  "repositoyy": {
+  "repository": {
     "type": "git",
     "url": "git@github.com:KamataRyo/bird-api.git"
   },
