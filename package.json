@@ -1,7 +1,7 @@
 {
   "name": "bird-api",
   "version": "1.0.0",
-  "description": "鳥の名前のAPIサーバ",
+  "description": "日本の野鳥 Web API",
   "main": "./app/server.js",
   "scripts": {
     "start-mongod-local": "sudo mongod --dbpath /usr/local/var/mongodb/",
@@ -50,9 +50,6 @@
     "development": {
       "host": "localhost",
       "port": "3000"
-    },
-    "staging": {
-      "host": "bird-api.biwako.io"
     }
   }
 }
