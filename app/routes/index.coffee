@@ -9,7 +9,7 @@ findUpperRankFromSpecies = (sp) ->
 
 module.exports =
     document: (req, res) ->
-        res.header "Content-Type", "application/json; charset=utf-8"
+        res.header 'Content-Type', 'application/json; charset=utf-8'
         res.json document:
             title:'とりAPIドキュメント'
             body:
@@ -19,24 +19,32 @@ module.exports =
                 },{
                     API: "GET #{APIbase}/birds"
                     description: '日本で見られるすべての鳥について、名前Objectをすべて取得'
-                    returns: "{species: [Species]}"
+                    returns: '{species: [Species]}'
                 },{
                     API: "GET #{APIbase}/birds/{:鳥の名前}"
                     description: '標準和名を指定して該当する種の名前Objectを取得'
-                    returns: "{species: Species, taxonomies: [taxonomy]}"
+                    returns: '{species: Species, taxonomies: [taxonomy]}'
                 }]
 
-    species: (req, res) ->
-        res.header "Content-Type", "application/json; charset=utf-8"
-        Name.find {rank:"species"}, (err, species) ->
+    ranks: (req, res) ->
+        res.header 'Content-Type', 'application/json; charset=utf-8'
+        ranks = req.params.ranks
+        rank = lib.singular_for[ranks]
+        Name.find { rank }, (err, results) ->
             if err
                 res.send err
             else
-                res.json { species }
+                if results.length < 1
+                    res
+                        .status 404
+                        .json message: 'Unknown Resource'
+                else
+                    if ranks is 'birds' then ranks = 'species'
+                    res.json { "#{ranks}":results }
 
 
     identifySpecies: (req, res) ->
-        res.header "Content-Type", "application/json; charset=utf-8"
+        res.header 'Content-Type', 'application/json; charset=utf-8'
         Name.find {rank:"species", ja:req.params.identifier}, (err, result) ->
             # resultが複数帰ってきた場合は？
             if (err)
@@ -51,7 +59,12 @@ module.exports =
                 species = result[0]._doc
                 upper_id = species.upper_id
                 allFields = Object.keys species
-                fields = if req.query.fields? then req.query.fields.split ',' else allFields
+                if req.query.fields?
+                    fields = req.query.fields.split ','
+                    unless lib.atLeastContains fields, allFields
+                        fields = allFields
+                else
+                    fields = allFields
 
                 for field in allFields
                     unless field in fields then delete species[field]

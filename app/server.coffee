@@ -30,7 +30,7 @@ router.use (req, res, next) ->
     next()
 
 router.route('/').get routes.document
-router.route('/birds').get routes.species
+router.route('/:ranks').get routes.ranks
 router.route('/birds/:identifier').get routes.identifySpecies
 
 app.listen port,'localhost', ->

@@ -9,10 +9,18 @@ port    = meta.settings[STAGE].port
 version = meta.version.split('.')[0]
 
 upper_for =
-    family:     "order"
-    genus:      "family"
-    species:    "genus"
-    subspecies: "species"
+    family:     'order'
+    genus:      'family'
+    species:    'genus'
+    subspecies: 'species'
+
+singular_for =
+    orders:     'order'
+    families:   'family'
+    genuses:    'genus'
+    species:    'species'
+    birds:      'species'  # treat birds as species
+    subspecies: 'subspecies'
 
 getAPIbase = -> "/v#{version}"
 
@@ -44,6 +52,13 @@ attachUpperTaxonomies = ({species, upper_id, taxonomies, fields, callback}) ->
             callback {species, taxonomies}
 
 
+# check if elements in array `A` equal that of `B`
+atLeastContains = (A, B) ->
+    for a in A
+        for b in B
+            if a is b then return true
+    return false
+
 module.exports = {
     host
     port
@@ -51,4 +66,6 @@ module.exports = {
     getAPIbase
     getAPIurl
     attachUpperTaxonomies
+    atLeastContains
+    singular_for
 }
