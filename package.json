@@ -1,6 +1,6 @@
 {
   "name": "bird-api",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "日本の野鳥 Web API",
   "main": "./app/server.js",
   "scripts": {
@@ -17,7 +17,8 @@
     "test-local": " npm run build; npm run migrate; npm start; npm test; npm stop",
     "test": "npm run do-test",
 
-    "postinstall": "npm run build; npm run migrate"
+    "prepublish": "npm run build",
+    "postinstall": "npm run migrate"
 
   },
   "keywords": [
