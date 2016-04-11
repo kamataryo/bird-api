@@ -3,9 +3,9 @@ lib    = require '../lib/'
 APIurl    = lib.getAPIurl
 ObjectId = require('mongoose').Schema.Types.ObjectId
 
-notFoundResponse =
-    message: "Not Found",
-    documentation_url: APIurl ''
+# notFoundResponse =
+#     message: "Not Found",
+#     documentation_url: APIurl ''
 
 frisby
     .create 'bad request(1)'
@@ -65,4 +65,27 @@ frisby
     .expectJSON 'taxonomies.?', rank: 'genus'
     .expectJSON 'taxonomies.?', rank: 'family'
     .expectJSON 'taxonomies.?', rank: 'order'
+    .toss()
+
+
+frisby
+    .create 'GET birds/ヒドリガモ?fields=ja,alien'
+    .get APIurl 'birds/ヒドリガモ?fields=ja,alien'
+    .expectStatus 200
+    .expectHeaderContains 'Content-Type', 'application/json'
+    .expectHeaderContains 'Content-Type', 'charset=UTF-8'
+    .expectJSONTypes 'species',
+            sc: undefined
+            ja: String
+            alien: Boolean
+            rank: undefined
+            upper_id: undefined
+    .expectJSONTypes '', taxonomies: Array
+    .expectJSONTypes 'taxonomies.?', ja: String
+    .toss()
+
+frisby
+    .create 'GET birds/undefined-bird-species'
+    .get APIurl 'birds/undefined-bird-species'
+    .expectStatus 404
     .toss()
