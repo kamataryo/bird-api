@@ -20,6 +20,6 @@ before_script:
   - set -e
   - npm install
   - npm run build
-  - npm migrate
+  - npm run migrate
 script:
   - npm test
