@@ -1,25 +1,21 @@
 {
   "name": "bird-api",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "日本の野鳥 Web API",
   "main": "./app/server.js",
   "scripts": {
     "start-mongod-local": "sudo mongod --dbpath /usr/local/var/mongodb/",
     "debug-server": "gulp watch-app & node-dev ./app/server.js",
-
     "migrate": "mongo birdAPI ./migrations/",
     "build": "./node_modules/gulp/bin/gulp.js coffee",
     "start": "node ./app/server.js &",
     "poststart": "sleep 3",
     "stop": "psid=$(ps ar | grep \"node ./app/server.js\" | grep -v \"grep\" | cut -d\" \" -f1); if [[ $psid -ne '' ]]; then kill $psid; fi",
     "do-test": "./node_modules/jasmine-node/bin/jasmine-node ./app/specs/",
-
     "test-local": " npm run build; npm run migrate; npm start; npm test; npm stop",
     "test": "npm run do-test",
-
     "prepublish": "npm run build",
     "postinstall": "npm run migrate"
-
   },
   "keywords": [
     "bird",
@@ -36,6 +32,7 @@
     "body-parser": "~1.0.1",
     "express": "~4.0.0",
     "mongoose": "~3.6.13",
+    "morgan": "^1.7.0",
     "underscore": "^1.8.3"
   },
   "devDependencies": {
