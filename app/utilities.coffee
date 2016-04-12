@@ -1,9 +1,9 @@
 # app/lib
 
-Name    = require '../models/'
+Name    = require './models/'
 
 STAGE = 'development'
-meta    = require('../../package.json')
+meta    = require('../package.json')
 host    = meta.settings[STAGE].host
 port    = meta.settings[STAGE].port
 version = meta.version.split('.')[0]

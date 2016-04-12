@@ -1,14 +1,14 @@
 # app/routes
 
 Name    = require '../models/'
-lib     = require '../lib/'
-APIbase = lib.getAPIbase()
+util    = require '../utilities'
+APIbase = util.getAPIbase()
 
 findUpperRankFromSpecies = (sp) ->
     Name.find {_id:sp.upper_id }, (err, genus)->
 
 module.exports =
-    document: (req, res) ->
+    doc: (req, res) ->
         res.header 'Content-Type', 'application/json; charset=utf-8'
         res.json document:
             title:'とりAPIドキュメント'
@@ -29,7 +29,7 @@ module.exports =
     ranks: (req, res) ->
         res.header 'Content-Type', 'application/json; charset=utf-8'
         ranks = req.params.ranks
-        rank = lib.singular_for[ranks]
+        rank = util.singular_for[ranks]
         Name.find { rank }, (err, results) ->
             if err
                 res.send err
@@ -61,7 +61,7 @@ module.exports =
                 allFields = Object.keys species
                 if req.query.fields?
                     fields = req.query.fields.split ','
-                    unless lib.atLeastContains fields, allFields
+                    unless util.atLeastContains fields, allFields
                         fields = allFields
                 else
                     fields = allFields
@@ -69,11 +69,11 @@ module.exports =
                 for field in allFields
                     unless field in fields then delete species[field]
 
-                lib.attachUpperTaxonomies {
+                util.attachUpperTaxonomies {
                     species
                     taxonomies: []
                     upper_id
                     fields
                     callback: (body) -> res.json body
                 }
-                # lib.attachUpperTaxonomies result[0], result[0].upper_id, (body) -> res.json body
+                # util.attachUpperTaxonomies result[0], result[0].upper_id, (body) -> res.json body

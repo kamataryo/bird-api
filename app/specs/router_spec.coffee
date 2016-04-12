@@ -1,6 +1,5 @@
-frisby = require 'frisby'
-lib    = require '../lib/'
-APIurl    = lib.getAPIurl
+frisby   = require 'frisby'
+APIurl   = require('../utilities').getAPIurl
 ObjectId = require('mongoose').Schema.Types.ObjectId
 
 frisby
