@@ -1,6 +1,6 @@
 {
   "name": "bird-api",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "日本の野鳥 Web API",
   "main": "./app/server.js",
   "scripts": {
