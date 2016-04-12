@@ -55,8 +55,18 @@ module.exports =
                         fieldsAcceptable = allFields
 
 
+                    # deal limit query
+                    if req.query.limit?
+                        limit = parseInt req.query.limit
+                        if limit isnt limit
+                            limit = results.length
+                        else
+                            if limit < 0
+                                limit = 0
+                    else
+                        limit = results.length
 
-
+                    results = results.slice 1, limit+1
 
                     for result in results
                         util.acceptFieldsInTaxonomy fieldsAcceptable, result._doc
@@ -92,10 +102,6 @@ module.exports =
                 else
                     fieldsAcceptable = allFields
 
-                # filter species object by fields
-                # species_sc = species.sc
-                # for field in allFields
-                #     unless field in fields then delete species[field]
 
                 # recurse getting upper taxonomy
                 util.attachUpperTaxonomies {
