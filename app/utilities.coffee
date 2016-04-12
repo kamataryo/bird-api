@@ -1,6 +1,6 @@
 # app/lib
 
-Name    = require './models'
+Name    = require('./models').Name
 _       = require 'underscore'
 
 # meta information settings

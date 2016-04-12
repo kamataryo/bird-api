@@ -1,6 +1,6 @@
 # app/routes
 
-Name    = require '../models'
+Name    = require('../models').Name
 util    = require '../utilities'
 APIbase = util.getAPIbase()
 _       = require 'underscore'
