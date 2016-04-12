@@ -61,13 +61,22 @@ module.exports =
                         if limit isnt limit
                             limit = results.length
                         else
-                            if limit < 0
-                                limit = 0
+                            if limit < 0 then limit = 0
                     else
                         limit = results.length
 
-                    results = results.slice 1, limit+1
+                    # deal offset query
+                    if req.query.offset?
+                        offset = parseInt req.query.offset
+                        if offset isnt offset
+                            offset = 0
+                        else
+                            if offset < 0 then offset = 0
+                    else
+                        offset = 0
 
+
+                    results = results.slice offset+1, limit+offset+1
                     for result in results
                         util.acceptFieldsInTaxonomy fieldsAcceptable, result._doc
                     res.json { "#{ranks}":results }

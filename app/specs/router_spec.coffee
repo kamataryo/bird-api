@@ -73,6 +73,15 @@ frisby
     .expectJSONLength 'species', 20
     .toss()
 
+frisby
+    .create 'GET species with offset query'
+    .get APIurl 'species?offset=100000000'
+    .expectStatus 200
+    .expectHeaderContains 'Content-Type', 'application/json'
+    .expectHeaderContains 'Content-Type', 'charset=UTF-8'
+    .expectJSONTypes '', species: Array
+    .expectJSONLength 'species',0
+    .toss()
 
 
 frisby
