@@ -4,23 +4,24 @@
   "description": "日本の野鳥 Web API",
   "main": "./app/server.js",
   "scripts": {
-    "start-mongod-local": "sudo mongod --dbpath /usr/local/var/mongodb/",
-    "debug-server": "gulp watch-app & node-dev ./app/server.js",
+    "forme-start-mongod": "sudo mongod --dbpath /usr/local/var/mongodb/",
+    "debug-server": "./node_modules/gulp/bin/gulp.js watch-app & ./node_modules/node-dev/bin/node-dev ./app/server.js",
+
     "migrate": "mongo birdAPI ./migrations/",
     "build": "./node_modules/gulp/bin/gulp.js coffee",
     "start": "node ./app/server.js &",
     "poststart": "sleep 3",
     "stop": "psid=$(ps ar | grep \"node ./app/server.js\" | grep -v \"grep\" | cut -d\" \" -f1); if [[ $psid -ne '' ]]; then kill $psid; fi",
     "do-test": "./node_modules/jasmine-node/bin/jasmine-node ./app/specs/",
-    "test-local": " npm run build; npm run migrate; npm start; npm test; npm stop",
     "test": "npm run do-test",
     "prepublish": "npm run build",
-    "postinstall": "npm run migrate"
+    "postinstall": "npm run migrate",
+    "local-test": "npm run build; npm run migrate; npm start; npm test; npm stop"
   },
   "keywords": [
-    "bird",
+    "birds",
     "name",
-    "academic-name"
+    "scientific name"
   ],
   "repository": {
     "type": "git",
@@ -43,10 +44,9 @@
     "gulp-coffee": "^2.3.2",
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.1.0",
-    "gulp-sourcemap": "^1.0.1",
     "gulp-sourcemaps": "^1.6.0",
-    "gulp-uglify": "^1.5.3",
-    "jasmine-node": "^1.14.5"
+    "jasmine-node": "^1.14.5",
+    "node-dev": "^3.1.0"
   },
   "settings": {
     "development": {

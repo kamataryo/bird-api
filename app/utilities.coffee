@@ -1,5 +1,7 @@
 # app/lib
+
 Name    = require './models'
+_       = require 'underscore'
 
 # meta information settings
 STAGE = 'development'
@@ -32,16 +34,22 @@ getAPIbase = -> "/v#{version}"
 getAPIurl = (dir) ->
     "http://#{host}#{if port then ':' + port}#{getAPIbase()}/#{encodeURI dir}"
 
+buildBiomen = (species, taxonomies) ->
+    species = species.sc
+    genus = ''
+    for taxonomy in taxonomies
+        if taxonomy.rank = 'genus'
+            genus = taxonomy.sc
+            break
+    n = genus.length
+    return genus[0].toUpperCase() + genus[1...n].toLowerCase() + ' ' + species.toLowerCase()
+
 # find upper taxonomies from db
 attachUpperTaxonomies = ({species, upper_id, taxonomies, fields, callback}) ->
 
     Name.findById upper_id, (err, upper) ->
         upper = upper._doc
         upper_id = upper.upper_id
-
-        allFields = Object.keys upper
-        for field in allFields
-            unless field in fields then delete upper[field]
 
         taxonomies.push upper
 
@@ -54,7 +62,18 @@ attachUpperTaxonomies = ({species, upper_id, taxonomies, fields, callback}) ->
                 callback
             }
         else
-            callback {species, taxonomies}
+            biomen = buildBiomen species, taxonomies
+            for taxonomy in taxonomies
+                # filter fields
+                allFields = Object.keys taxonomy
+                for field in allFields
+                    unless field in fields then delete taxonomy[field]
+
+                allFields = Object.keys species
+                for field in allFields
+                    unless field in fields then delete species[field]
+
+            callback {species, biomen, taxonomies}
 
 
 # check if elements in array `A` equal that of `B`

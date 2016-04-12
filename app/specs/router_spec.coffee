@@ -97,13 +97,16 @@ frisby
     .expectStatus 200
     .expectHeaderContains 'Content-Type', 'application/json'
     .expectHeaderContains 'Content-Type', 'charset=UTF-8'
+    .expectJSONTypes '',
+            species: Object
+            biomen: String
+            taxonomies: Array
     .expectJSONTypes 'species',
             sc: String
             ja: String
             alien: Boolean
             rank: String
             upper_id: String
-    .expectJSONTypes '', taxonomies: Array
     .expectJSONTypes 'taxonomies.*',
             sc: String
             ja: String
@@ -117,13 +120,16 @@ frisby
     .expectStatus 200
     .expectHeaderContains 'Content-Type', 'application/json'
     .expectHeaderContains 'Content-Type', 'charset=UTF-8'
+    .expectJSONTypes '',
+            species: Object
+            biomen: String
+            taxonomies: Array
     .expectJSONTypes 'species',
             sc: undefined
             ja: String
             alien: Boolean
             rank: undefined
             upper_id: undefined
-    .expectJSONTypes '', taxonomies: Array
     .expectJSONTypes 'taxonomies.*',
             sc: undefined
             ja: String
@@ -136,13 +142,16 @@ frisby
     .expectStatus 200
     .expectHeaderContains 'Content-Type', 'application/json'
     .expectHeaderContains 'Content-Type', 'charset=UTF-8'
+    .expectJSONTypes '',
+            species: Object
+            biomen: String
+            taxonomies: Array
     .expectJSONTypes 'species',
             sc: undefined
             ja: String
             alien: undefined
             rank: undefined
             upper_id: undefined
-    .expectJSONTypes '', taxonomies: Array
     .expectJSONTypes 'taxonomies.?',
             sc: undefined
             ja: String
@@ -155,13 +164,16 @@ frisby
     .expectStatus 200
     .expectHeaderContains 'Content-Type', 'application/json'
     .expectHeaderContains 'Content-Type', 'charset=UTF-8'
+    .expectJSONTypes '',
+            species: Object
+            biomen: String
+            taxonomies: Array
     .expectJSONTypes 'species',
             sc: String
             ja: String
             alien: Boolean
             rank: String
             upper_id: String
-    .expectJSONTypes '', taxonomies: Array
     .expectJSONTypes 'taxonomies.*',
             sc: String
             ja: String

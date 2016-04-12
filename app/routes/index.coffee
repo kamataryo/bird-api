@@ -75,8 +75,9 @@ module.exports =
                     fields = allFields
 
                 # filter species object by fields
-                for field in allFields
-                    unless field in fields then delete species[field]
+                # species_sc = species.sc
+                # for field in allFields
+                #     unless field in fields then delete species[field]
 
                 # recurse getting upper taxonomy
                 util.attachUpperTaxonomies {
