@@ -48,6 +48,22 @@ frisby
 
 
 frisby
+    .create 'GET birds with some query'
+    .get APIurl 'birds?fields=ja,rank'
+    .expectStatus 200
+    .expectHeaderContains 'Content-Type', 'application/json'
+    .expectHeaderContains 'Content-Type', 'charset=UTF-8'
+    .expectJSONTypes '', species: Array
+    .expectJSONTypes 'species.*',
+            rank: String
+            sc: undefined
+            ja: String
+            alien: undefined
+            upper_id: undefined
+    .toss()
+
+
+frisby
     .create 'GET genuses'
     .get APIurl 'genuses'
     .expectStatus 200

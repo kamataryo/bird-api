@@ -3,6 +3,7 @@
 Name    = require '../models'
 util    = require '../utilities'
 APIbase = util.getAPIbase()
+_       = require 'underscore'
 
 
 module.exports =
@@ -43,7 +44,24 @@ module.exports =
                         .json message: 'Unknown Resource'
                 else
                     if ranks is 'birds' then ranks = 'species'
+
+                    # filter fields
+                    allFields = Object.keys results[0]._doc
+                    if req.query.fields?
+                        fieldsAcceptable = req.query.fields.split ','
+                        unless util.atLeastContains fieldsAcceptable, allFields
+                            fieldsAcceptable = allFields
+                    else
+                        fieldsAcceptable = allFields
+
+
+
+
+
+                    for result in results
+                        util.acceptFieldsInTaxonomy fieldsAcceptable, result._doc
                     res.json { "#{ranks}":results }
+
 
 
     identifySpecies: (req, res) ->
@@ -68,11 +86,11 @@ module.exports =
                 # filter fields
                 allFields = Object.keys species
                 if req.query.fields?
-                    fields = req.query.fields.split ','
-                    unless util.atLeastContains fields, allFields
-                        fields = allFields
+                    fieldsAcceptable = req.query.fields.split ','
+                    unless util.atLeastContains fieldsAcceptable, allFields
+                        fieldsAcceptable = allFields
                 else
-                    fields = allFields
+                    fieldsAcceptable = allFields
 
                 # filter species object by fields
                 # species_sc = species.sc
@@ -84,6 +102,6 @@ module.exports =
                     species
                     taxonomies: []
                     upper_id
-                    fields
+                    fieldsAcceptable
                     callback: (body) -> res.json body
                 }

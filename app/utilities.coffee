@@ -45,7 +45,7 @@ buildBiomen = (species, taxonomies) ->
     return genus[0].toUpperCase() + genus[1...n].toLowerCase() + ' ' + species.toLowerCase()
 
 # find upper taxonomies from db
-attachUpperTaxonomies = ({species, upper_id, taxonomies, fields, callback}) ->
+attachUpperTaxonomies = ({species, upper_id, taxonomies, fieldsAcceptable, callback}) ->
 
     Name.findById upper_id, (err, upper) ->
         upper = upper._doc
@@ -58,22 +58,24 @@ attachUpperTaxonomies = ({species, upper_id, taxonomies, fields, callback}) ->
                 species
                 taxonomies
                 upper_id
-                fields
+                fieldsAcceptable
                 callback
             }
         else
             biomen = buildBiomen species, taxonomies
             for taxonomy in taxonomies
-                # filter fields
-                allFields = Object.keys taxonomy
-                for field in allFields
-                    unless field in fields then delete taxonomy[field]
-
-                allFields = Object.keys species
-                for field in allFields
-                    unless field in fields then delete species[field]
+                acceptFieldsInTaxonomy fieldsAcceptable, taxonomy
+                acceptFieldsInTaxonomy fieldsAcceptable, species
 
             callback {species, biomen, taxonomies}
+
+
+acceptFieldsInTaxonomy = (fieldsAcceptable, taxonomy) ->
+
+    allFields = Object.keys taxonomy
+    for field in allFields
+        unless field in fieldsAcceptable then delete taxonomy[field]
+
 
 
 # check if elements in array `A` equal that of `B`
@@ -91,6 +93,7 @@ module.exports = {
     getAPIbase
     getAPIurl
     attachUpperTaxonomies
+    acceptFieldsInTaxonomy
     atLeastContains
     singular_for
 }
