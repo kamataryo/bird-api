@@ -1,4 +1,5 @@
 # mongo birdAPI
+# this is db import script
 db.dropDatabase()
 
 data_names = [

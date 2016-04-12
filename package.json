@@ -1,6 +1,6 @@
 {
   "name": "bird-api",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "日本の野鳥 Web API",
   "main": "./app/server.js",
   "scripts": {
@@ -31,6 +31,7 @@
   "dependencies": {
     "body-parser": "~1.0.1",
     "express": "~4.0.0",
+    "http2": "^3.3.2",
     "mongoose": "~3.6.13",
     "morgan": "^1.7.0",
     "underscore": "^1.8.3"

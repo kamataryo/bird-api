@@ -1,38 +1,41 @@
 # app/routes
 
-Name    = require '../models/'
+Name    = require '../models'
 util    = require '../utilities'
 APIbase = util.getAPIbase()
 
-findUpperRankFromSpecies = (sp) ->
-    Name.find {_id:sp.upper_id }, (err, genus)->
 
 module.exports =
     doc: (req, res) ->
         res.header 'Content-Type', 'application/json; charset=utf-8'
         res.json document:
-            title:'とりAPIドキュメント'
+            title:'日本の野鳥 Web APIドキュメント'
             body:
-                APIs: [{
-                    API: "GET #{APIbase}"
-                    description: 'このドキュメント'
-                },{
-                    API: "GET #{APIbase}/birds"
-                    description: '日本で見られるすべての鳥について、名前Objectをすべて取得'
-                    returns: '{species: [Species]}'
-                },{
-                    API: "GET #{APIbase}/birds/{:鳥の名前}"
-                    description: '標準和名を指定して該当する種の名前Objectを取得'
-                    returns: '{species: Species, taxonomies: [taxonomy]}'
-                }]
+                APIs: [
+                    {
+                        API: "GET #{APIbase}"
+                        description: 'このドキュメント'
+                    },{
+                        API: "GET #{APIbase}/birds"
+                        description: '日本で見られるすべての鳥について、名前Objectをすべて取得'
+                        returns: '{species: [Species]}'
+                    },{
+                        API: "GET #{APIbase}/birds/{:鳥の名前}"
+                        description: '標準和名を指定して該当する種の名前Objectを取得'
+                        returns: '{species: Species, taxonomies: [taxonomy]}'
+                    }
+                ]
 
     ranks: (req, res) ->
         res.header 'Content-Type', 'application/json; charset=utf-8'
+        # get plural form of rank
         ranks = req.params.ranks
         rank = util.singular_for[ranks]
         Name.find { rank }, (err, results) ->
             if err
-                res.send err
+                res
+                    .status 500
+                    .json message:"Internal Server Error"
             else
                 if results.length < 1
                     res
@@ -46,9 +49,11 @@ module.exports =
     identifySpecies: (req, res) ->
         res.header 'Content-Type', 'application/json; charset=utf-8'
         Name.find {rank:"species", ja:req.params.identifier}, (err, result) ->
-            # resultが複数帰ってきた場合は？
             if (err)
-                res.send err
+                res
+                    .status 500
+                    .json message:"Internal Server Error"
+
             else
                 if result.length < 1
                     res
@@ -56,8 +61,11 @@ module.exports =
                         .json  message: "Unknown bird name"
                     return
 
+                # use as normal JSON
                 species = result[0]._doc
                 upper_id = species.upper_id
+
+                # filter fields
                 allFields = Object.keys species
                 if req.query.fields?
                     fields = req.query.fields.split ','
@@ -66,9 +74,11 @@ module.exports =
                 else
                     fields = allFields
 
+                # filter species object by fields
                 for field in allFields
                     unless field in fields then delete species[field]
 
+                # recurse getting upper taxonomy
                 util.attachUpperTaxonomies {
                     species
                     taxonomies: []
@@ -76,4 +86,3 @@ module.exports =
                     fields
                     callback: (body) -> res.json body
                 }
-                # util.attachUpperTaxonomies result[0], result[0].upper_id, (body) -> res.json body
