@@ -9,6 +9,7 @@ _       = require 'underscore'
 module.exports =
     doc: (req, res) ->
         res.header 'Content-Type', 'application/json; charset=utf-8'
+        res.header 'Access-Control-Allow-Origin', '*'
         res.json document:
             title:'日本の野鳥 Web API'
             links:[
@@ -21,6 +22,7 @@ module.exports =
 
     ranks: (req, res) ->
         res.header 'Content-Type', 'application/json; charset=utf-8'
+        res.header 'Access-Control-Allow-Origin', '*'
         # get plural form of rank
         ranks = req.params.ranks
         rank = util.singular_for[ranks]
@@ -77,6 +79,7 @@ module.exports =
 
     identifySpecies: (req, res) ->
         res.header 'Content-Type', 'application/json; charset=utf-8'
+        res.header 'Access-Control-Allow-Origin', '*'
         Name.find {rank:"species", ja:req.params.identifier}, (err, result) ->
             if (err)
                 res
