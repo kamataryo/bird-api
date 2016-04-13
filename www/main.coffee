@@ -10,6 +10,26 @@ app.controller 'SimpleAPIaccess', [
                 method: 'GET'
                 url: $scope.APIbase + $scope.APIend
             }
-                .then (result)->
-                    $scope.result = result.data
+                .then (res)->
+                    $scope.result = res.data
+]
+
+
+
+app.controller 'SearchTaxonomy', [
+    '$scope'
+    '$http'
+    ($scope, $http) ->
+        $scope.APIbase = 'http://bird-api.biwako.io/v1/birds/'
+        $scope.request = ->
+            $scope.taxFound = false
+            $http {
+                method: 'GET'
+                url: $scope.APIbase + $scope.name
+            }
+                .then (res) ->
+                    $scope.taxFound = true
+                    $scope.taxonomies = res.data.taxonomies
+                , ()->
+                    $scope.taxFound = false
 ]
