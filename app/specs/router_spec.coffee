@@ -8,6 +8,8 @@ frisby
     .expectStatus 404
     .expectHeaderContains 'Content-Type', 'application/json'
     .expectHeaderContains 'Content-Type', 'charset=UTF-8'
+    .expectHeaderContains 'Access-Control-Allow-Origin', '*'
+    .expectHeaderContains 'Access-Control-Allow-Origin', '*'
     .toss()
 
 frisby
@@ -16,6 +18,8 @@ frisby
     .expectStatus 404
     # .expectHeaderContains 'Content-Type', 'application/json'
     # .expectHeaderContains 'Content-Type', 'charset=UTF-8'
+    # .expectHeaderContains 'Access-Control-Allow-Origin', '*'
+
     .toss()
 
 frisby
@@ -24,6 +28,7 @@ frisby
     .expectStatus 200
     .expectHeaderContains 'Content-Type', 'application/json'
     .expectHeaderContains 'Content-Type', 'charset=UTF-8'
+    .expectHeaderContains 'Access-Control-Allow-Origin', '*'
     .expectJSONTypes 'document',
             title: String
             links: Array
@@ -38,6 +43,7 @@ frisby
     .expectStatus 200
     .expectHeaderContains 'Content-Type', 'application/json'
     .expectHeaderContains 'Content-Type', 'charset=UTF-8'
+    .expectHeaderContains 'Access-Control-Allow-Origin', '*'
     .expectJSONTypes '', species: Array
     .expectJSONTypes 'species.*',
             sc: String
@@ -54,6 +60,7 @@ frisby
     .expectStatus 200
     .expectHeaderContains 'Content-Type', 'application/json'
     .expectHeaderContains 'Content-Type', 'charset=UTF-8'
+    .expectHeaderContains 'Access-Control-Allow-Origin', '*'
     .expectJSONTypes '', species: Array
     .expectJSONTypes 'species.*',
             rank: String
@@ -70,6 +77,7 @@ frisby
     .expectStatus 200
     .expectHeaderContains 'Content-Type', 'application/json'
     .expectHeaderContains 'Content-Type', 'charset=UTF-8'
+    .expectHeaderContains 'Access-Control-Allow-Origin', '*'
     .expectJSONTypes '', species: Array
     .expectJSONLength 'species', 20
     .toss()
@@ -80,6 +88,7 @@ frisby
     .expectStatus 200
     .expectHeaderContains 'Content-Type', 'application/json'
     .expectHeaderContains 'Content-Type', 'charset=UTF-8'
+    .expectHeaderContains 'Access-Control-Allow-Origin', '*'
     .expectJSONTypes '', species: Array
     .expectJSONLength 'species',0
     .toss()
@@ -91,6 +100,7 @@ frisby
     .expectStatus 200
     .expectHeaderContains 'Content-Type', 'application/json'
     .expectHeaderContains 'Content-Type', 'charset=UTF-8'
+    .expectHeaderContains 'Access-Control-Allow-Origin', '*'
     .expectJSONTypes '', genuses: Array
     .expectJSONTypes 'genuses.*',
             sc: String
@@ -106,6 +116,7 @@ frisby
     .expectStatus 200
     .expectHeaderContains 'Content-Type', 'application/json'
     .expectHeaderContains 'Content-Type', 'charset=UTF-8'
+    .expectHeaderContains 'Access-Control-Allow-Origin', '*'
     .expectJSONTypes '', families: Array
     .expectJSONTypes 'families.*',
             sc: String
@@ -121,6 +132,7 @@ frisby
     .expectStatus 200
     .expectHeaderContains 'Content-Type', 'application/json'
     .expectHeaderContains 'Content-Type', 'charset=UTF-8'
+    .expectHeaderContains 'Access-Control-Allow-Origin', '*'
     .expectJSONTypes '', orders: Array
     .expectJSONTypes 'orders.*',
             sc: String
@@ -135,6 +147,7 @@ frisby
     .expectStatus 200
     .expectHeaderContains 'Content-Type', 'application/json'
     .expectHeaderContains 'Content-Type', 'charset=UTF-8'
+    .expectHeaderContains 'Access-Control-Allow-Origin', '*'
     .expectJSONTypes '',
             species: Object
             biomen: String
@@ -158,6 +171,7 @@ frisby
     .expectStatus 200
     .expectHeaderContains 'Content-Type', 'application/json'
     .expectHeaderContains 'Content-Type', 'charset=UTF-8'
+    .expectHeaderContains 'Access-Control-Allow-Origin', '*'
     .expectJSONTypes '',
             species: Object
             biomen: String
@@ -180,6 +194,7 @@ frisby
     .expectStatus 200
     .expectHeaderContains 'Content-Type', 'application/json'
     .expectHeaderContains 'Content-Type', 'charset=UTF-8'
+    .expectHeaderContains 'Access-Control-Allow-Origin', '*'
     .expectJSONTypes '',
             species: Object
             biomen: String
@@ -202,6 +217,7 @@ frisby
     .expectStatus 200
     .expectHeaderContains 'Content-Type', 'application/json'
     .expectHeaderContains 'Content-Type', 'charset=UTF-8'
+    .expectHeaderContains 'Access-Control-Allow-Origin', '*'
     .expectJSONTypes '',
             species: Object
             biomen: String
