@@ -31,6 +31,9 @@ app.use util.getAPIbase(), router
 router.route('/').get routes.doc
 router.route('/:ranks').get routes.ranks
 router.route('/birds/:identifier').get routes.identifySpecies
+router.route '/birds/:identifier/distributions'
+    .get routes.birdFoundAt
+    .post foundBird
 
 # start listening
 mongoose.connect 'mongodb://localhost/birdAPI'
