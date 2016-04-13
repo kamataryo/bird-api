@@ -24,11 +24,12 @@ frisby
     .expectStatus 200
     .expectHeaderContains 'Content-Type', 'application/json'
     .expectHeaderContains 'Content-Type', 'charset=UTF-8'
-    .expectJSONTypes 'document', title: String
-    .expectJSONTypes 'document.body', APIs: Array
-    .expectJSONTypes 'document.body.APIs.?',
-        API: String
-        description: String
+    .expectJSONTypes 'document',
+            title: String
+            links: Array
+    .expectJSONTypes 'document.links.*',
+            rel: String
+            href: String
     .toss()
 
 frisby

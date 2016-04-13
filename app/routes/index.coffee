@@ -10,22 +10,14 @@ module.exports =
     doc: (req, res) ->
         res.header 'Content-Type', 'application/json; charset=utf-8'
         res.json document:
-            title:'日本の野鳥 Web APIドキュメント'
-            body:
-                APIs: [
-                    {
-                        API: "GET #{APIbase}"
-                        description: 'このドキュメント'
-                    },{
-                        API: "GET #{APIbase}/birds"
-                        description: '日本で見られるすべての鳥について、名前Objectをすべて取得'
-                        returns: '{species: [Species]}'
-                    },{
-                        API: "GET #{APIbase}/birds/{:鳥の名前}"
-                        description: '標準和名を指定して該当する種の名前Objectを取得'
-                        returns: '{species: Species, taxonomies: [taxonomy]}'
-                    }
-                ]
+            title:'日本の野鳥 Web API'
+            links:[
+                {
+                    rel:"git-repository"
+                    href:"https://github.com/KamataRyo/bird-api"
+                }
+            ]
+
 
     ranks: (req, res) ->
         res.header 'Content-Type', 'application/json; charset=utf-8'
