@@ -2,19 +2,23 @@
 <html ng-app="myApp">
 <head>
   <meta charset="UTF-8">
-  <title>日本の野鳥APIを読んでみる</title>
+  <title>日本の野鳥APIをアプリにしてみるテスト</title>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
   <script src="./main.js"></script>
 </head>
-<body ng-controller="mainCtrl">
-  <h1>日本の野鳥APIを読んでみる</h1>
-  <form>
-    <p>{{APIbase}}<input type="text" ng-model="APIend"></p>
-    <a class="btn request GET" ng-click="request()">GET</a>
-  </form>
-  <hr>
-  <div class="result">
-    {{result}}
-  </div>
+<body>
+  <h1>日本の野鳥APIをアプリにしてみるテスト</h1>
+  <section ng-controller="SimpleAPIaccess">
+    <h2>リクエスト</h2>
+    <form>
+      <p>{{APIbase}}<input type="text" ng-model="APIend"></p>
+      <a class="btn request GET" ng-click="request()">GET</a>
+    </form>
+    <hr>
+    <div class="result">
+      <h3>raw data</h3>
+        {{result}}
+    </div>
+  </section>
 </body>
 </html>
