@@ -1,6 +1,6 @@
 {
   "name": "bird-api",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "日本の野鳥 Web API",
   "main": "./app/server.js",
   "scripts": {
@@ -29,11 +29,11 @@
   "author": "KamataRyo",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "~1.0.1",
-    "express": "~4.0.0",
+    "body-parser": "~1.15.0",
+    "express": "~4.13.4",
     "http2": "^3.3.2",
-    "mongoose": "~3.6.13",
-    "morgan": "^1.7.0",
+    "mongoose": "~4.4.12",
+    "morgan": "^2.0.1",
     "underscore": "^1.8.3"
   },
   "devDependencies": {

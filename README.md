@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/KamataRyo/bird-api.svg?branch=master)](https://travis-ci.org/KamataRyo/bird-api)
 [![npm version](https://badge.fury.io/js/bird-api.svg)](https://badge.fury.io/js/bird-api)
-
+![npm dependencies](https://david-dm.org/kamataryo/bird-api.svg)
 
 これは、日本の野鳥の名前を取得するエンドポイントを提供するWebサーバです。
 
