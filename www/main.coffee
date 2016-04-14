@@ -30,6 +30,25 @@ app.controller 'SearchTaxonomy', [
                 .then (res) ->
                     $scope.taxFound = true
                     $scope.taxonomies = res.data.taxonomies
-                , ()->
+                , ->
                     $scope.taxFound = false
+]
+
+
+
+app.controller 'birdNameHistogram', [
+    '$scope'
+    '$http'
+    ($scope, $http) ->
+        $scope.APIbase = 'http://bird-api.biwako.io/v1/inclusion?href='
+        $scope.request = ->
+            $http {
+                method: 'GET'
+                url: $scope.APIbase + $scope.url
+            }
+                .then (res) ->
+                    console.log res
+                    $scope.histogram = res.data.histogram
+                , ->
+                    $scope.histogram = undefined
 ]
