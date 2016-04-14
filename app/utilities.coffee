@@ -29,7 +29,8 @@ singular_for =
     subspecies: 'subspecies'
 
 
-getAPIbase = -> "/v#{version}"
+getAPIbase = ->
+    "/v#{version}"
 
 getAPIurl = (dir) ->
     "http://#{host}#{if port then ':' + port}#{getAPIbase()}/#{encodeURI dir}"

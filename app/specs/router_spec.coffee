@@ -236,7 +236,30 @@ frisby
 
 
 frisby
-    .create 'GET birds/undefined-bird-species'
-    .get APIurl 'birds/undefined-bird-species'
-    .expectStatus 404
+    .create 'GET existence/undefined-bird-species'
+    .get APIurl 'existence/undefined-bird-species'
+    .expectStatus 200
+    .expectHeaderContains 'Content-Type', 'application/json'
+    .expectHeaderContains 'Content-Type', 'charset=UTF-8'
+    .expectHeaderContains 'Access-Control-Allow-Origin', '*'
+    .expectJSONTypes '',
+            existence: Boolean
+            species: undefined
+    .expectJSON '',
+            existence: false
+    .toss()
+
+
+frisby
+    .create 'GET existence/マガモ'
+    .get APIurl 'existence/マガモ'
+    .expectStatus 200
+    .expectHeaderContains 'Content-Type', 'application/json'
+    .expectHeaderContains 'Content-Type', 'charset=UTF-8'
+    .expectHeaderContains 'Access-Control-Allow-Origin', '*'
+    .expectJSONTypes '',
+            existence: Boolean
+            species: Object
+    .expectJSON '',
+            existence: true
     .toss()

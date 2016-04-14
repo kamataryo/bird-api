@@ -8,21 +8,23 @@ _       = require 'underscore'
 
 module.exports =
     doc: (req, res) ->
-        res.header 'Content-Type', 'application/json; charset=utf-8'
-        res.header 'Access-Control-Allow-Origin', '*'
-        res.json document:
-            title:'日本の野鳥 Web API'
-            links:[
-                {
-                    rel:"git-repository"
-                    href:"https://github.com/KamataRyo/bird-api"
-                }
-            ]
+        res
+            .header 'Content-Type', 'application/json; charset=utf-8'
+            .header 'Access-Control-Allow-Origin', '*'
+            .json document:
+                title:'日本の野鳥 Web API'
+                links:[
+                    {
+                        rel:"git-repository"
+                        href:"https://github.com/KamataRyo/bird-api"
+                    }
+                ]
 
 
     ranks: (req, res) ->
-        res.header 'Content-Type', 'application/json; charset=utf-8'
-        res.header 'Access-Control-Allow-Origin', '*'
+        res
+            .header 'Content-Type', 'application/json; charset=utf-8'
+            .header 'Access-Control-Allow-Origin', '*'
         # get plural form of rank
         ranks = req.params.ranks
         rank = util.singular_for[ranks]
@@ -30,7 +32,7 @@ module.exports =
             if err
                 res
                     .status 500
-                    .json message:"Internal Server Error"
+                    .json message:'Internal Server Error'
             else
                 if results.length < 1
                     res
@@ -69,28 +71,27 @@ module.exports =
                     else
                         offset = 0
 
-
                     results = results.slice offset+1, limit+offset+1
                     for result in results
                         util.acceptFieldsInTaxonomy fieldsAcceptable, result._doc
                     res.json { "#{ranks}":results }
 
 
-
     identifySpecies: (req, res) ->
-        res.header 'Content-Type', 'application/json; charset=utf-8'
-        res.header 'Access-Control-Allow-Origin', '*'
+        res
+            .header 'Content-Type', 'application/json; charset=utf-8'
+            .header 'Access-Control-Allow-Origin', '*'
         Name.find {rank:"species", ja:req.params.identifier}, (err, result) ->
-            if (err)
+            if err
                 res
                     .status 500
-                    .json message:"Internal Server Error"
+                    .json message:'Internal Server Error'
 
             else
                 if result.length < 1
                     res
                         .status 404
-                        .json  message: "Unknown bird name"
+                        .json  message:'Unknown bird name'
                     return
 
                 # use as normal JSON
@@ -106,8 +107,7 @@ module.exports =
                 else
                     fieldsAcceptable = allFields
 
-
-                # recurse getting upper taxonomy
+                # get upper taxonomies recursively in this function
                 util.attachUpperTaxonomies {
                     species
                     taxonomies: []
@@ -115,3 +115,27 @@ module.exports =
                     fieldsAcceptable
                     callback: (body) -> res.json body
                 }
+
+
+    askExistence: (req, res) ->
+        res
+            .header 'Content-Type', 'application/json; charset=utf-8'
+            .header 'Access-Control-Allow-Origin', '*'
+        Name.find {ja:req.params.identifier}, (err, results) ->
+            if err
+              res
+                  .status 500
+                  .json message:'Unknown bird name'
+
+            if results.length > 0
+                result = results[0]
+                res
+                    .status 200
+                    .json {
+                        existence:true
+                        species:result
+                    }
+            else
+                res
+                    .status 200
+                    .json existence:false
