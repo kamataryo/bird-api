@@ -29,6 +29,7 @@ router.use (req, res, next) ->
 # set routers up
 app.use util.getAPIbase(), router
 router.route('/').get routes.doc
+router.route('/inclusion').get routes.findIncluded
 router.route('/:ranks').get routes.ranks
 router.route('/birds/:identifier').get routes.identifySpecies
 router.route('/existence/:identifier').get routes.askExistence

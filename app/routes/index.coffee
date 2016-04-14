@@ -1,10 +1,9 @@
 # app/routes
-
 Name    = require '../models'
 util    = require '../utilities'
 APIbase = util.getAPIbase()
 _       = require 'underscore'
-
+request = require 'request'
 
 module.exports =
     doc: (req, res) ->
@@ -123,9 +122,9 @@ module.exports =
             .header 'Access-Control-Allow-Origin', '*'
         Name.find {ja:req.params.identifier}, (err, results) ->
             if err
-              res
-                  .status 500
-                  .json message:'Unknown bird name'
+                res
+                    .status 500
+                    .json message:'Internal Server Error'
 
             if results.length > 0
                 result = results[0]
@@ -139,3 +138,48 @@ module.exports =
                 res
                     .status 200
                     .json existence:false
+
+
+    findIncluded: (req, res) ->
+        res
+            .header 'Content-Type', 'application/json; charset=utf-8'
+            .header 'Access-Control-Allow-Origin', '*'
+        Name.find {rank:'species'}, (err, allSpecies) =>
+            url = req.query.href
+            histogram = {}
+            unless url?
+                res
+                    .status 200
+                    .json { histogram, aa:'aa' }
+
+            else if err
+                res
+                    .status 500
+                    .json message:'Internal Server Error'
+
+            if url?
+                request.get encodeURI(url), (err, innerRes, body) ->
+                    if err
+                        res
+                            .status 404
+                            .json message:'404 resource queried not found'
+                    else if innerRes.statusCode is 200
+                        body = body.toString()
+
+                        # sort allSpecies
+                        allSpecies.sort (a, b)->
+                            b.ja.length - a.ja.length
+
+                        # find species name
+                        for species in allSpecies
+                            ja = species.ja
+                            replaced = body.replace ja, ''
+                            if body isnt replaced
+                                unless histogram[ja]
+                                    histogram[ja] = (body.length - replaced.length) / ja.length
+                                else
+                                    histogram[ja] += (body.length - replaced.length) / ja.length
+                                body = replaced
+                        res
+                            .status 200
+                            .json { histogram }

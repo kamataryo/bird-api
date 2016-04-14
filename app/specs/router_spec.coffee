@@ -263,3 +263,24 @@ frisby
     .expectJSON '',
             existence: true
     .toss()
+
+
+frisby
+    .create 'GET inclusion success'
+    .get APIurl 'inclusion?href=https://gist.github.com/KamataRyo/9b2c4aca61f2f18b301b198c2987514e'
+    .expectStatus 200
+    .expectHeaderContains 'Content-Type', 'application/json'
+    .expectHeaderContains 'Content-Type', 'charset=UTF-8'
+    .expectHeaderContains 'Access-Control-Allow-Origin', '*'
+    .expectJSONTypes '',
+            histogram: Object
+    .toss()
+
+frisby
+    .create 'GET inclusion failes'
+    .get APIurl 'inclusion?href=invalid-url'
+    .expectStatus 404
+    .expectHeaderContains 'Content-Type', 'application/json'
+    .expectHeaderContains 'Content-Type', 'charset=UTF-8'
+    .expectHeaderContains 'Access-Control-Allow-Origin', '*'
+    .toss()

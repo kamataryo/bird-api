@@ -1,12 +1,11 @@
 {
   "name": "bird-api",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "日本の野鳥 Web API",
   "main": "./app/server.js",
   "scripts": {
     "forme-start-mongod": "sudo mongod --dbpath /usr/local/var/mongodb/",
     "debug-server": "./node_modules/gulp/bin/gulp.js watch-app & ./node_modules/node-dev/bin/node-dev ./app/server.js",
-
     "migrate": "mongo birdAPI ./migrations/",
     "build": "./node_modules/gulp/bin/gulp.js coffee",
     "start": "node ./app/server.js &",
@@ -34,6 +33,7 @@
     "http2": "^3.3.2",
     "mongoose": "~4.4.12",
     "morgan": "^1.7.0",
+    "request": "^2.71.0",
     "underscore": "^1.8.3"
   },
   "devDependencies": {
