@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <title>日本の野鳥API</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+  <script src="./main.js"></script>
+</head>
+<body>
+  <h1>日本の野鳥API</h1>
+
+  <section ng-controller="SimpleAPIaccess">
+    <h2>リクエスト</h2>
+    <p>
+      <span>{{APIbase}}</span><input type="text" ng-model="APIend">
+    </p>
+    <a class="btn request" ng-click="request()">GET</a>
+    <h2>結果</h2>
+    <div class="div-result">
+        <p>{{result}}</p>
+    </div>
+  </section>
+
+
+  <section ng-controller="SearchTaxonomy">
+    <h2>分類群を探す</h2>
+    <input type="text" ng-model="name" ng-change="request()">
+    <p><a href="{{APIbase + name}}">{{APIbase + name}}</a></p>
+    <h2>結果</h2>
+    <div class="div-result">
+      <p ng-hide="taxFound">Bird Not Found</p>
+      <ul ng-show="taxFound">
+        <li ng-repeat="tax in taxonomies">{{tax.ja}}</li>
+    </div>
+  </section>
+
+
+  <section ng-controller="birdNameHistogram">
+    <h2>鳥の名前ヒストグラム</h2>
+    <input type="text" ng-model="url">
+    <a class="btn request" ng-click="request()">GET</a>
+    <p>{{histogram}}</p>
+  </section>
+
+</body>
+</html>
