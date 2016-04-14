@@ -6,7 +6,6 @@
   "scripts": {
     "forme-start-mongod": "sudo mongod --dbpath /usr/local/var/mongodb/",
     "debug-server": "./node_modules/gulp/bin/gulp.js watch-app & ./node_modules/node-dev/bin/node-dev ./app/server.js",
-
     "migrate": "mongo birdAPI ./migrations/",
     "build": "./node_modules/gulp/bin/gulp.js coffee",
     "start": "node ./app/server.js &",
