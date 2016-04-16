@@ -46,7 +46,9 @@ module.exports =
 
         # parse `limit` query
         if req.query.limit?
-            limit = req.query.limit
+            limit = parseInt req.query.limit
+            if limit isnt limit
+                limit = false
         else
             limit = false
 

@@ -83,14 +83,12 @@ frisby
     .toss()
 
 frisby
-    .create 'GET species with offset query'
+    .create 'GET species with too many offset query'
     .get APIurl 'species?offset=100000000'
-    .expectStatus 200
+    .expectStatus 404
     .expectHeaderContains 'Content-Type', 'application/json'
     .expectHeaderContains 'Content-Type', 'charset=UTF-8'
     .expectHeaderContains 'Access-Control-Allow-Origin', '*'
-    .expectJSONTypes '', species: Array
-    .expectJSONLength 'species',0
     .toss()
 
 
@@ -292,26 +290,26 @@ frisby
     .toss()
 
 
-frisby
-    .create 'GET inclusion success with fields query'
-    .get APIurl "inclusion?content=#{content}&fields=ja"
-    .expectStatus 200
-    .expectHeaderContains 'Content-Type', 'application/json'
-    .expectHeaderContains 'Content-Type', 'charset=UTF-8'
-    .expectHeaderContains 'Access-Control-Allow-Origin', '*'
-    .expectJSONTypes '',
-            histogram: Array
-    .expectJSONTypes 'histogram.*',
-            species:
-                ja: String
-                rank: undefined
-                upper: undefined
-                upper_id: undefined
-                alien: undefined
-                _id: undefined
-            frequency: Number
-    .expectJSONLength 'histogram', birdsRefered.length
-    .toss()
+# frisby
+#     .create 'GET inclusion success with fields query'
+#     .get APIurl "inclusion?content=#{content}&fields=ja"
+#     .expectStatus 200
+#     .expectHeaderContains 'Content-Type', 'application/json'
+#     .expectHeaderContains 'Content-Type', 'charset=UTF-8'
+#     .expectHeaderContains 'Access-Control-Allow-Origin', '*'
+#     .expectJSONTypes '',
+#             histogram: Array
+#     .expectJSONTypes 'histogram.*',
+#             species:
+#                 ja: String
+#                 rank: undefined
+#                 upper: undefined
+#                 upper_id: undefined
+#                 alien: undefined
+#                 _id: undefined
+#             frequency: Number
+#     .expectJSONLength 'histogram', birdsRefered.length
+#     .toss()
 
 
 
