@@ -265,22 +265,42 @@ frisby
     .toss()
 
 
+content = '''
+日本ではカモ類の多くは渡り鳥ですが、カルガモは留鳥で、年中観察することができます。
+マガモは渡りを行いますが、日本で繁殖する場合もあります。
+滋賀県米原市にある三島池はマガモの繁殖日として有名です。
+
+琵琶湖では、コガモ、オナガガモ、キンクロハジロ、ホシハジロ、スズガモなどのカモ類が多く見られます。
+これらのうち、コガモ、オナガガモ、キンクロハジロ、ホシハジロは狩猟鳥です。
+コガモは狩猟者から「べ」と呼ばれます。
+'''
+
 frisby
     .create 'GET inclusion success'
-    .get APIurl 'inclusion?href=https://gist.github.com/KamataRyo/9b2c4aca61f2f18b301b198c2987514e'
+    .get APIurl "inclusion?content=#{content}"
     .expectStatus 200
     .expectHeaderContains 'Content-Type', 'application/json'
     .expectHeaderContains 'Content-Type', 'charset=UTF-8'
     .expectHeaderContains 'Access-Control-Allow-Origin', '*'
-    .expectJSONTypes '',
-            histogram: Object
+    .expectJSON '',
+            histogram:
+                'カルガモ': 1
+                'マガモ' : 2
+                'コガモ' : 3
+                'オナガガモ' : 2
+                'キンクロハジロ' : 2
+                'ホシハジロ' : 2
+                'スズガモ' : 1
     .toss()
 
+
 frisby
-    .create 'GET inclusion failes'
-    .get APIurl 'inclusion?href=invalid-url'
-    .expectStatus 404
+    .create 'GET inclusion with nocontent'
+    .get APIurl 'inclusion'
+    .expectStatus 200
     .expectHeaderContains 'Content-Type', 'application/json'
     .expectHeaderContains 'Content-Type', 'charset=UTF-8'
     .expectHeaderContains 'Access-Control-Allow-Origin', '*'
+    .expectJSON '',
+            histogram: {}
     .toss()
