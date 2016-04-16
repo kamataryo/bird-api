@@ -3,6 +3,7 @@ Name    = require '../models'
 util    = require '../utilities'
 _       = require 'underscore'
 
+
 module.exports =
     doc: (req, res) ->
         res
@@ -163,10 +164,8 @@ module.exports =
                     ja = species.ja
                     replaced = content.replace (new RegExp ja, 'g'), ''
                     if content isnt replaced # species name found
-                        histogram.push {
-                            species
-                            value: (content.length - replaced.length) / ja.length
-                        }
+                        frequency = (content.length - replaced.length) / ja.length
+                        histogram.push { species, frequency }
                         content = replaced
                 res
                     .status 200

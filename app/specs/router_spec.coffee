@@ -286,7 +286,7 @@ frisby
             histogram: Array
     .expectJSONTypes 'histogram.*',
             species: Object
-            value: Number
+            frequency: Number
     .expectJSONLength 'histogram', ['カルガモ','マガモ','コガモ','オナガガモ','キンクロハジロ','ホシハジロ','スズガモ'].length
     .toss()
 
