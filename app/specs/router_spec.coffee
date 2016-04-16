@@ -274,6 +274,7 @@ content = '''
 これらのうち、コガモ、オナガガモ、キンクロハジロ、ホシハジロは狩猟鳥です。
 コガモは狩猟者から「べ」と呼ばれます。
 '''
+birdsRefered = ['カルガモ','マガモ','コガモ','オナガガモ','キンクロハジロ','ホシハジロ','スズガモ']
 
 frisby
     .create 'GET inclusion success'
@@ -287,8 +288,31 @@ frisby
     .expectJSONTypes 'histogram.*',
             species: Object
             frequency: Number
-    .expectJSONLength 'histogram', ['カルガモ','マガモ','コガモ','オナガガモ','キンクロハジロ','ホシハジロ','スズガモ'].length
+    .expectJSONLength 'histogram', birdsRefered.length
     .toss()
+
+
+frisby
+    .create 'GET inclusion success with fields query'
+    .get APIurl "inclusion?content=#{content}&fields=ja"
+    .expectStatus 200
+    .expectHeaderContains 'Content-Type', 'application/json'
+    .expectHeaderContains 'Content-Type', 'charset=UTF-8'
+    .expectHeaderContains 'Access-Control-Allow-Origin', '*'
+    .expectJSONTypes '',
+            histogram: Array
+    .expectJSONTypes 'histogram.*',
+            species:
+                ja: String
+                rank: undefined
+                upper: undefined
+                upper_id: undefined
+                alien: undefined
+                _id: undefined
+            frequency: Number
+    .expectJSONLength 'histogram', birdsRefered.length
+    .toss()
+
 
 
 frisby

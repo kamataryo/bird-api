@@ -25,53 +25,57 @@ module.exports =
         # get plural form of rank
         ranks = req.params.ranks
         rank = util.singular_for[ranks]
-        Name.find { rank }, (err, results) ->
-            if err
-                res
-                    .status 500
-                    .json message:'Internal Server Error'
+
+        #parse `fields` query
+        if req.query.fields?
+            fields = req.query.fields
+                .split ','
+                .join ' '
+        else
+            fields = ''
+
+        # parse `offset` query
+        if req.query.offset?
+            offset = parseInt req.query.offset
+            if offset isnt offset
+                offset = 0
             else
+                if offset < 0 then offset = 0
+        else
+            offset = 0
+
+        # parse `limit` query
+        if req.query.limit?
+            limit = req.query.limit
+        else
+            limit = false
+
+        promise = Name
+            .find {rank}
+            .select fields
+            .skip offset # map skip as offset for request
+            .limit limit
+            .exec()
+
+        promise
+            .then (results) ->
                 if results.length < 1
                     res
                         .status 404
                         .json message: 'Unknown Resource'
                 else
+                    # set Alias
                     if ranks is 'birds' then ranks = 'species'
 
-                    # filter fields
-                    allFields = Object.keys results[0]._doc
-                    if req.query.fields?
-                        fieldsAcceptable = req.query.fields.split ','
-                        unless util.atLeastContains fieldsAcceptable, allFields
-                            fieldsAcceptable = allFields
-                    else
-                        fieldsAcceptable = allFields
-
-
-                    # deal limit query
-                    if req.query.limit?
-                        limit = parseInt req.query.limit
-                        if limit isnt limit
-                            limit = results.length
-                        else
-                            if limit < 0 then limit = 0
-                    else
-                        limit = results.length
-
-                    # deal offset query
-                    if req.query.offset?
-                        offset = parseInt req.query.offset
-                        if offset isnt offset
-                            offset = 0
-                        else
-                            if offset < 0 then offset = 0
-                    else
-                        offset = 0
-
-                    results = results.slice offset+1, limit+offset+1
-                    for result in results
-                        util.acceptFieldsInTaxonomy fieldsAcceptable, result._doc
                     res.json { "#{ranks}":results }
+
+            .catch (error) ->
+                console.log error
+                res
+                    .status 500
+                    .json message:'Internal Server Error'
+
+
 
 
     identifySpecies: (req, res) ->
