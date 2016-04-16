@@ -138,13 +138,13 @@ module.exports =
                     .json existence:false
 
 
-    findIncluded: (req, res) ->
+    findInclusion: (req, res) ->
         res
             .header 'Content-Type', 'application/json; charset=utf-8'
             .header 'Access-Control-Allow-Origin', '*'
 
         Name.find {rank:'species'}, (err, allSpecies) =>
-            histogram = {}
+            histogram = []
             content = req.query.content
             unless content? then content = ''
 
@@ -161,13 +161,13 @@ module.exports =
                 # find species name
                 for species in allSpecies
                     ja = species.ja
-                    replaced = body.replace ja, ''
-                    if body isnt replaced
-                        unless histogram[ja]
-                            histogram[ja] = (body.length - replaced.length) / ja.length
-                        else
-                            histogram[ja] += (body.length - replaced.length) / ja.length
-                        body = replaced
+                    replaced = content.replace (new RegExp ja, 'g'), ''
+                    if content isnt replaced # species name found
+                        histogram.push {
+                            species
+                            value: (content.length - replaced.length) / ja.length
+                        }
+                        content = replaced
                 res
                     .status 200
                     .json { histogram }

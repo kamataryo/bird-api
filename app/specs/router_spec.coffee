@@ -268,7 +268,7 @@ frisby
 content = '''
 日本ではカモ類の多くは渡り鳥ですが、カルガモは留鳥で、年中観察することができます。
 マガモは渡りを行いますが、日本で繁殖する場合もあります。
-滋賀県米原市にある三島池はマガモの繁殖日として有名です。
+滋賀県米原市にある三島池はマガモの繁殖の南限地として有名です。
 
 琵琶湖では、コガモ、オナガガモ、キンクロハジロ、ホシハジロ、スズガモなどのカモ類が多く見られます。
 これらのうち、コガモ、オナガガモ、キンクロハジロ、ホシハジロは狩猟鳥です。
@@ -282,15 +282,12 @@ frisby
     .expectHeaderContains 'Content-Type', 'application/json'
     .expectHeaderContains 'Content-Type', 'charset=UTF-8'
     .expectHeaderContains 'Access-Control-Allow-Origin', '*'
-    .expectJSON '',
-            histogram:
-                'カルガモ': 1
-                'マガモ' : 2
-                'コガモ' : 3
-                'オナガガモ' : 2
-                'キンクロハジロ' : 2
-                'ホシハジロ' : 2
-                'スズガモ' : 1
+    .expectJSONTypes '',
+            histogram: Array
+    .expectJSONTypes 'histogram.*',
+            species: Object
+            value: Number
+    .expectJSONLength 'histogram', ['カルガモ','マガモ','コガモ','オナガガモ','キンクロハジロ','ホシハジロ','スズガモ'].length
     .toss()
 
 
@@ -302,5 +299,5 @@ frisby
     .expectHeaderContains 'Content-Type', 'charset=UTF-8'
     .expectHeaderContains 'Access-Control-Allow-Origin', '*'
     .expectJSON '',
-            histogram: {}
+            histogram: []
     .toss()
