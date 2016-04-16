@@ -3,7 +3,6 @@ Name    = require '../models'
 util    = require '../utilities'
 _       = require 'underscore'
 
-
 module.exports =
     doc: (req, res) ->
         res
