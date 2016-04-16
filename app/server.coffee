@@ -15,28 +15,15 @@ util       = require './utilities'
 # load and configure express plugins
 app.use bodyParser.urlencoded(extended: true)
 app.use bodyParser.json()
-app.use morgan('common',immediate:true)
-###
-# morgan setting and something
-app.use express.static(__dirname + '/public')
-router.use (req, res, next) ->
-    console.log 'Detect access.'
-    console.log Object.keys req
-    console.log req.connection
-    next()
-###
+app.use morgan('common',immediate:true) # morgan setting default
 
 # set routers up
 app.use util.getAPIbase(), router
-router.route('/').get routes.doc
-router.route('/inclusion').get routes.findIncluded
-router.route('/:ranks').get routes.ranks
-router.route('/birds/:identifier').get routes.identifySpecies
+router.route('/').get                      routes.doc
+router.route('/inclusion').get             routes.findIncluded
+router.route('/:ranks').get                routes.ranks
+router.route('/birds/:identifier').get     routes.identifySpecies
 router.route('/existence/:identifier').get routes.askExistence
-
-# start listening
-mongoose.connect 'mongodb://localhost/birdAPI'
-port = process.env.PORT || util.port
 
 ###
 # http2 settings
@@ -49,5 +36,9 @@ require('http2')
         console.log "server start listenning.."
 ###
 
+# start listening
+mongoose.connect 'mongodb://localhost/birdAPI'
+port = process.env.PORT || util.port
+
 app.listen port,'localhost', ->
-    console.log "server start listenning.."
+    console.log "server start listenning at #{port}.."
