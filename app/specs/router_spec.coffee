@@ -16,10 +16,6 @@ frisby
     .create 'bad request(2)'
     .get APIurl 'some_strange_directory/not_acceptable'
     .expectStatus 404
-    # .expectHeaderContains 'Content-Type', 'application/json'
-    # .expectHeaderContains 'Content-Type', 'charset=UTF-8'
-    # .expectHeaderContains 'Access-Control-Allow-Origin', '*'
-
     .toss()
 
 frisby

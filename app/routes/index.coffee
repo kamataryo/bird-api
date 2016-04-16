@@ -26,31 +26,7 @@ module.exports =
         ranks = req.params.ranks
         rank = util.singular_for[ranks]
 
-        #parse `fields` query
-        if req.query.fields?
-            fields = req.query.fields
-                .split ','
-                .join ' '
-        else
-            fields = ''
-
-        # parse `offset` query
-        if req.query.offset?
-            offset = parseInt req.query.offset
-            if offset isnt offset
-                offset = 0
-            else
-                if offset < 0 then offset = 0
-        else
-            offset = 0
-
-        # parse `limit` query
-        if req.query.limit?
-            limit = parseInt req.query.limit
-            if limit isnt limit
-                limit = false
-        else
-            limit = false
+        { fields, offset, limit } = util.parseQuery req
 
         promise = Name
             .find {rank}
@@ -72,10 +48,9 @@ module.exports =
                     res.json { "#{ranks}":results }
 
             .catch (error) ->
-                console.log error
                 res
-                    .status 500
-                    .json message:'Internal Server Error'
+                    .status 400
+                    .json message:'bad request.'
 
 
 
