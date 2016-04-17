@@ -62,11 +62,12 @@ module.exports =
         rank = util.singular_for[ranks]
         identifier = req.params.identifier
 
+        # parse queries
+        { fields } = util.parseQuery req
+
         res
             .header 'Content-Type', 'application/json; charset=utf-8'
             .header 'Access-Control-Allow-Origin', '*'
-
-        { fields } = util.parseQuery req
 
         promise1 = Name
             .find {rank, ja:identifier}
@@ -102,35 +103,44 @@ module.exports =
                 console.log err
                 res
                     .status 500
-                    .json {
-                        error: err
-                        message:'Internal Server Error'
-                    }
+                    .json message:'Internal Server Error'
 
 
 
     askExistence: (req, res) ->
+
+        # parse params
+        identifier = req.params.identifier
+
+        # parse queries
+        { fields } = util.parseQuery req
+
         res
             .header 'Content-Type', 'application/json; charset=utf-8'
             .header 'Access-Control-Allow-Origin', '*'
-        Name.find {ja:req.params.identifier}, (err, results) ->
-            if err
+
+        Name
+            .find {rank:'species', ja:identifier}
+            .select fields
+            .exec()
+            .then (results) ->
+                if results.length > 0
+                    result = results[0]
+                    res
+                        .status 200
+                        .json {
+                            existence: true
+                            name: result
+                        }
+                else
+                    res
+                        .status 200
+                        .json existence: false
+            .catch (err) ->
+                console.log err
                 res
                     .status 500
                     .json message:'Internal Server Error'
-
-            if results.length > 0
-                result = results[0]
-                res
-                    .status 200
-                    .json {
-                        existence:true
-                        species:result
-                    }
-            else
-                res
-                    .status 200
-                    .json existence:false
 
 
     findInclusion: (req, res) ->

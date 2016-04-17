@@ -1,6 +1,5 @@
 frisby   = require 'frisby'
 APIurl   = require('../utilities').getAPIurl
-ObjectId = require('mongoose').Schema.Types.ObjectId
 
 frisby
     .create 'bad request(1)'
@@ -242,7 +241,7 @@ frisby
     .expectHeaderContains 'Access-Control-Allow-Origin', '*'
     .expectJSONTypes '',
             existence: Boolean
-            species: undefined
+            name: undefined
     .expectJSON '',
             existence: false
     .toss()
@@ -257,7 +256,26 @@ frisby
     .expectHeaderContains 'Access-Control-Allow-Origin', '*'
     .expectJSONTypes '',
             existence: Boolean
-            species: Object
+            name: Object
+    .expectJSON '',
+            existence: true
+    .toss()
+
+frisby
+    .create 'GET existence/マガモ?fields=ja'
+    .get APIurl 'existence/マガモ?fields=ja'
+    .expectStatus 200
+    .expectHeaderContains 'Content-Type', 'application/json'
+    .expectHeaderContains 'Content-Type', 'charset=UTF-8'
+    .expectHeaderContains 'Access-Control-Allow-Origin', '*'
+    .expectJSONTypes '',
+            existence: Boolean
+            name:
+                _id: String
+                ja: String
+                sc: undefined
+                rank: undefined
+                upper_id: undefined
     .expectJSON '',
             existence: true
     .toss()
