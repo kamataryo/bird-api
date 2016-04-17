@@ -10,9 +10,6 @@ host    = meta.settings[STAGE].host
 port    = meta.settings[STAGE].port
 version = meta.version.split('.')[0]
 
-
-# modules to export
-
 ## taxonomies relationships
 upper_for =
     family:     'order'
@@ -35,47 +32,43 @@ getAPIbase = ->
 getAPIurl = (dir) ->
     "http://#{host}#{if port then ':' + port}#{getAPIbase()}/#{encodeURI dir}"
 
-buildBiomen = (species, taxonomies) ->
-    species = species.sc
-    genus = ''
-    for taxonomy in taxonomies
-        if taxonomy.rank = 'genus'
-            genus = taxonomy.sc
-            break
-    n = genus.length
-    return genus[0].toUpperCase() + genus[1...n].toLowerCase() + ' ' + species.toLowerCase()
+buildBinomen = (species_sc, genus_sc) ->
+    n = genus_sc.length
+    return genus_sc[0].toUpperCase() + genus_sc[1...n].toLowerCase() + ' ' + species_sc.toLowerCase()
 
 # find upper taxonomies from db
-attachUpperTaxonomies = ({species, upper_id, taxonomies, fieldsAcceptable, callback}) ->
+attachUpperTaxonomies = ({name, binomen, taxonomies, reference, fields, callback}) ->
+    unless taxonomies? then taxonomies = []
 
-    Name.findById upper_id, (err, upper) ->
-        upper = upper._doc
-        upper_id = upper.upper_id
+    promise1 = Name
+        .findById reference.upper_id
+        .select fields
+        .exec()
 
-        taxonomies.push upper
+    promise2 = Name
+        .findById reference.upper_id
+        .exec()
 
-        if upper_id?
-            attachUpperTaxonomies {
-                species
-                taxonomies
-                upper_id
-                fieldsAcceptable
-                callback
-            }
-        else
-            biomen = buildBiomen species, taxonomies
-            for taxonomy in taxonomies
-                acceptFieldsInTaxonomy fieldsAcceptable, taxonomy
-                acceptFieldsInTaxonomy fieldsAcceptable, species
+    Promise.all [promise1, promise2]
+        .then ([upper, ref2Upper]) ->
 
-            callback {species, biomen, taxonomies}
+            if reference.rank is 'species'
+                binomen = buildBinomen reference.sc, ref2Upper.sc
 
+            upper_id = reference.upper_id
+            if upper_id?
+                taxonomies.push upper
+                attachUpperTaxonomies {
+                    name
+                    binomen
+                    taxonomies
+                    reference:ref2Upper
+                    fields
+                    callback
+                }
+            else
+                callback {name,binomen, taxonomies}
 
-acceptFieldsInTaxonomy = (fieldsAcceptable, taxonomy) ->
-
-    allFields = Object.keys taxonomy
-    for field in allFields
-        unless field in fieldsAcceptable then delete taxonomy[field]
 
 
 
@@ -124,7 +117,6 @@ module.exports = {
     getAPIbase
     getAPIurl
     attachUpperTaxonomies
-    acceptFieldsInTaxonomy
     atLeastContains
     singular_for
     parseQuery

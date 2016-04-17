@@ -47,7 +47,7 @@ module.exports =
 
                     res.json { "#{ranks}":results }
 
-            .catch (error) ->
+            .catch (err) ->
                 res
                     .status 400
                     .json message:'bad request.'
@@ -55,44 +55,58 @@ module.exports =
 
 
 
-    identifySpecies: (req, res) ->
+    identifyName: (req, res) ->
+
+        # parse params
+        ranks = req.params.ranks
+        rank = util.singular_for[ranks]
+        identifier = req.params.identifier
+
         res
             .header 'Content-Type', 'application/json; charset=utf-8'
             .header 'Access-Control-Allow-Origin', '*'
-        Name.find {rank:"species", ja:req.params.identifier}, (err, result) ->
-            if err
-                res
-                    .status 500
-                    .json message:'Internal Server Error'
 
-            else
-                if result.length < 1
+        { fields } = util.parseQuery req
+
+        promise1 = Name
+            .find {rank, ja:identifier}
+            .select fields
+            .exec()
+
+        promise2 = Name
+            .find {rank, ja:identifier}
+            .exec()
+
+        Promise.all [promise1, promise2]
+            .then ([results, references]) ->
+                if results.length < 1
                     res
                         .status 404
                         .json  message:'Unknown bird name'
-                    return
-
-                # use as normal JSON
-                species = result[0]._doc
-                upper_id = species.upper_id
-
-                # filter fields
-                allFields = Object.keys species
-                if req.query.fields?
-                    fieldsAcceptable = req.query.fields.split ','
-                    unless util.atLeastContains fieldsAcceptable, allFields
-                        fieldsAcceptable = allFields
                 else
-                    fieldsAcceptable = allFields
+                    name = results[0]
+                    reference = references[0]
 
-                # get upper taxonomies recursively in this function
-                util.attachUpperTaxonomies {
-                    species
-                    taxonomies: []
-                    upper_id
-                    fieldsAcceptable
-                    callback: (body) -> res.json body
-                }
+                    if reference.upper_id?
+                        # get upper taxonomies recursively in this function
+                        util.attachUpperTaxonomies {
+                            name      # filtered object
+                            reference # non-filtered onject
+                            fields    # filter
+                            callback: (body) -> res.json body
+                        }
+                    else
+                        res.json { name }
+
+            .catch (err) ->
+                console.log err
+                res
+                    .status 500
+                    .json {
+                        error: err
+                        message:'Internal Server Error'
+                    }
+
 
 
     askExistence: (req, res) ->

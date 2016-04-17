@@ -143,10 +143,10 @@ frisby
     .expectHeaderContains 'Content-Type', 'charset=UTF-8'
     .expectHeaderContains 'Access-Control-Allow-Origin', '*'
     .expectJSONTypes '',
-            species: Object
-            biomen: String
+            name: Object
+            binomen: String
             taxonomies: Array
-    .expectJSONTypes 'species',
+    .expectJSONTypes 'name',
             sc: String
             ja: String
             alien: Boolean
@@ -167,10 +167,10 @@ frisby
     .expectHeaderContains 'Content-Type', 'charset=UTF-8'
     .expectHeaderContains 'Access-Control-Allow-Origin', '*'
     .expectJSONTypes '',
-            species: Object
-            biomen: String
+            name: Object
+            binomen: String
             taxonomies: Array
-    .expectJSONTypes 'species',
+    .expectJSONTypes 'name',
             sc: undefined
             ja: String
             alien: Boolean
@@ -190,10 +190,10 @@ frisby
     .expectHeaderContains 'Content-Type', 'charset=UTF-8'
     .expectHeaderContains 'Access-Control-Allow-Origin', '*'
     .expectJSONTypes '',
-            species: Object
-            biomen: String
+            name: Object
+            binomen: String
             taxonomies: Array
-    .expectJSONTypes 'species',
+    .expectJSONTypes 'name',
             sc: undefined
             ja: String
             alien: undefined
@@ -213,19 +213,23 @@ frisby
     .expectHeaderContains 'Content-Type', 'charset=UTF-8'
     .expectHeaderContains 'Access-Control-Allow-Origin', '*'
     .expectJSONTypes '',
-            species: Object
-            biomen: String
+            name: Object
+            binomen: String
             taxonomies: Array
-    .expectJSONTypes 'species',
-            sc: String
-            ja: String
-            alien: Boolean
-            rank: String
-            upper_id: String
+    .expectJSONTypes 'name',
+            _id: String
+            sc: undefined
+            ja: undefined
+            alien: undefined
+            rank: undefined
+            upper_id: undefined
     .expectJSONTypes 'taxonomies.*',
-            sc: String
-            ja: String
-            rank: String
+            _id: String
+            sc: undefined
+            ja: undefined
+            alien: undefined
+            rank: undefined
+            upper_id: undefined
     .toss()
 
 

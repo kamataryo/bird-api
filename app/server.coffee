@@ -22,7 +22,7 @@ app.use util.getAPIbase(), router
 router.route('/').get                      routes.doc
 router.route('/inclusion').get             routes.findInclusion
 router.route('/:ranks').get                routes.ranks
-router.route('/birds/:identifier').get     routes.identifySpecies
+router.route('/:ranks/:identifier').get    routes.identifyName
 router.route('/existence/:identifier').get routes.askExistence
 
 ###
