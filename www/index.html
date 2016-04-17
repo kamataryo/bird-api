@@ -1,46 +1,27 @@
 <!DOCTYPE html>
 <html ng-app="myApp">
-<head>
-  <meta charset="UTF-8">
-  <title>日本の野鳥API</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
-  <script src="./main.js"></script>
-</head>
-<body>
-  <h1>日本の野鳥API</h1>
-
-  <section ng-controller="SimpleAPIaccess">
-    <h2>リクエスト</h2>
-    <p>
-      <span>{{APIbase}}</span><input type="text" ng-model="APIend">
-    </p>
-    <a class="btn request" ng-click="request()">GET</a>
-    <h2>結果</h2>
-    <div class="div-result">
-        <p>{{result}}</p>
-    </div>
-  </section>
-
-
-  <section ng-controller="SearchTaxonomy">
-    <h2>分類群を探す</h2>
-    <input type="text" ng-model="name" ng-change="request()">
-    <p><a href="{{APIbase + name}}">{{APIbase + name}}</a></p>
-    <h2>結果</h2>
-    <div class="div-result">
-      <p ng-hide="taxFound">Bird Not Found</p>
-      <ul ng-show="taxFound">
-        <li ng-repeat="tax in taxonomies">{{tax.ja}}</li>
-    </div>
-  </section>
-
-
-  <section ng-controller="birdNameHistogram">
-    <h2>鳥の名前ヒストグラム</h2>
-    <input type="text" ng-model="url">
-    <a class="btn request" ng-click="request()">GET</a>
-    <p>{{histogram}}</p>
-  </section>
-
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>日本の野鳥API</title>
+    <script src="./bower_components/angular/angular.min.js"></script>
+    <script src="./bower_components/Chart.js/Chart.js"></script>
+    <script src="./bower_components/angular-chart.js/angular-chart.js"></script>
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="bower_components/angular-chart.js/dist/angular-chart.css">
+  </head>
+  <body>
+    <h1>日本の野鳥API</h1>
+    <section ng-controller="birdNameHistogram">
+      <h2>鳥の名前ヒストグラム</h2>
+      <textarea type="text" ng-model="content"></textarea>
+      <select name="rank" id="rank" ng-model="rank" ng-change="request()">
+        <option value="species">種レベル</option>
+        <option value="genus">属レベル</option>
+        <option value="family">科レベル</option>
+        <option value="order">目レベル</option>
+      </select>
+      <canvas id="pie" class="chart chart-pie" chart-legend="true" chart-data="data" chart-labels="labels">
+      </canvas>
+    </section>
+  </body>
 </html>
