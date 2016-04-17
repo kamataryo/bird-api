@@ -19,10 +19,9 @@ coffeePipeline = (src, dest) ->
             .pipe sourcemaps.write()
             .pipe gulp.dest dest
 
-gulp.task 'coffee-migrations', coffeePipeline(srcs.migrations, './migrations')
-gulp.task 'coffee-app',        coffeePipeline(srcs.app,        './app')
-gulp.task 'coffee-www',        coffeePipeline(srcs.www,        './www')
-
+gulp.task 'coffee-migrations', coffeePipeline(srcs.migrations, './migrations/')
+gulp.task 'coffee-app',        coffeePipeline(srcs.app,        './app/')
+gulp.task 'coffee-www',        coffeePipeline(srcs.www,        './www/')
 
 gulp.task 'coffee', [
     'coffee-migrations'
