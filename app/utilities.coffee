@@ -107,7 +107,12 @@ parseQuery = (req) ->
     else
         limit = false
 
-    return { fields, offset, limit }
+    # parse `content` query
+    content = req.query.content
+    unless content? then content = ''
+
+
+    return { fields, offset, limit, content }
 
 
 module.exports = {

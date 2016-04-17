@@ -144,21 +144,20 @@ module.exports =
 
 
     findInclusion: (req, res) ->
+
+
+        # parse queries
+        { content } = util.parseQuery req
+
         res
             .header 'Content-Type', 'application/json; charset=utf-8'
             .header 'Access-Control-Allow-Origin', '*'
 
-        Name.find {rank:'species'}, (err, allSpecies) =>
-            histogram = []
-            content = req.query.content
-            unless content? then content = ''
-
-            if err
-                res
-                    .status 500
-                    .json message:'Internal Server Error'
-
-            else
+        Name
+            .find {rank:'species'}
+            .exec()
+            .then (allSpecies) ->
+                histogram = []
                 # sort allSpecies
                 allSpecies.sort (a, b)->
                     b.ja.length - a.ja.length
@@ -174,3 +173,9 @@ module.exports =
                 res
                     .status 200
                     .json { histogram }
+
+            .catch (err) ->
+                console.log err
+                res
+                    .status 500
+                    .json message:'Internal Server Error'
