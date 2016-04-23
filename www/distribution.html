@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="myApp" lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>日本の野鳥API</title>
+    <script src="./bower_components/angular/angular.min.js"></script>
+    <script src="./bower_components/Chart.js/Chart.js"></script>
+    <script src="./bower_components/angular-chart.js/angular-chart.js"></script>
+    <script src="./distribution.js"></script>
+    <script src="http://maps.google.com/maps/api/js"></script>
+    <script src="./bower_components/ngmap/build/scripts/ng-map.min.js"></script>
+    <link rel="stylesheet" href="bower_components/angular-chart.js/dist/angular-chart.css">
+    <style>
+      html, body {font-size: 24px;}
+      h1, h2 {font-size: 1em;}
+      section { padding: 0 2em; }
+      input {font-size: 1em;}
+    </style>
+  </head>
+  <body>
+
+    <h1>日本の野鳥API</h1>
+    <section ng-controller="bird-distribution">
+      <h2>観察した野鳥</h2>
+      <form>
+        <label for="ja">標準和名</label>
+        <input name="ja" id="ja" type="text" ng-model="ja">
+        <br />
+        <label for="name">見つけたところ</label>
+        <input name="name" id="place" type="text" ng-model="place">
+        <p>
+          <a href="#" ng-click="post()">POST above</a><br /><span>last-status: {{lastPostStatus}}</span>
+        </p>
+        <p>
+          <a href="#" ng-click="get()">GET all</a><br /><span>last-status: {{lastGetStatus}}</span>
+        </p>
+
+        <ng-map zoom="1" center="55,55" ng-if="distributions">
+          <marker ng-repeat="dist in distributions" position="{{dist.place}}" draggable="true" title={{dist.place}}></marker>
+        </ng-map>
+      </form>
+    </section>
+  </body>
+</html>
