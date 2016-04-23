@@ -214,11 +214,35 @@ module.exports =
 
             .catch (err) ->
                 console.log err
-                res
-                    .status 500
-                    .json message:'Internal Server Error'
 
 
 
     postDistributionsOf: (req, res) ->
-        return
+        # parse body
+        {ja, place} = req.body.ja, req.body.place
+        unless ja? or place?
+            res
+                .status 404
+                .json {message: 'no `ja` or `place` field in body.'}
+        else
+            Name
+                .find {rank:species, ja}
+                .select '_id'
+                .exec()
+                .then (results)->
+                    if results.length < 1
+                        res
+                            .status 404
+                            .json {message: 'no birdname registered.'}
+                        throw new Error 'Unknown bird name'
+                    else
+                        return results[0]._id
+                .then (bird_id) ->
+                    Distribution
+                        .insert {bird_id, place}
+                        .exec()
+                .then (insertion) ->
+                    if insertion
+                        res
+                            .status 200
+                            .json {message: 'post success.'}
