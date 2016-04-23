@@ -1,5 +1,5 @@
 # app/routes
-Name    = require '../models'
+Name    = require('../models').Name
 util    = require '../utilities'
 _       = require 'underscore'
 
