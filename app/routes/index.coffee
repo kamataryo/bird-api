@@ -178,11 +178,47 @@ module.exports =
                     .json message:'Internal Server Error'
 
 
+
     getDistributions: (req, res) ->
         return
 
+
+
     getDistributionsOf: (req, res) ->
-        return
+        # parse params
+        identifier = req.params.identifier
+        res
+            .header 'Content-Type', 'application/json; charset=utf-8'
+            .header 'Access-Control-Allow-Origin', '*'
+
+        promise1 = Name
+            .find {rank:'species', ja:identifier}
+            .select '_id'
+            .exec()
+            .then (results) ->
+                if results.length < 1
+                    res.
+                        .status 404
+                        .json  message:'Unknown bird name'
+                    throw new Error 'Unknown bird name'
+                else
+                    return results[0]
+            .then ({id})->
+                Distribution
+                    .find {name_id: id}
+                    .exec()
+                    .then (results) ->
+                        res
+                            .status 200
+                            .json {name:identifier, distributions:results}
+
+            .catch (err) ->
+                console.log err
+                res
+                    .status 500
+                    .json message:'Internal Server Error'
+
+
 
     postDistributionsOf: (req, res) ->
         return
