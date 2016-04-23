@@ -22,8 +22,7 @@ app.use util.getAPIbase(), router
 router.route('/').get                      routes.doc
 router.route('/inclusion').get             routes.findInclusion
 
-router.route('/distributions').get             routes.getDistributions
-router.route('/distributions').post            routes.postDdistributionsOf
+router.route('/distributions').post            routes.postDistributionsOf
 router.route('/distributions/:identifier').get routes.getDistributionsOf
 
 router.route('/existence/:identifier').get routes.askExistence

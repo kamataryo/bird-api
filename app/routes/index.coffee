@@ -54,7 +54,6 @@ module.exports =
                     .json message:'bad request.'
 
 
-
     identifyName: (req, res) ->
         # parse params
         ranks = req.params.ranks
@@ -105,7 +104,6 @@ module.exports =
                     .json message:'Internal Server Error'
 
 
-
     askExistence: (req, res) ->
         # parse params
         identifier = req.params.identifier
@@ -139,7 +137,6 @@ module.exports =
                 res
                     .status 500
                     .json message:'Internal Server Error'
-
 
 
     findInclusion: (req, res) ->
@@ -178,12 +175,6 @@ module.exports =
                     .json message:'Internal Server Error'
 
 
-
-    getDistributions: (req, res) ->
-        return
-
-
-
     getDistributionsOf: (req, res) ->
         # parse params
         identifier = req.params.identifier
@@ -197,52 +188,61 @@ module.exports =
             .exec()
             .then (results) ->
                 if results.length < 1
-                    res.
+                    res
                         .status 404
-                        .json  message:'Unknown bird name'
                     throw new Error 'Unknown bird name'
                 else
-                    return results[0]
-            .then ({id})->
-                Distribution
-                    .find {name_id: id}
-                    .exec()
-                    .then (results) ->
-                        res
-                            .status 200
-                            .json {name:identifier, distributions:results}
+                    id = results[0]._id
+                    console.log id
+                    Distribution
+                        .find {name_id: id}
+                        .exec()
+                        .then (results) ->
+                            res
+                                .status 200
+                                .json {name:identifier, distributions:results}
 
             .catch (err) ->
                 console.log err
-
+                res
+                    .status 500
+                    .json {message:'internal server erroe'}
 
 
     postDistributionsOf: (req, res) ->
         # parse body
-        {ja, place} = req.body.ja, req.body.place
+        [ja, place] = [req.body.ja, req.body.place]
+        res
+            .header 'Content-Type', 'application/json; charset=utf-8'
+            .header 'Access-Control-Allow-Origin', '*'
+
         unless ja? or place?
             res
                 .status 404
                 .json {message: 'no `ja` or `place` field in body.'}
         else
             Name
-                .find {rank:species, ja}
-                .select '_id'
+                .find {rank:'species', ja}
                 .exec()
-                .then (results)->
+                .then (results) ->
                     if results.length < 1
                         res
                             .status 404
                             .json {message: 'no birdname registered.'}
                         throw new Error 'Unknown bird name'
                     else
-                        return results[0]._id
-                .then (bird_id) ->
-                    Distribution
-                        .insert {bird_id, place}
-                        .exec()
-                .then (insertion) ->
-                    if insertion
-                        res
-                            .status 200
-                            .json {message: 'post success.'}
+                        name_id = results[0]._id
+                        new Distribution {name_id, place}
+                            .save (err) ->
+                                if err
+                                    res
+                                        .status 500
+                                        .json {message:'iteranal server error.'}
+                                else
+                                    res
+                                        .status 200
+                                        .json {
+                                            species: results[0]
+                                            message: 'post success.'
+                                            distribution: {name_id, place}
+                                        }

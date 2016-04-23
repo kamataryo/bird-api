@@ -341,3 +341,51 @@ frisby
     .expectJSON '',
             histogram: []
     .toss()
+
+
+frisby
+    .create 'POST distributions'
+    .post APIurl('distributions'), {ja: 'ウズラ', place: '横浜'}, {json:true}
+    .expectStatus 200
+    .expectHeaderContains 'Content-Type', 'application/json'
+    .expectHeaderContains 'Content-Type', 'charset=UTF-8'
+    .expectHeaderContains 'Access-Control-Allow-Origin', '*'
+    .after (err, res, body) ->
+        frisby
+            .create 'GET AFTER POST'
+            .get APIurl 'distributions/ウズラ'
+            .expectStatus 200
+            .expectHeaderContains 'Content-Type', 'application/json'
+            .expectHeaderContains 'Content-Type', 'charset=UTF-8'
+            .expectHeaderContains 'Access-Control-Allow-Origin', '*'
+            .expectJSON '',
+                name: 'ウズラ'
+            .expectJSON 'distributions.*',
+                place: '横浜'
+            .expectJSONTypes 'distributions.*',
+                name_id: String
+            .toss()
+    .toss()
+
+
+# frisby
+#     .create 'POST distributions'
+#     .post APIurl('distributions'), {ja: 'カワガラス', place: '川'}, {json:true}
+#     .post APIurl('distributions'), {ja: 'カワガラス', place: '渓谷'}, {json:true}
+#     .post APIurl('distributions'), {ja: 'ウミガラス', place: '海'}, {json:true}
+#     .after (err, res, body) ->
+#         frisby
+#             .create 'GET AFTER POST'
+#             .get APIurl 'distributions'
+#             .expectStatus 200
+#             .expectHeaderContains 'Content-Type', 'application/json'
+#             .expectHeaderContains 'Content-Type', 'charset=UTF-8'
+#             .expectHeaderContains 'Access-Control-Allow-Origin', '*'
+#             .expectJSON '',
+#                 name: 'ウズラ'
+#             .expectJSON 'distributions.*',
+#                 place: '横浜'
+#             .expectJSONTypes 'distributions.*',
+#                 name_id: String
+#             .toss()
+#     .toss()
