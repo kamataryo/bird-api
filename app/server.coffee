@@ -21,6 +21,11 @@ app.use morgan('common',immediate:true) # morgan setting default
 app.use util.getAPIbase(), router
 router.route('/').get                      routes.doc
 router.route('/inclusion').get             routes.findInclusion
+
+router.route('/distributions').get              routes.getDistributions
+router.route('/distributions/:identifier').get  routes.getDistributionsOf
+router.route('/distributions/:identifier').post routes.postDdistributionsOf
+
 router.route('/existence/:identifier').get routes.askExistence
 router.route('/:ranks').get                routes.ranks
 router.route('/:ranks/:identifier').get    routes.identifyName

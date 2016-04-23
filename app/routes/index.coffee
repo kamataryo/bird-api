@@ -1,5 +1,6 @@
 # app/routes
-Name    = require('../models').Name
+Name         = require('../models').Name
+Distribution = require('../models').Distribution
 util    = require '../utilities'
 _       = require 'underscore'
 
@@ -54,9 +55,7 @@ module.exports =
 
 
 
-
     identifyName: (req, res) ->
-
         # parse params
         ranks = req.params.ranks
         rank = util.singular_for[ranks]
@@ -108,7 +107,6 @@ module.exports =
 
 
     askExistence: (req, res) ->
-
         # parse params
         identifier = req.params.identifier
 
@@ -143,9 +141,8 @@ module.exports =
                     .json message:'Internal Server Error'
 
 
+
     findInclusion: (req, res) ->
-
-
         # parse queries
         { content } = util.parseQuery req
 
@@ -179,3 +176,13 @@ module.exports =
                 res
                     .status 500
                     .json message:'Internal Server Error'
+
+
+    getDistributions: (req, res) ->
+        return
+
+    getDistributionsOf: (req, res) ->
+        return
+
+    postDistributionsOf: (req, res) ->
+        return
