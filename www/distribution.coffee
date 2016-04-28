@@ -6,7 +6,6 @@ app.config [
         $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8'
 ]
 
-
 app.controller 'bird-distribution', [
     'NgMap'
     '$http'
@@ -21,9 +20,7 @@ app.controller 'bird-distribution', [
                 .success (data, status) ->
                     $scope.lastPostStatus = status
                 .error (data, status) ->
-                    console.log data
                     $scope.lastPostStatus = status
-
 
         $scope.get = ->
             $http {
@@ -33,8 +30,6 @@ app.controller 'bird-distribution', [
                 .success (data, status) ->
                     $scope.lastGetStatus = status
                     $scope.distributions = data.distributions
-                    console.log data.distributions
                 .error (data, status) ->
                     $scope.lastGetStatus = status
-
 ]
